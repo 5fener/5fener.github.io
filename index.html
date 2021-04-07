@@ -164,6 +164,127 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/07/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://tse2-mm.cn.bing.net/th/id/OIP.T-hCFpnd10w0pf7cqccClAAAAA?w=162&h=180&c=7&o=5&dpr=1.24&pid=1.7">
+      <meta itemprop="name" content="五分儿">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/07/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="post-title-link" itemprop="url">输入输出略解</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-07 15:18:29 / 修改时间：16:01:35" itemprop="dateCreated datePublished" datetime="2021-04-07T15:18:29+08:00">2021-04-07</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>926</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>###输入###</li>
+</ul>
+<hr>
+<pre><code>* `scanf`
+* 函数原型:`int scanf(const char *format, ...)` *
+* 函数从标准输入流 stdin 读取输入，并根据提供的 format 来浏览输入 *
+* (format 可以是一个简单的常量字符串，但是您可以分别指定 %s、%d、%c、%f 等来输出或读取字符串、整数、字符或浮点数) *
+* scanf遇到空格、回车和Tab键都会认为输入结束，所有它不能接收空格 *
+</code></pre>
+<hr>
+<pre><code>* `gets`
+* 函数原型：`char *gets(char *s)` *
+* 从标准输入接收一串字符，遇到&#39;\n&#39;时结束，但不接收&#39;\n&#39;，把 &#39;\n&#39;留存输入缓冲区；把接收的一串字符存储在形式参数指针指向的空间，并在最后自动添加一个&#39;\0&#39; *
+* gets可以接收空格 *
+</code></pre>
+<hr>
+<pre><code>* `getchar`
+* 函数原型: `int getchar(void)` *
+* 从标准输入接收一个字符返回，在同一个时间内只会读取一个单一的字符，多余的字符全部留在输入缓冲区，什么时候结束由程序员自己约定结束符，一般选择\n为结束符，当然也可以是任意其他字符 *
+</code></pre>
+<hr>
+<pre><code>* `fgets`
+* 函数原型：`char *fgets(char *s, int n, FILE *stream)` *
+* 从文件指针stream中读取字符，存到以s为起始地址的空间里，直到读完N-1个字符，或者读完一行 *
+* 我们平时可以这么使用：fgets(str, sizeof(str), stdin);其中str为数组首地址，sizeof(str)为数组大小，stdin表示我们从键盘输入数据 *
+</code></pre>
+<hr>
+<ul>
+<li>###输出###</li>
+</ul>
+<hr>
+<pre><code>* `printf`
+* 函数原型:`int printf(const char *format, ...)` *
+* 函数把输出写入到标准输出流 stdout ，并根据提供的格式产生输出 *
+</code></pre>
+<hr>
+<pre><code>* `puts`
+* 函数原型:`int puts(const char *s)` *
+* 函数把字符串 s 和一个尾随的换行符写入到 stdout *
+</code></pre>
+<hr>
+<pre><code>* `putchar`
+* 函数原型:`int putchar(int c)` *
+* 把字符输出到屏幕上，并返回相同的字符。这个函数在同一个时间内只会输出一个单一的字符。可以在循环内使用这个方法，以便在屏幕上输出多个字符 *
+</code></pre>
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/02/Blog%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -184,19 +305,21 @@
         <div class="post-meta">
 
           
-  	<i class="fa fa-thumb-tack"></i>
-  	<font color=7D26CD>置顶</font>
-  	<span class="post-meta-divider">|</span>
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-02 17:57:51 / 修改时间：22:25:18" itemprop="dateCreated datePublished" datetime="2021-04-02T17:57:51+08:00">2021-04-02</time>
+              <time title="创建时间：2021-04-02 17:57:51" itemprop="dateCreated datePublished" datetime="2021-04-02T17:57:51+08:00">2021-04-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-07 15:16:28" itemprop="dateModified" datetime="2021-04-07T15:16:28+08:00">2021-04-07</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -405,14 +528,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -448,12 +571,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
