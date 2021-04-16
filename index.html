@@ -164,6 +164,204 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/15/c%E6%A0%87%E5%87%86%E5%BA%93%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8(1)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://tse2-mm.cn.bing.net/th/id/OIP.T-hCFpnd10w0pf7cqccClAAAAA?w=162&h=180&c=7&o=5&dpr=1.24&pid=1.7">
+      <meta itemprop="name" content="五分儿">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/15/c%E6%A0%87%E5%87%86%E5%BA%93%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8(1)/" class="post-title-link" itemprop="url">c标准库函数应用(1)</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-15 20:11:41" itemprop="dateCreated datePublished" datetime="2021-04-15T20:11:41+08:00">2021-04-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-16 12:49:22" itemprop="dateModified" datetime="2021-04-16T12:49:22+08:00">2021-04-16</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p><code>#include&lt;math.h&gt;</code></p>
+<ol>
+<li><p><strong>abs函数</strong><br>函数定义：int abs（int i）；<br>函数功能：求整数的绝对值  </p>
+</li>
+<li><p><strong>labs函数</strong><br>函数定义：long labs(long n);<br>函数功能：求长整数的绝对值</p>
+</li>
+<li><p><strong>fabs函数</strong><br>函数定义：double fabs(double x);<br>函数功能：返回浮点数的绝对值</p>
+</li>
+<li><p><strong>sin函数</strong><br>函数定义：double sin(double x);<br>函数功能：求解正弦</p>
+</li>
+<li><p><strong>cos函数</strong><br>函数定义：double cos(double x);<br>函数功能：求解余弦</p>
+</li>
+<li><p><strong>tan函数</strong><br>函数定义: double tan(double x);<br>函数功能：求解正切</p>
+</li>
+</ol>
+<p>  <em>以下举例给出1~3的程序代码：</em></p>
+</li>
+</ul>
+<p>‘’’<br>    #include&lt;stdio.h&gt;<br>    #include&lt;math.h&gt;</p>
+<pre><code>int main()
+&#123;
+    int iAbsoluteNumber;
+    int iNumber1 = -12;
+    iAbsoluteNumber = abs(iNumber1);
+    printf(&quot;%d\n&quot;, iAbsoluteNumber);
+
+    long iResult;
+    long iNumber2 = -1234567890L;
+    iResult = labs(iNumber2);
+    printf(&quot;%ld\n&quot;, iResult);
+
+    double fFloatResult;
+    double fNumber = -1234.0;
+    fFloatResult = fabs(fNumber);
+    printf(&quot;%lf&quot;, fNumber);
+
+    return 0;
+&#125;
+</code></pre>
+<p>‘’’</p>
+<pre><code>*以下举例给出4~6的程序代码：*
+</code></pre>
+<p>‘’’<br>    #include&lt;stdio.h&gt;<br>    #include&lt;math.h&gt;</p>
+<pre><code>int main()
+&#123;
+    double fResultSin;
+    double fResultCos;
+    double fResultTan;
+
+    double fXsin=0.5;
+    double fXcos=0.5;
+    double fXtan=0.5;
+
+    fResultSin=sin(fXsin);
+    fResultCos=cos(fXcos);
+    fResultTan=tan(fXtan);
+
+    printf(&quot;%l\n&quot;,fResultSin);
+    printf(&quot;%lf\n&quot;,fResultCos);
+    printf(&quot;%lf\n&quot;,fResultTan);
+
+    return 0;
+&#125;
+</code></pre>
+<p>‘’’</p>
+<ul>
+<li><p><code>#include&lt;ctype.h&gt;</code></p>
+<ol>
+<li><p><strong>isalpha函数</strong><br>函数定义：int isalpha(int ch);<br>函数功能：检测字符是否为字母</p>
+</li>
+<li><p><strong>isdigit函数</strong><br>函数定义：int isdigit(int ch);<br>函数功能：检测字符是否为数字</p>
+</li>
+<li><p><strong>isalnum函数</strong><br>函数定义：int isalnum(int ch);<br>函数功能：检测字符是否为字母或数字</p>
+</li>
+</ol>
+<p>  <em>以下举例给出4~6的程序代码：</em></p>
+</li>
+</ul>
+<p>‘’’<br>    #include&lt;stdio.h&gt;<br>    #include&lt;ctype.h&gt;</p>
+<pre><code>void SwitchShow(char c);
+
+int main()
+&#123;
+    char cCharPut;
+    char cCharTemp;
+
+    printf(&quot;First enter:&quot;);
+    scanf_s(&quot;%c&quot;, &amp;cCharPut,sizeof(cCharPut));
+    SwitchShow(cCharPut);
+    cCharTemp = getchar();
+
+    printf(&quot;Second enter:&quot;);
+    scanf_s(&quot;%c&quot;, &amp;cCharPut,sizeof(cCharPut));
+    SwitchShow(cCharPut);
+    cCharTemp = getchar();
+
+    printf(&quot;Third enter:&quot;);
+    scanf_s(&quot;%c&quot;, &amp;cCharPut,sizeof(cCharPut));
+    SwitchShow(cCharPut);
+
+    return 0;
+&#125;
+
+void SwitchShow(char cChar)
+&#123;
+    if (isalpha(cChar))
+        printf(&quot;You entered a letter of  the alphabet %c\n&quot;, cChar);
+    if (isdigit(cChar))
+        printf(&quot;You entered the digit %c\n&quot;, cChar);
+    if (isalnum(cChar))
+        printf(&quot;You entered the alphanumuric character %c\n&quot;, cChar);
+    else
+        printf(&quot;You entered the character is not alphabet or digit:%c\n&quot;, cChar);
+&#125;
+</code></pre>
+<p>‘’’<br><strong>PS：以上代码均由IDE：VS2019 编译运行</strong></p>
+<p><em><strong>主要参考文献：</strong></em><br>    C语言从入门到精通（第4版）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/07/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -534,14 +732,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -577,12 +775,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">4k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
