@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://5fener.github.io/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/</loc>
+    
+    <lastmod>2023-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://5fener.github.io/tags/index.html</loc>
     
     <lastmod>2023-02-15</lastmod>
@@ -48,24 +57,6 @@
   
   <url>
     <loc>https://5fener.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://5fener.github.io/about/index.html</loc>
-    
-    <lastmod>2023-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://5fener.github.io/2023/02/15/hello-world/</loc>
     
     <lastmod>2023-02-15</lastmod>
     
