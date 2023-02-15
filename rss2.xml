@@ -4,9 +4,9 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>长安街</title>
-    <link>http://example.com/</link>
+    <link>https://5fener.github.io/</link>
     
-    <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://5fener.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>举目见日，不见长安</description>
     <pubDate>Wed, 15 Feb 2023 03:26:22 GMT</pubDate>
@@ -14,8 +14,8 @@
     
     <item>
       <title>Hello World</title>
-      <link>http://example.com/2023/02/15/hello-world/</link>
-      <guid>http://example.com/2023/02/15/hello-world/</guid>
+      <link>https://5fener.github.io/2023/02/15/hello-world/</link>
+      <guid>https://5fener.github.io/2023/02/15/hello-world/</guid>
       <pubDate>Wed, 15 Feb 2023 03:26:22 GMT</pubDate>
       
         
@@ -30,7 +30,7 @@
       
       
       
-      <comments>http://example.com/2023/02/15/hello-world/#disqus_thread</comments>
+      <comments>https://5fener.github.io/2023/02/15/hello-world/#disqus_thread</comments>
       
     </item>
     
