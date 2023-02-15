@@ -74,7 +74,14 @@
 
   
   <url>
-    <loc>https://5fener.github.io/tags/Blog-Hexo/</loc>
+    <loc>https://5fener.github.io/tags/Blog/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://5fener.github.io/tags/Hexo/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
