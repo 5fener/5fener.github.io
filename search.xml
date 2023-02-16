@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>ERROR Deployer not found: baidu_url_submit</title>
+      <link href="/2023/02/16/Hexo-d%20baitu-submit%E6%8A%A5%E9%94%99/"/>
+      <url>/2023/02/16/Hexo-d%20baitu-submit%E6%8A%A5%E9%94%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo-d的时候报错：ERROR-Deployer-not-found-baidu-url-submit"><a href="#hexo-d的时候报错：ERROR-Deployer-not-found-baidu-url-submit" class="headerlink" title="hexo d的时候报错：ERROR Deployer not found: baidu_url_submit"></a>hexo d的时候报错：ERROR Deployer not found: baidu_url_submit</h1><ul><li>在配置Blog提交百度等搜索引擎收录完成后，输入hexo d出现报错<code>ERROR Deployer not found: baidu_url_submit</code>，此处在百度站长平台的链接<strong>主动推送</strong>设置时操作</li><li>其主动推送的实现原理如下：<ul><li>新链接的产生， <code>hexo generate</code> 会产生一个文本文件，里面包含最新的链接</li><li>新链接的提交， <code>hexo deploy</code> 会从上述文件中读取链接，提交至百度搜索引擎</li></ul></li><li>问题发生在修改站点配置文件<code>_config.yml</code>时<ul><li><code>-type: baidu_url_submitter</code> 配置是 <code>baidu_url_submit</code> ，两者不一样</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+            <tag> 杂症 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Blog快速搭建</title>
       <link href="/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/"/>
       <url>/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/</url>
