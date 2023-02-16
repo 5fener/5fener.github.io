@@ -22,21 +22,21 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Windows 基础命令目标掌握Windows系统文件及目录操作命令 掌握Windows网络相关命令 学习Windows输入命令 使用命令提示符对话 CMD一. 目录和文件的应用操作 cd命令 123cd &#x2F;d d:\    &#x2F;&#x2F;切换到d盘目录，因为改变了驱动器，所以需要加上&#x2F;d选项 c:\Users\Administrator&gt;cd c:\    &#x2F;&#x2F;如果没有改变驱动器，就不需要加&#x2F;d选项">
+  <meta name="description" content="NTFS 权限规则一、权限规则1、权限的累加 用户分配的有效权限是分配给用户所有权限的累加 假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改    2、拒绝权限 拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高） 当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）  3、继承权限 文件或文件夹的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows基础命令">
-<meta property="og:url" content="https://5fener.github.io/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="NTFS权限规则">
+<meta property="og:url" content="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="Windows 基础命令目标掌握Windows系统文件及目录操作命令 掌握Windows网络相关命令 学习Windows输入命令 使用命令提示符对话 CMD一. 目录和文件的应用操作 cd命令 123cd &#x2F;d d:\    &#x2F;&#x2F;切换到d盘目录，因为改变了驱动器，所以需要加上&#x2F;d选项 c:\Users\Administrator&gt;cd c:\    &#x2F;&#x2F;如果没有改变驱动器，就不需要加&#x2F;d选项">
+<meta property="og:description" content="NTFS 权限规则一、权限规则1、权限的累加 用户分配的有效权限是分配给用户所有权限的累加 假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改    2、拒绝权限 拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高） 当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）  3、继承权限 文件或文件夹的">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-16T02:49:50.650Z">
-<meta property="article:modified_time" content="2023-02-16T03:11:35.846Z">
+<meta property="article:published_time" content="2021-12-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-16T07:46:05.585Z">
 <meta property="article:author" content="5fener">
 <meta property="article:tag" content="网络安全">
 <meta property="article:tag" content="Windows安全">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://5fener.github.io/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>Windows基础命令 | 长安街</title>
+  <title>NTFS权限规则 | 长安街</title>
   
 
 
@@ -208,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Windows基础命令
+          NTFS权限规则
         </h1>
 
         <div class="post-meta">
@@ -232,10 +232,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-02-16 10:49:50 / 修改时间：11:11:35" itemprop="dateCreated datePublished" datetime="2023-02-16T10:49:50+08:00">2023-02-16</time>
+              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:46:05" itemprop="dateModified" datetime="2023-02-16T15:46:05+08:00">2023-02-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -259,14 +265,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>408</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -278,156 +284,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Windows-基础命令"><a href="#Windows-基础命令" class="headerlink" title="Windows 基础命令"></a>Windows 基础命令</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><strong>掌握Windows系统文件及目录操作命令</strong></p>
-<p><strong>掌握Windows网络相关命令</strong></p>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="Windows输入命令-使用命令提示符对话-CMD"><a href="#Windows输入命令-使用命令提示符对话-CMD" class="headerlink" title="Windows输入命令 使用命令提示符对话 CMD"></a>Windows输入命令 使用命令提示符对话 CMD</h3><h3 id="一-目录和文件的应用操作"><a href="#一-目录和文件的应用操作" class="headerlink" title="一. 目录和文件的应用操作"></a>一. 目录和文件的应用操作</h3><ol>
-<li><p>cd命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\    //切换到d盘目录，因为改变了驱动器，所以需要加上/d选项 </span><br><span class="line"></span><br><span class="line">c:\Users\Administrator&gt;cd c:\    //如果没有改变驱动器，就不需要加/d选项</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>目录分为相对路径和绝对路径<ul>
-<li>相对路径(以当前为起点)<ul>
-<li>“.”代表的是当前路径</li>
-<li>“..&#x2F;“代表的是当前的上一级目录</li>
-</ul>
-</li>
-<li>绝对路径（以驱动器号为起点）</li>
+        <h1 id="NTFS-权限规则"><a href="#NTFS-权限规则" class="headerlink" title="NTFS 权限规则"></a>NTFS 权限规则</h1><h2 id="一、权限规则"><a href="#一、权限规则" class="headerlink" title="一、权限规则"></a>一、权限规则</h2><h4 id="1、权限的累加"><a href="#1、权限的累加" class="headerlink" title="1、权限的累加"></a>1、权限的累加</h4><ul>
+<li>用户分配的有效权限是分配给用户所有权限的累加<ul>
+<li>假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改</li>
 </ul>
 </li>
 </ul>
-<ol start="2">
-<li>dir命令</li>
-</ol>
-<ul>
-<li><p>用于显示目录和文件列表</p>
-</li>
-<li><p>常用的用法直接使用dir</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- dir</span><br><span class="line">  dir /a:h c:\   #查看c盘下的隐藏目录和文件</span><br><span class="line">  dir /o:-n c:\  #使用字母逆序方式查看</span><br></pre></td></tr></table></figure></li>
+<h3 id="2、拒绝权限"><a href="#2、拒绝权限" class="headerlink" title="2、拒绝权限"></a>2、拒绝权限</h3><ul>
+<li>拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高）</li>
+<li>当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）</li>
 </ul>
-<ol start="3">
-<li>md 或 mkdir</li>
-</ol>
-<ul>
-<li><p>创建目录（文件夹），也可以创建多级子目录</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- md 公司文件夹</span><br><span class="line">  md 公司文件夹\技术部\技术文件夹  #当技术部文件夹不存在时会直接创建</span><br></pre></td></tr></table></figure></li>
+<h3 id="3、继承权限"><a href="#3、继承权限" class="headerlink" title="3、继承权限"></a>3、继承权限</h3><ul>
+<li>文件或文件夹的访问控制列表默认情况下会继承上级文件夹的权限</li>
 </ul>
-<ol start="4">
-<li>rd</li>
-</ol>
-<ul>
-<li><p>用于删除目录</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd 成都文件  #直接使用rd，只能删除空目录</span><br><span class="line">rd /s /q 公司文件夹  #如果要删除的目录中只有子目录或文件，就必须使用/s选项，可以携带/q选项不提醒</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="5">
-<li>move</li>
-</ol>
-<ul>
-<li><p>用于移动，重命名</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;move woniu.bmp c:\		#移动</span><br><span class="line">d:\&gt;move c:\woniu.bmp c:\woniutf.bmp	#重命名</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="6">
-<li>copy</li>
-</ol>
-<ul>
-<li><p>用于复制文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;copy c:\woniutf.bmp d:\woniuxy   #直接复制文件到指定目录</span><br><span class="line">d:\&gt;copy 1.txt+2.txt 3.txt   #将两个文件中的内容直接融合到新的文件中</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="7">
-<li>xcopy</li>
-</ol>
-<ul>
-<li><p>用于复制目录</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="8">
-<li>del</li>
-</ol>
-<ul>
-<li><p>用于删除文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;del 1.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="二-文本处理"><a href="#二-文本处理" class="headerlink" title="二. 文本处理"></a>二. 文本处理</h3><ol>
-<li>type</li>
-</ol>
-<ul>
-<li><p>用于显示文本内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;type d:\3.txt</span><br><span class="line">&lt;内容&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重定向 “&gt;”</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;ipconfig &gt; c:\ip.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>管道符 “|”</p>
-<ul>
-<li>将前面命令执行的结果做为后面命令的操作对象</li>
+<h3 id="4、特殊权限（特别的权限）"><a href="#4、特殊权限（特别的权限）" class="headerlink" title="4、特殊权限（特别的权限）"></a>4、特殊权限（特别的权限）</h3><ul>
+<li>读取权限（和读取文件或文件夹的内容没有关系）<ul>
+<li>读取文件或文件夹的访问控制列表</li>
+<li>针对于用户想要访问某个文件的内容，此权限必须勾选</li>
 </ul>
 </li>
-</ul>
-<ol start="2">
-<li>finder</li>
-</ol>
-<ul>
-<li><p>查找文件内容（查找的某个字符串的内容）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;findstr 192 c:\ip.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="三-网络相关操作"><a href="#三-网络相关操作" class="headerlink" title="三.网络相关操作"></a>三.网络相关操作</h3><ol>
-<li>配置TCP&#x2F;IP参数</li>
-</ol>
-<ul>
-<li><p>TCP&#x2F;IP参数</p>
-<ul>
-<li><p>IP 地址：标识了网络中的某一台主机</p>
-</li>
-<li><p>子网掩码：用于标识你的 IP 所处的网络的范围，子网掩码越大，网络范围越小</p>
-</li>
-<li><p>默认网关：标识与主机直连的路由器的 IP 地址</p>
-</li>
-<li><p>DNS 服务器：用于域名解析的</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#静态配置IP地址、子网掩码、默认网关</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; static 192.168.100.100 255.255.255.0 192.168.100.254</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#自动获取 TCP/IP 参数</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#静态配置 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; static 12.12.12.12</span><br><span class="line">#添加备用 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; 222.66.66.66 index=2	//index=2 是索引，表示备用 DNS</span><br><span class="line">#自动获取 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure></li>
+<li>更改权限（和修改文件或文件夹的内容没有关系）<ul>
+<li>用户是否可以修改文件或文件夹的访问控制列表，由于此权限是可以为用户添加或删除权限，会造成很多不安全因素，此权限一般不会给</li>
+<li>要想更改，前提是必须能读取</li>
 </ul>
 </li>
-</ul>
-<ol start="2">
-<li>查看TCP&#x2F;IP参数，用ipconfig</li>
-</ol>
-<ul>
-<li><p>常用</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关）</span><br><span class="line">ipconfig</span><br><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关、mac地址、dhcp地址、dns地址、主机名）</span><br><span class="line">ipconfig /all</span><br><span class="line">#释放TCP/IP参数</span><br><span class="line">ipconfig /release</span><br><span class="line">#重新获取TCP/IP参数</span><br><span class="line">ipconfig /renew</span><br><span class="line">#刷新dns缓存</span><br><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="3">
-<li>ping命令</li>
-</ol>
-<ul>
-<li><p>用于测试TCP&#x2F;IP配置是否正确</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping -n 10 -l 1000 -t -a 192.168.31.131</span><br><span class="line"># -n 10 发送10个报文</span><br><span class="line"># -l 1000 单个报文10000个字节</span><br><span class="line"># -t 一直不停的ping</span><br><span class="line"># -a 返回IP的主机名</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="4">
-<li>tracert</li>
-</ol>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:&gt;tracert 39.156.66.14</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="5">
-<li>route</li>
-</ol>
-<ul>
-<li><p>用来操作网络路由表</p>
-<ul>
-<li><p>0.0.0.0代表的任意网路</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#打印路由表</span><br><span class="line">route -4 print</span><br><span class="line">#添加路由条目</span><br><span class="line">（112.53.42.52目标地址或网络 /32代表子网掩码或者112.53.42.0目标网络，/24代表子网掩码，192.168.33.1网关地址）</span><br><span class="line">route add 122.53.42.52/32 192.168.33.1</span><br><span class="line">#删除路由条目</span><br><span class="line">route delete 112.53.42.52 #（112.53.42.52目标）</span><br></pre></td></tr></table></figure></li>
+<li>取得所有权<ul>
+<li>能够修改文件或文件夹的所有者</li>
+<li>前提必须得读取和修改</li>
 </ul>
 </li>
-</ul>
-<ol start="6">
-<li>netstat</li>
-</ol>
-<ul>
-<li><p>用法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看所有的TCP链接，包括进程，以数字形式显示</span><br><span class="line">netstat -anop tcp</span><br><span class="line">#查看路由表</span><br><span class="line">netstat -r	等同于	route print</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -455,7 +340,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" title="Windows基础命令">https://5fener.github.io/2023/02/16/Windows基础命令/</a>
+    <a href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/" title="NTFS权限规则">https://5fener.github.io/2021/12/24/NTFS权限规则/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -505,12 +390,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/" rel="prev" title="虚拟机基本指南">
-      <i class="fa fa-chevron-left"></i> 虚拟机基本指南
+    <a href="/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="prev" title="Windows基础命令">
+      <i class="fa fa-chevron-left"></i> Windows基础命令
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" rel="next" title="Windows用户管理">
-      Windows用户管理 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/12/24/NTFS%E6%9D%83%E9%99%90/" rel="next" title="NTFS权限">
+      NTFS权限 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -570,7 +455,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Windows 基础命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.2.</span> <span class="nav-text">学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows%E8%BE%93%E5%85%A5%E5%91%BD%E4%BB%A4-%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E5%AF%B9%E8%AF%9D-CMD"><span class="nav-number">1.2.1.</span> <span class="nav-text">Windows输入命令 使用命令提示符对话 CMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80-%E7%9B%AE%E5%BD%95%E5%92%8C%E6%96%87%E4%BB%B6%E7%9A%84%E5%BA%94%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">一. 目录和文件的应用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C-%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="nav-number">1.2.3.</span> <span class="nav-text">二. 文本处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89-%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.4.</span> <span class="nav-text">三.网络相关操作</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NTFS-%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99"><span class="nav-number">1.</span> <span class="nav-text">NTFS 权限规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99"><span class="nav-number">1.1.</span> <span class="nav-text">一、权限规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81%E6%9D%83%E9%99%90%E7%9A%84%E7%B4%AF%E5%8A%A0"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">1、权限的累加</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%8B%92%E7%BB%9D%E6%9D%83%E9%99%90"><span class="nav-number">1.1.1.</span> <span class="nav-text">2、拒绝权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E7%BB%A7%E6%89%BF%E6%9D%83%E9%99%90"><span class="nav-number">1.1.2.</span> <span class="nav-text">3、继承权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90%EF%BC%88%E7%89%B9%E5%88%AB%E7%9A%84%E6%9D%83%E9%99%90%EF%BC%89"><span class="nav-number">1.1.3.</span> <span class="nav-text">4、特殊权限（特别的权限）</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

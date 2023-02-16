@@ -22,24 +22,21 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
+  <meta name="description" content="Windows 基础命令目标掌握Windows系统文件及目录操作命令 掌握Windows网络相关命令 学习Windows输入命令 使用命令提示符对话 CMD一. 目录和文件的应用操作 cd命令 123cd &#x2F;d d:\    &#x2F;&#x2F;切换到d盘目录，因为改变了驱动器，所以需要加上&#x2F;d选项 c:\Users\Administrator&gt;cd c:\    &#x2F;&#x2F;如果没有改变驱动器，就不需要加&#x2F;d选项">
 <meta property="og:type" content="article">
-<meta property="og:title" content="注册表基础">
-<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="Windows基础命令">
+<meta property="og:url" content="https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
+<meta property="og:description" content="Windows 基础命令目标掌握Windows系统文件及目录操作命令 掌握Windows网络相关命令 学习Windows输入命令 使用命令提示符对话 CMD一. 目录和文件的应用操作 cd命令 123cd &#x2F;d d:\    &#x2F;&#x2F;切换到d盘目录，因为改变了驱动器，所以需要加上&#x2F;d选项 c:\Users\Administrator&gt;cd c:\    &#x2F;&#x2F;如果没有改变驱动器，就不需要加&#x2F;d选项">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png">
-<meta property="og:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173843636.png">
-<meta property="article:published_time" content="2023-02-16T02:52:04.693Z">
-<meta property="article:modified_time" content="2023-02-16T07:26:15.104Z">
+<meta property="article:published_time" content="2021-12-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-16T07:46:48.777Z">
 <meta property="article:author" content="5fener">
 <meta property="article:tag" content="网络安全">
 <meta property="article:tag" content="Windows安全">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png">
 
-<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
+<link rel="canonical" href="https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
 
 
 <script id="page-configurations">
@@ -52,7 +49,7 @@
   };
 </script>
 
-  <title>注册表基础 | 长安街</title>
+  <title>Windows基础命令 | 长安街</title>
   
 
 
@@ -211,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -224,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          注册表基础
+          Windows基础命令
         </h1>
 
         <div class="post-meta">
@@ -235,10 +232,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-02-16 10:52:04 / 修改时间：15:26:15" itemprop="dateCreated datePublished" datetime="2023-02-16T10:52:04+08:00">2023-02-16</time>
+              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:46:48" itemprop="dateModified" datetime="2023-02-16T15:46:48+08:00">2023-02-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -262,7 +265,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -281,99 +284,156 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="注册表基础"><a href="#注册表基础" class="headerlink" title="注册表基础"></a>注册表基础</h1><h2 id="一、注册表基础"><a href="#一、注册表基础" class="headerlink" title="一、注册表基础"></a>一、注册表基础</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><ul>
-<li>注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统</li>
-<li>注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬件设置、软件配置等信息，从而方便了管理，增强了系统地稳定性</li>
-</ul>
-<h3 id="2、早期注册表"><a href="#2、早期注册表" class="headerlink" title="2、早期注册表"></a>2、早期注册表</h3><ul>
-<li>以ini为扩展名的文本文件的配置文件</li>
-</ul>
-<h3 id="3、Windows-95后的注册表"><a href="#3、Windows-95后的注册表" class="headerlink" title="3、Windows 95后的注册表"></a>3、Windows 95后的注册表</h3><ul>
-<li><p>自Windows 95操作系统开始，注册表真正成为Windows用户经常接触的内容，并在其后的操作系统中继续沿用</p>
+        <h1 id="Windows-基础命令"><a href="#Windows-基础命令" class="headerlink" title="Windows 基础命令"></a>Windows 基础命令</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><strong>掌握Windows系统文件及目录操作命令</strong></p>
+<p><strong>掌握Windows网络相关命令</strong></p>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="Windows输入命令-使用命令提示符对话-CMD"><a href="#Windows输入命令-使用命令提示符对话-CMD" class="headerlink" title="Windows输入命令 使用命令提示符对话 CMD"></a>Windows输入命令 使用命令提示符对话 CMD</h3><h3 id="一-目录和文件的应用操作"><a href="#一-目录和文件的应用操作" class="headerlink" title="一. 目录和文件的应用操作"></a>一. 目录和文件的应用操作</h3><ol>
+<li><p>cd命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\    //切换到d盘目录，因为改变了驱动器，所以需要加上/d选项 </span><br><span class="line"></span><br><span class="line">c:\Users\Administrator&gt;cd c:\    //如果没有改变驱动器，就不需要加/d选项</span><br></pre></td></tr></table></figure></li>
+</ol>
 <ul>
-<li><p>注册表数据库由多个文件组成</p>
+<li>目录分为相对路径和绝对路径<ul>
+<li>相对路径(以当前为起点)<ul>
+<li>“.”代表的是当前路径</li>
+<li>“..&#x2F;“代表的是当前的上一级目录</li>
+</ul>
 </li>
-<li><p>Windwos提供了注册表编辑器</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在运行处输入命令打开注册表编辑器</span><br><span class="line">regedit</span><br></pre></td></tr></table></figure></li>
+<li>绝对路径（以驱动器号为起点）</li>
 </ul>
 </li>
 </ul>
-<h3 id="4、注册表结构"><a href="#4、注册表结构" class="headerlink" title="4、注册表结构"></a>4、注册表结构</h3><ul>
-<li><p>注册表以树状结构进行呈现</p>
+<ol start="2">
+<li>dir命令</li>
+</ol>
 <ul>
-<li><p>子树（实际只有两颗子树，为了方便操作，分为了五颗子树）</p>
+<li><p>用于显示目录和文件列表</p>
+</li>
+<li><p>常用的用法直接使用dir</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- dir</span><br><span class="line">  dir /a:h c:\   #查看c盘下的隐藏目录和文件</span><br><span class="line">  dir /o:-n c:\  #使用字母逆序方式查看</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li>md 或 mkdir</li>
+</ol>
 <ul>
-<li><p>HKEY_LOCAL_MACHINE：记录关于本地计算机系统的信息，包括硬件和操作系统数据</p>
-</li>
-<li><p>HKEY_USERS：记录关于动态加载的用户配置文件和默认配置文件的信息</p>
-</li>
-<li><p>HKEY_CURRENT_USER：HKEY_USERS子树，它指向“HKEY_USERS\当前用户的安全ID”包含当前以交互方式登陆的用户的用户配置文件</p>
-</li>
-<li><p>HKEY_CURRENT_CONFIG：HEEY_LOCAL_MACHINE子树，指向</p>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current包含在启动时由本地计算机系统使用的硬件配置文件的相关信息加载的设备驱动程序、显示时要使用的分辨率</p>
-</li>
-<li><p>HKEY_CLASSES_ROOT：HKEY_CURRENT_USER子树包含用于各种OLE技术和文件类关联数据的信息</p>
-</li>
+<li><p>创建目录（文件夹），也可以创建多级子目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- md 公司文件夹</span><br><span class="line">  md 公司文件夹\技术部\技术文件夹  #当技术部文件夹不存在时会直接创建</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p>项</p>
+<ol start="4">
+<li>rd</li>
+</ol>
 <ul>
-<li>可以简单的理解为文件夹，项中可以包含项和值</li>
+<li><p>用于删除目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd 成都文件  #直接使用rd，只能删除空目录</span><br><span class="line">rd /s /q 公司文件夹  #如果要删除的目录中只有子目录或文件，就必须使用/s选项，可以携带/q选项不提醒</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p>值</p>
+<ol start="5">
+<li>move</li>
+</ol>
 <ul>
-<li>每个注册表项或子项都可以包含称为值的数据</li>
-<li>部分值应用于某个用户的信息</li>
-<li>部分值应用于计算机所有用户的信息</li>
-<li>值由三部分组成（值的名称、值类型、值的数据）</li>
+<li><p>用于移动，重命名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;move woniu.bmp c:\		#移动</span><br><span class="line">d:\&gt;move c:\woniu.bmp c:\woniutf.bmp	#重命名</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、注册表基本操作"><a href="#二、注册表基本操作" class="headerlink" title="二、注册表基本操作"></a>二、注册表基本操作</h2><h3 id="1、创建项"><a href="#1、创建项" class="headerlink" title="1、创建项"></a>1、创建项</h3><h3 id="2、创建值（有六种类型的值）"><a href="#2、创建值（有六种类型的值）" class="headerlink" title="2、创建值（有六种类型的值）"></a>2、创建值（有六种类型的值）</h3><ul>
-<li>字符串值（REG_SZ)：固定长度的文本字符串</li>
-<li>二进制值（REG_BINARY）：原始二进制数据。多数硬件组件信息都以二进制数据存储</li>
-<li>DWORD值（REG_DWORD）：数据由4字节长的数表示。设备驱动程序和服务的很多参数都是这种类型</li>
-<li>QWORD值（REG_QWORD）: 数据由8字节长的数表示</li>
-<li>多字符串值（REG_MULTI_SZ）：多重字符串。包含列表或多值的值通常为该类型</li>
-<li>可扩充字符串值（REG_EXPAND_SZ）：长度可变的数据串。该数据类型包含在程序或服务使用该数据时解析的变量</li>
-</ul>
-<h3 id="3、修改、删除和重命名值"><a href="#3、修改、删除和重命名值" class="headerlink" title="3、修改、删除和重命名值"></a>3、修改、删除和重命名值</h3><h2 id="三、注册表应用"><a href="#三、注册表应用" class="headerlink" title="三、注册表应用"></a>三、注册表应用</h2><h3 id="1、案例"><a href="#1、案例" class="headerlink" title="1、案例"></a>1、案例</h3><ul>
-<li><p>个性化时间设置</p>
+<ol start="6">
+<li>copy</li>
+</ol>
 <ul>
-<li><p>打开注册表编辑器，锁定“HKEY_CURRENT_USER\Control Panel\International”下的值sTimeFormat进行修改</p>
-<p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png" alt="image-20211226173310032"></p>
-</li>
+<li><p>用于复制文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;copy c:\woniutf.bmp d:\woniuxy   #直接复制文件到指定目录</span><br><span class="line">d:\&gt;copy 1.txt+2.txt 3.txt   #将两个文件中的内容直接融合到新的文件中</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p>在欢迎屏幕显示自定义信息</p>
+<ol start="7">
+<li>xcopy</li>
+</ol>
 <ul>
-<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”下的值legalnoticecaption（标题）legalnoticetext（文本）<img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173843636.png" alt="image-20211226173843636"></li>
+<li><p>用于复制目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p>禁用任务管理器</p>
+<ol start="8">
+<li>del</li>
+</ol>
 <ul>
-<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system”下新建 DWORD 值 DisableTaskMgr，设置值为1</li>
+<li><p>用于删除文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;del 1.txt</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p>禁用控制面板</p>
+<h3 id="二-文本处理"><a href="#二-文本处理" class="headerlink" title="二. 文本处理"></a>二. 文本处理</h3><ol>
+<li>type</li>
+</ol>
 <ul>
-<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer”下新建 DOWRD 值 NoControlPanel，设置值为1</li>
-</ul>
+<li><p>用于显示文本内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;type d:\3.txt</span><br><span class="line">&lt;内容&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>去除快捷方式左下角小箭头</p>
+<li><p>重定向 “&gt;”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;ipconfig &gt; c:\ip.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>管道符 “|”</p>
 <ul>
-<li>打开注册表编辑器，锁定“HKEY_CLASSES_ROOT\lnkfile”找到项下的 IsShortcut 值，直接删除</li>
+<li>将前面命令执行的结果做为后面命令的操作对象</li>
 </ul>
 </li>
 </ul>
-<h3 id="2、注册表编辑技巧"><a href="#2、注册表编辑技巧" class="headerlink" title="2、注册表编辑技巧"></a>2、注册表编辑技巧</h3><ul>
-<li>查找字符串、值、项</li>
-<li>将子项添加到收藏夹</li>
-<li>打印注册表</li>
-<li>复制项名字</li>
+<ol start="2">
+<li>finder</li>
+</ol>
+<ul>
+<li><p>查找文件内容（查找的某个字符串的内容）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;findstr 192 c:\ip.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="三-网络相关操作"><a href="#三-网络相关操作" class="headerlink" title="三.网络相关操作"></a>三.网络相关操作</h3><ol>
+<li>配置TCP&#x2F;IP参数</li>
+</ol>
+<ul>
+<li><p>TCP&#x2F;IP参数</p>
+<ul>
+<li><p>IP 地址：标识了网络中的某一台主机</p>
+</li>
+<li><p>子网掩码：用于标识你的 IP 所处的网络的范围，子网掩码越大，网络范围越小</p>
+</li>
+<li><p>默认网关：标识与主机直连的路由器的 IP 地址</p>
+</li>
+<li><p>DNS 服务器：用于域名解析的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#静态配置IP地址、子网掩码、默认网关</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; static 192.168.100.100 255.255.255.0 192.168.100.254</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#自动获取 TCP/IP 参数</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#静态配置 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; static 12.12.12.12</span><br><span class="line">#添加备用 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; 222.66.66.66 index=2	//index=2 是索引，表示备用 DNS</span><br><span class="line">#自动获取 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>查看TCP&#x2F;IP参数，用ipconfig</li>
+</ol>
+<ul>
+<li><p>常用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关）</span><br><span class="line">ipconfig</span><br><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关、mac地址、dhcp地址、dns地址、主机名）</span><br><span class="line">ipconfig /all</span><br><span class="line">#释放TCP/IP参数</span><br><span class="line">ipconfig /release</span><br><span class="line">#重新获取TCP/IP参数</span><br><span class="line">ipconfig /renew</span><br><span class="line">#刷新dns缓存</span><br><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li>ping命令</li>
+</ol>
+<ul>
+<li><p>用于测试TCP&#x2F;IP配置是否正确</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping -n 10 -l 1000 -t -a 192.168.31.131</span><br><span class="line"># -n 10 发送10个报文</span><br><span class="line"># -l 1000 单个报文10000个字节</span><br><span class="line"># -t 一直不停的ping</span><br><span class="line"># -a 返回IP的主机名</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="4">
+<li>tracert</li>
+</ol>
+<ul>
+<li><p>用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:&gt;tracert 39.156.66.14</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="5">
+<li>route</li>
+</ol>
+<ul>
+<li><p>用来操作网络路由表</p>
+<ul>
+<li><p>0.0.0.0代表的任意网路</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#打印路由表</span><br><span class="line">route -4 print</span><br><span class="line">#添加路由条目</span><br><span class="line">（112.53.42.52目标地址或网络 /32代表子网掩码或者112.53.42.0目标网络，/24代表子网掩码，192.168.33.1网关地址）</span><br><span class="line">route add 122.53.42.52/32 192.168.33.1</span><br><span class="line">#删除路由条目</span><br><span class="line">route delete 112.53.42.52 #（112.53.42.52目标）</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ol start="6">
+<li>netstat</li>
+</ol>
+<ul>
+<li><p>用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看所有的TCP链接，包括进程，以数字形式显示</span><br><span class="line">netstat -anop tcp</span><br><span class="line">#查看路由表</span><br><span class="line">netstat -r	等同于	route print</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -401,7 +461,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/" title="注册表基础">https://5fener.github.io/2023/02/16/注册表基础/</a>
+    <a href="https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" title="Windows基础命令">https://5fener.github.io/2021/12/24/Windows基础命令/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -451,12 +511,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/16/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" rel="prev" title="Windows文件共享">
-      <i class="fa fa-chevron-left"></i> Windows文件共享
+    <a href="/2021/12/24/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" rel="prev" title="Windows用户管理">
+      <i class="fa fa-chevron-left"></i> Windows用户管理
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/" rel="next" title="注册表维护与优化">
-      注册表维护与优化 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/" rel="next" title="NTFS权限规则">
+      NTFS权限规则 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -516,7 +576,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">一、注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%97%A9%E6%9C%9F%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、早期注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81Windows-95%E5%90%8E%E7%9A%84%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、Windows 95后的注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.4.</span> <span class="nav-text">4、注册表结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">二、注册表基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%88%9B%E5%BB%BA%E9%A1%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、创建项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%88%9B%E5%BB%BA%E5%80%BC%EF%BC%88%E6%9C%89%E5%85%AD%E7%A7%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC%EF%BC%89"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、创建值（有六种类型的值）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E9%87%8D%E5%91%BD%E5%90%8D%E5%80%BC"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、修改、删除和重命名值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BA%94%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">三、注册表应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A1%88%E4%BE%8B"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BC%96%E8%BE%91%E6%8A%80%E5%B7%A7"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、注册表编辑技巧</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Windows 基础命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.2.</span> <span class="nav-text">学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows%E8%BE%93%E5%85%A5%E5%91%BD%E4%BB%A4-%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E5%AF%B9%E8%AF%9D-CMD"><span class="nav-number">1.2.1.</span> <span class="nav-text">Windows输入命令 使用命令提示符对话 CMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80-%E7%9B%AE%E5%BD%95%E5%92%8C%E6%96%87%E4%BB%B6%E7%9A%84%E5%BA%94%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">一. 目录和文件的应用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C-%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="nav-number">1.2.3.</span> <span class="nav-text">二. 文本处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89-%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.4.</span> <span class="nav-text">三.网络相关操作</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
