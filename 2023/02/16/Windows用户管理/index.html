@@ -22,21 +22,21 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+  <meta name="description" content="Windows 用户管理一、用户账户1、什么是用户账户  不同的用户身份拥有不同的权限  每个用户包含了一个名称和一个密码  每个用户账户具有唯一的安全标识符  查看系统中的用户 1net user  安全标识符（SID）  查看当前用户的SID 1whoami &#x2F;user   使用注册表进行查看 打开注册表命令 regedit  1HKEY_LOCAL_MACHINE\SOFTWARE\Micr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="虚拟机基本指南">
-<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/index.html">
+<meta property="og:title" content="Windows用户管理">
+<meta property="og:url" content="https://5fener.github.io/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+<meta property="og:description" content="Windows 用户管理一、用户账户1、什么是用户账户  不同的用户身份拥有不同的权限  每个用户包含了一个名称和一个密码  每个用户账户具有唯一的安全标识符  查看系统中的用户 1net user  安全标识符（SID）  查看当前用户的SID 1whoami &#x2F;user   使用注册表进行查看 打开注册表命令 regedit  1HKEY_LOCAL_MACHINE\SOFTWARE\Micr">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-16T02:43:09.196Z">
-<meta property="article:modified_time" content="2023-02-16T02:47:29.279Z">
+<meta property="article:published_time" content="2023-02-16T02:50:11.046Z">
+<meta property="article:modified_time" content="2023-02-16T03:40:48.351Z">
 <meta property="article:author" content="5fener">
-<meta property="article:tag" content="虚拟机">
-<meta property="article:tag" content="VMWare">
+<meta property="article:tag" content="网络安全">
+<meta property="article:tag" content="Windows安全">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="https://5fener.github.io/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>虚拟机基本指南 | 长安街</title>
+  <title>Windows用户管理 | 长安街</title>
   
 
 
@@ -208,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          虚拟机基本指南
+          Windows用户管理
         </h1>
 
         <div class="post-meta">
@@ -234,7 +234,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-16 10:43:09 / 修改时间：10:47:29" itemprop="dateCreated datePublished" datetime="2023-02-16T10:43:09+08:00">2023-02-16</time>
+              <time title="创建时间：2023-02-16 10:50:11 / 修改时间：11:40:48" itemprop="dateCreated datePublished" datetime="2023-02-16T10:50:11+08:00">2023-02-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -242,7 +242,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">虚拟机</span></a>
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
                 </span>
             </span>
 
@@ -259,7 +259,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>292</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -278,40 +278,103 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="虚拟机基本指南"><a href="#虚拟机基本指南" class="headerlink" title="虚拟机基本指南"></a>虚拟机基本指南</h1><h2 id="1、虚拟网编辑器"><a href="#1、虚拟网编辑器" class="headerlink" title="1、虚拟网编辑器"></a>1、虚拟网编辑器</h2><ul>
-<li><p>vmnet0 一般是桥接 与物理网络直接相连</p>
+        <h1 id="Windows-用户管理"><a href="#Windows-用户管理" class="headerlink" title="Windows 用户管理"></a>Windows 用户管理</h1><h2 id="一、用户账户"><a href="#一、用户账户" class="headerlink" title="一、用户账户"></a>一、用户账户</h2><p>1、什么是用户账户</p>
+<ul>
+<li><p>不同的用户身份拥有不同的权限</p>
 </li>
-<li><p>vmnet1 一般是仅主机模式 单独自己一个网络</p>
+<li><p>每个用户包含了一个名称和一个密码</p>
 </li>
-<li><p>vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连</p>
+<li><p>每个用户账户具有唯一的安全标识符</p>
+</li>
+<li><p>查看系统中的用户</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安全标识符（SID）</p>
+<ul>
+<li><p>查看当前用户的SID</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami /user</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用注册表进行查看 打开注册表命令 regedit</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在Windows系统中管理员的 SID 是500，普通用户的 SID 是从10000开始</li>
+</ul>
 </li>
 </ul>
-<h2 id="2、快照"><a href="#2、快照" class="headerlink" title="2、快照"></a>2、快照</h2><ul>
-<li><p>保存虚拟机当前的状态</p>
-</li>
-<li><p>建议使用关机快照，占用磁盘空间较小</p>
 </li>
 </ul>
-<h2 id="3、克隆"><a href="#3、克隆" class="headerlink" title="3、克隆"></a>3、克隆</h2><ul>
-<li><p>相当于复制一台新的虚拟机</p>
+<p>2、 进行用户管理</p>
+<ul>
+<li><p>创建用户</p>
+<ul>
+<li><p>用户名：系统的显示名</p>
 </li>
-<li><p>链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）</p>
+<li><p>全名：用户登录时的显示名</p>
 </li>
-<li><p>完整克隆（将原始虚拟机完全复制一份，原始虚拟机文件删除后不影响克隆的虚拟机）</p>
+<li><p>密码：Windows服务器默认需要符合复杂性要求</p>
+</li>
+<li><p>账户已锁定：如果开启了账户锁定阈值，输错密码多次后将被锁定</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建用户不指定密码</span><br><span class="line">net user zhangsan /add</span><br><span class="line">#创建用户指定明文密码</span><br><span class="line">net user lisi p-0p-0 /add</span><br><span class="line">#创建用户手动输入密码</span><br><span class="line">net user wangwu /add *</span><br><span class="line">#删除用户</span><br><span class="line">net user zhangsan /del</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改用户的密码</span><br><span class="line">net user lisi p-0p-0p-0</span><br><span class="line">net user lisi *</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>管理用户</p>
+</li>
+<li><p>设置密码</p>
+</li>
+<li><p>隐藏用户</p>
+<ul>
+<li>在用户的后面加上了 $ 符号，隐藏用户用 net user 命令是无法看到的</li>
+</ul>
 </li>
 </ul>
-<h2 id="3、虚拟机与物理机切换"><a href="#3、虚拟机与物理机切换" class="headerlink" title="3、虚拟机与物理机切换"></a>3、虚拟机与物理机切换</h2><ul>
-<li><p>虚拟机 —&gt; 物理机</p>
-</li>
-<li><p>Ctrl+Alt</p>
-</li>
-<li><p>物理机 —&gt; 虚拟机</p>
-</li>
-<li><p>Ctrl+g</p>
-</li>
+<h2 id="二、Windows的内置用户账户"><a href="#二、Windows的内置用户账户" class="headerlink" title="二、Windows的内置用户账户"></a>二、Windows的内置用户账户</h2><p>1、与使用者关联的</p>
+<ul>
+<li>管理员 administrator： 在使用者中具有最高的权限，如果没有其它管理员的情况下，不建议使用</li>
+<li>普通用户：具有一般的读取权限，权限较低</li>
+<li>来宾用户guest： 一般是提供给访客使用，在使用者中，权限最低，默认是禁用</li>
 </ul>
-<h2 id="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"><a href="#4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件" class="headerlink" title="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"></a>4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</h2><ul>
-<li>VMware Tools插件</li>
+<p>2、与Windows组件关联的</p>
+<ul>
+<li>system 本地系统，拥有最高权限</li>
+<li>local service 本地服务，它的权限相对于普通用户组 users 会低一点</li>
+<li>network service 网络服务，它的权限和普通用户组 users 一样</li>
+</ul>
+<h1 id="Windows-组的管理"><a href="#Windows-组的管理" class="headerlink" title="Windows 组的管理"></a>Windows 组的管理</h1><p>用户</p>
+<p>1、与人员关联</p>
+<ul>
+<li>administrator</li>
+<li>guest</li>
+</ul>
+<p>2、与组件关联</p>
+<ul>
+<li>system</li>
+<li>local service</li>
+<li>network service</li>
+</ul>
+<h2 id="一、用户组"><a href="#一、用户组" class="headerlink" title="一、用户组"></a>一、用户组</h2><p>1、概念</p>
+<ul>
+<li>一组用户的集合，组中所有的用户具备所组的权限</li>
+</ul>
+<p>2、管理组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /add</span><br><span class="line">#删除组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /del</span><br><span class="line">#创建并将用户加入组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /add</span><br><span class="line">#将用户从组中拿掉</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /del</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、内置组账户"><a href="#二、内置组账户" class="headerlink" title="二、内置组账户"></a>二、内置组账户</h2><p>1、需要人为添加的</p>
+<ul>
+<li>administrators：管理员组</li>
+<li>guests：来宾用户组</li>
+<li>power users：向下兼容的组，现在一般没有使用</li>
+<li>users：标准用户组，创建用户后默认处于此组中</li>
+</ul>
+<p>2、动态包含成员的组</p>
+<ul>
+<li>interactive：动态包含在本地登陆的用户</li>
+<li>authenticated users：动态包含通过验证的用户</li>
+<li>everyone：所有人，包含了来宾用户</li>
 </ul>
 
     </div>
@@ -339,7 +402,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/" title="虚拟机基本指南">https://5fener.github.io/2023/02/16/虚拟机基本指南/</a>
+    <a href="https://5fener.github.io/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" title="Windows用户管理">https://5fener.github.io/2023/02/16/Windows用户管理/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -379,8 +442,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag"># 虚拟机</a>
-              <a href="/tags/VMWare/" rel="tag"># VMWare</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"># 网络安全</a>
+              <a href="/tags/Windows%E5%AE%89%E5%85%A8/" rel="tag"># Windows安全</a>
           </div>
 
         
@@ -389,12 +452,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/" rel="prev" title="Blog快速搭建">
-      <i class="fa fa-chevron-left"></i> Blog快速搭建
+    <a href="/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="prev" title="Windows基础命令">
+      <i class="fa fa-chevron-left"></i> Windows基础命令
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="next" title="Windows基础命令">
-      Windows基础命令 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/02/16/NTFS%E6%9D%83%E9%99%90/" rel="next" title="NTFS权限">
+      NTFS权限 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -454,7 +517,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">虚拟机基本指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%99%9A%E6%8B%9F%E7%BD%91%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1、虚拟网编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%BF%AB%E7%85%A7"><span class="nav-number">1.2.</span> <span class="nav-text">2、快照</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%85%8B%E9%9A%86"><span class="nav-number">1.3.</span> <span class="nav-text">3、克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E7%89%A9%E7%90%86%E6%9C%BA%E5%88%87%E6%8D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">3、虚拟机与物理机切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%A6%82%E6%9E%9C%E6%83%B3%E8%A6%81%E5%B0%86%E7%89%A9%E7%90%86%E6%9C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E7%9B%B4%E6%8E%A5%E6%94%BE%E5%85%A5%E5%88%B0%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Windows 用户管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7"><span class="nav-number">1.1.</span> <span class="nav-text">一、用户账户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Windows%E7%9A%84%E5%86%85%E7%BD%AE%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7"><span class="nav-number">1.2.</span> <span class="nav-text">二、Windows的内置用户账户</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows-%E7%BB%84%E7%9A%84%E7%AE%A1%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">Windows 组的管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%94%A8%E6%88%B7%E7%BB%84"><span class="nav-number">2.1.</span> <span class="nav-text">一、用户组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%86%85%E7%BD%AE%E7%BB%84%E8%B4%A6%E6%88%B7"><span class="nav-number">2.2.</span> <span class="nav-text">二、内置组账户</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

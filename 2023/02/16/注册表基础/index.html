@@ -22,21 +22,23 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+  <meta name="description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
 <meta property="og:type" content="article">
-<meta property="og:title" content="虚拟机基本指南">
-<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/index.html">
+<meta property="og:title" content="注册表基础">
+<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+<meta property="og:description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-16T02:43:09.196Z">
-<meta property="article:modified_time" content="2023-02-16T02:47:29.279Z">
+<meta property="og:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png">
+<meta property="og:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173843636.png">
+<meta property="article:published_time" content="2023-02-16T02:52:04.693Z">
+<meta property="article:modified_time" content="2023-02-16T07:15:05.869Z">
 <meta property="article:author" content="5fener">
-<meta property="article:tag" content="虚拟机">
-<meta property="article:tag" content="VMWare">
+<meta property="article:tag" content="网络安全， Windows安全">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\%E4%BA%94%E5%88%86%E5%84%BF\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png">
 
-<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -49,7 +51,7 @@
   };
 </script>
 
-  <title>虚拟机基本指南 | 长安街</title>
+  <title>注册表基础 | 长安街</title>
   
 
 
@@ -208,7 +210,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -221,7 +223,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          虚拟机基本指南
+          注册表基础
         </h1>
 
         <div class="post-meta">
@@ -234,7 +236,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-16 10:43:09 / 修改时间：10:47:29" itemprop="dateCreated datePublished" datetime="2023-02-16T10:43:09+08:00">2023-02-16</time>
+              <time title="创建时间：2023-02-16 10:52:04 / 修改时间：15:15:05" itemprop="dateCreated datePublished" datetime="2023-02-16T10:52:04+08:00">2023-02-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -242,7 +244,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">虚拟机</span></a>
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
                 </span>
             </span>
 
@@ -259,14 +261,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>292</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -278,40 +280,99 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="虚拟机基本指南"><a href="#虚拟机基本指南" class="headerlink" title="虚拟机基本指南"></a>虚拟机基本指南</h1><h2 id="1、虚拟网编辑器"><a href="#1、虚拟网编辑器" class="headerlink" title="1、虚拟网编辑器"></a>1、虚拟网编辑器</h2><ul>
-<li><p>vmnet0 一般是桥接 与物理网络直接相连</p>
+        <h1 id="注册表基础"><a href="#注册表基础" class="headerlink" title="注册表基础"></a>注册表基础</h1><h2 id="一、注册表基础"><a href="#一、注册表基础" class="headerlink" title="一、注册表基础"></a>一、注册表基础</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><ul>
+<li>注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统</li>
+<li>注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬件设置、软件配置等信息，从而方便了管理，增强了系统地稳定性</li>
+</ul>
+<h3 id="2、早期注册表"><a href="#2、早期注册表" class="headerlink" title="2、早期注册表"></a>2、早期注册表</h3><ul>
+<li>以ini为扩展名的文本文件的配置文件</li>
+</ul>
+<h3 id="3、Windows-95后的注册表"><a href="#3、Windows-95后的注册表" class="headerlink" title="3、Windows 95后的注册表"></a>3、Windows 95后的注册表</h3><ul>
+<li><p>自Windows 95操作系统开始，注册表真正成为Windows用户经常接触的内容，并在其后的操作系统中继续沿用</p>
+<ul>
+<li><p>注册表数据库由多个文件组成</p>
 </li>
-<li><p>vmnet1 一般是仅主机模式 单独自己一个网络</p>
-</li>
-<li><p>vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连</p>
+<li><p>Windwos提供了注册表编辑器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在运行处输入命令打开注册表编辑器</span><br><span class="line">regedit</span><br></pre></td></tr></table></figure></li>
+</ul>
 </li>
 </ul>
-<h2 id="2、快照"><a href="#2、快照" class="headerlink" title="2、快照"></a>2、快照</h2><ul>
-<li><p>保存虚拟机当前的状态</p>
+<h3 id="4、注册表结构"><a href="#4、注册表结构" class="headerlink" title="4、注册表结构"></a>4、注册表结构</h3><ul>
+<li><p>注册表以树状结构进行呈现</p>
+<ul>
+<li><p>子树（实际只有两颗子树，为了方便操作，分为了五颗子树）</p>
+<ul>
+<li><p>HKEY_LOCAL_MACHINE：记录关于本地计算机系统的信息，包括硬件和操作系统数据</p>
 </li>
-<li><p>建议使用关机快照，占用磁盘空间较小</p>
+<li><p>HKEY_USERS：记录关于动态加载的用户配置文件和默认配置文件的信息</p>
 </li>
-</ul>
-<h2 id="3、克隆"><a href="#3、克隆" class="headerlink" title="3、克隆"></a>3、克隆</h2><ul>
-<li><p>相当于复制一台新的虚拟机</p>
+<li><p>HKEY_CURRENT_USER：HKEY_USERS子树，它指向“HKEY_USERS\当前用户的安全ID”包含当前以交互方式登陆的用户的用户配置文件</p>
 </li>
-<li><p>链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）</p>
+<li><p>HKEY_CURRENT_CONFIG：HEEY_LOCAL_MACHINE子树，指向</p>
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current包含在启动时由本地计算机系统使用的硬件配置文件的相关信息加载的设备驱动程序、显示时要使用的分辨率</p>
 </li>
-<li><p>完整克隆（将原始虚拟机完全复制一份，原始虚拟机文件删除后不影响克隆的虚拟机）</p>
-</li>
-</ul>
-<h2 id="3、虚拟机与物理机切换"><a href="#3、虚拟机与物理机切换" class="headerlink" title="3、虚拟机与物理机切换"></a>3、虚拟机与物理机切换</h2><ul>
-<li><p>虚拟机 —&gt; 物理机</p>
-</li>
-<li><p>Ctrl+Alt</p>
-</li>
-<li><p>物理机 —&gt; 虚拟机</p>
-</li>
-<li><p>Ctrl+g</p>
+<li><p>HKEY_CLASSES_ROOT：HKEY_CURRENT_USER子树包含用于各种OLE技术和文件类关联数据的信息</p>
 </li>
 </ul>
-<h2 id="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"><a href="#4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件" class="headerlink" title="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"></a>4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</h2><ul>
-<li>VMware Tools插件</li>
+</li>
+<li><p>项</p>
+<ul>
+<li>可以简单的理解为文件夹，项中可以包含项和值</li>
+</ul>
+</li>
+<li><p>值</p>
+<ul>
+<li>每个注册表项或子项都可以包含称为值的数据</li>
+<li>部分值应用于某个用户的信息</li>
+<li>部分值应用于计算机所有用户的信息</li>
+<li>值由三部分组成（值的名称、值类型、值的数据）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、注册表基本操作"><a href="#二、注册表基本操作" class="headerlink" title="二、注册表基本操作"></a>二、注册表基本操作</h2><h3 id="1、创建项"><a href="#1、创建项" class="headerlink" title="1、创建项"></a>1、创建项</h3><h3 id="2、创建值（有六种类型的值）"><a href="#2、创建值（有六种类型的值）" class="headerlink" title="2、创建值（有六种类型的值）"></a>2、创建值（有六种类型的值）</h3><ul>
+<li>字符串值（REG_SZ)：固定长度的文本字符串</li>
+<li>二进制值（REG_BINARY）：原始二进制数据。多数硬件组件信息都以二进制数据存储</li>
+<li>DWORD值（REG_DWORD）：数据由4字节长的数表示。设备驱动程序和服务的很多参数都是这种类型</li>
+<li>QWORD值（REG_QWORD）: 数据由8字节长的数表示</li>
+<li>多字符串值（REG_MULTI_SZ）：多重字符串。包含列表或多值的值通常为该类型</li>
+<li>可扩充字符串值（REG_EXPAND_SZ）：长度可变的数据串。该数据类型包含在程序或服务使用该数据时解析的变量</li>
+</ul>
+<h3 id="3、修改、删除和重命名值"><a href="#3、修改、删除和重命名值" class="headerlink" title="3、修改、删除和重命名值"></a>3、修改、删除和重命名值</h3><h2 id="三、注册表应用"><a href="#三、注册表应用" class="headerlink" title="三、注册表应用"></a>三、注册表应用</h2><h3 id="1、案例"><a href="#1、案例" class="headerlink" title="1、案例"></a>1、案例</h3><ul>
+<li><p>个性化时间设置</p>
+<ul>
+<li><p>打开注册表编辑器，锁定“HKEY_CURRENT_USER\Control Panel\International”下的值sTimeFormat进行修改</p>
+<p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png" alt="image-20211226173310032"></p>
+</li>
+</ul>
+</li>
+<li><p>在欢迎屏幕显示自定义信息</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”下的值legalnoticecaption（标题）legalnoticetext（文本）<img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173843636.png" alt="image-20211226173843636"></li>
+</ul>
+</li>
+<li><p>禁用任务管理器</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system”下新建 DWORD 值 DisableTaskMgr，设置值为1</li>
+</ul>
+</li>
+<li><p>禁用控制面板</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer”下新建 DOWRD 值 NoControlPanel，设置值为1</li>
+</ul>
+</li>
+<li><p>去除快捷方式左下角小箭头</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_CLASSES_ROOT\lnkfile”找到项下的 IsShortcut 值，直接删除</li>
+</ul>
+</li>
+</ul>
+<h3 id="2、注册表编辑技巧"><a href="#2、注册表编辑技巧" class="headerlink" title="2、注册表编辑技巧"></a>2、注册表编辑技巧</h3><ul>
+<li>查找字符串、值、项</li>
+<li>将子项添加到收藏夹</li>
+<li>打印注册表</li>
+<li>复制项名字</li>
 </ul>
 
     </div>
@@ -339,7 +400,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/" title="虚拟机基本指南">https://5fener.github.io/2023/02/16/虚拟机基本指南/</a>
+    <a href="https://5fener.github.io/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/" title="注册表基础">https://5fener.github.io/2023/02/16/注册表基础/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -379,8 +440,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag"># 虚拟机</a>
-              <a href="/tags/VMWare/" rel="tag"># VMWare</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%EF%BC%8C-Windows%E5%AE%89%E5%85%A8/" rel="tag"># 网络安全， Windows安全</a>
           </div>
 
         
@@ -389,12 +449,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/" rel="prev" title="Blog快速搭建">
-      <i class="fa fa-chevron-left"></i> Blog快速搭建
+    <a href="/2023/02/16/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" rel="prev" title="Windows文件共享">
+      <i class="fa fa-chevron-left"></i> Windows文件共享
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="next" title="Windows基础命令">
-      Windows基础命令 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/" rel="next" title="注册表维护与优化">
+      注册表维护与优化 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -454,7 +514,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">虚拟机基本指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%99%9A%E6%8B%9F%E7%BD%91%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1、虚拟网编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%BF%AB%E7%85%A7"><span class="nav-number">1.2.</span> <span class="nav-text">2、快照</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%85%8B%E9%9A%86"><span class="nav-number">1.3.</span> <span class="nav-text">3、克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E7%89%A9%E7%90%86%E6%9C%BA%E5%88%87%E6%8D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">3、虚拟机与物理机切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%A6%82%E6%9E%9C%E6%83%B3%E8%A6%81%E5%B0%86%E7%89%A9%E7%90%86%E6%9C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E7%9B%B4%E6%8E%A5%E6%94%BE%E5%85%A5%E5%88%B0%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">一、注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%97%A9%E6%9C%9F%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、早期注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81Windows-95%E5%90%8E%E7%9A%84%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、Windows 95后的注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.4.</span> <span class="nav-text">4、注册表结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">二、注册表基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%88%9B%E5%BB%BA%E9%A1%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、创建项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%88%9B%E5%BB%BA%E5%80%BC%EF%BC%88%E6%9C%89%E5%85%AD%E7%A7%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC%EF%BC%89"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、创建值（有六种类型的值）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E9%87%8D%E5%91%BD%E5%90%8D%E5%80%BC"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、修改、删除和重命名值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BA%94%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">三、注册表应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A1%88%E4%BE%8B"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BC%96%E8%BE%91%E6%8A%80%E5%B7%A7"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、注册表编辑技巧</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

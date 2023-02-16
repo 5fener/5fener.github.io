@@ -22,21 +22,21 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+  <meta name="description" content="组策略应用一、组策略基本概念1、概念组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管">
 <meta property="og:type" content="article">
-<meta property="og:title" content="虚拟机基本指南">
-<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/index.html">
+<meta property="og:title" content="组策略应用">
+<meta property="og:url" content="https://5fener.github.io/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="虚拟机基本指南1、虚拟网编辑器 vmnet0 一般是桥接 与物理网络直接相连  vmnet1 一般是仅主机模式 单独自己一个网络  vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连   2、快照 保存虚拟机当前的状态  建议使用关机快照，占用磁盘空间较小   3、克隆 相当于复制一台新的虚拟机  链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）  完整克隆（将原始虚">
+<meta property="og:description" content="组策略应用一、组策略基本概念1、概念组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-16T02:43:09.196Z">
-<meta property="article:modified_time" content="2023-02-16T02:47:29.279Z">
+<meta property="article:published_time" content="2023-02-16T02:52:49.723Z">
+<meta property="article:modified_time" content="2023-02-16T07:24:50.626Z">
 <meta property="article:author" content="5fener">
-<meta property="article:tag" content="虚拟机">
-<meta property="article:tag" content="VMWare">
+<meta property="article:tag" content="网络安全">
+<meta property="article:tag" content="Windows安全">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="https://5fener.github.io/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>虚拟机基本指南 | 长安街</title>
+  <title>组策略应用 | 长安街</title>
   
 
 
@@ -208,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          虚拟机基本指南
+          组策略应用
         </h1>
 
         <div class="post-meta">
@@ -234,7 +234,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-16 10:43:09 / 修改时间：10:47:29" itemprop="dateCreated datePublished" datetime="2023-02-16T10:43:09+08:00">2023-02-16</time>
+              <time title="创建时间：2023-02-16 10:52:49 / 修改时间：15:24:50" itemprop="dateCreated datePublished" datetime="2023-02-16T10:52:49+08:00">2023-02-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -242,7 +242,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">虚拟机</span></a>
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
                 </span>
             </span>
 
@@ -259,7 +259,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>292</span>
+              <span>582</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -278,40 +278,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="虚拟机基本指南"><a href="#虚拟机基本指南" class="headerlink" title="虚拟机基本指南"></a>虚拟机基本指南</h1><h2 id="1、虚拟网编辑器"><a href="#1、虚拟网编辑器" class="headerlink" title="1、虚拟网编辑器"></a>1、虚拟网编辑器</h2><ul>
-<li><p>vmnet0 一般是桥接 与物理网络直接相连</p>
+        <h1 id="组策略应用"><a href="#组策略应用" class="headerlink" title="组策略应用"></a>组策略应用</h1><h2 id="一、组策略基本概念"><a href="#一、组策略基本概念" class="headerlink" title="一、组策略基本概念"></a>一、组策略基本概念</h2><h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><p>组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管理组策略设置。</p>
+<p>组策略是一组策略的集合</p>
+<h3 id="2、打开方式"><a href="#2、打开方式" class="headerlink" title="2、打开方式"></a>2、打开方式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpedit.msc</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、刷新组策略"><a href="#3、刷新组策略" class="headerlink" title="3、刷新组策略"></a>3、刷新组策略</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpupdate /force</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、模块"><a href="#4、模块" class="headerlink" title="4、模块"></a>4、模块</h3><ul>
+<li>计算机配置<ul>
+<li>针对于本地计算机生效</li>
+</ul>
 </li>
-<li><p>vmnet1 一般是仅主机模式 单独自己一个网络</p>
-</li>
-<li><p>vmnet8 一般是NAT模式 使用网络地址转换的方式与物理网络相连</p>
+<li>用户配置<ul>
+<li>针对于用户生效</li>
+</ul>
 </li>
 </ul>
-<h2 id="2、快照"><a href="#2、快照" class="headerlink" title="2、快照"></a>2、快照</h2><ul>
-<li><p>保存虚拟机当前的状态</p>
-</li>
-<li><p>建议使用关机快照，占用磁盘空间较小</p>
-</li>
+<h2 id="二、案例"><a href="#二、案例" class="headerlink" title="二、案例"></a>二、案例</h2><h3 id="1、隐藏桌面的系统图标"><a href="#1、隐藏桌面的系统图标" class="headerlink" title="1、隐藏桌面的系统图标"></a>1、隐藏桌面的系统图标</h3><ul>
+<li>用户配置——&gt;管理模板</li>
 </ul>
-<h2 id="3、克隆"><a href="#3、克隆" class="headerlink" title="3、克隆"></a>3、克隆</h2><ul>
-<li><p>相当于复制一台新的虚拟机</p>
-</li>
-<li><p>链接克隆（依托于原始虚拟机文件，所以原始虚拟机文件不能删除）</p>
-</li>
-<li><p>完整克隆（将原始虚拟机完全复制一份，原始虚拟机文件删除后不影响克隆的虚拟机）</p>
-</li>
+<h3 id="2、保护任务栏和“开始”菜单"><a href="#2、保护任务栏和“开始”菜单" class="headerlink" title="2、保护任务栏和“开始”菜单"></a>2、保护任务栏和“开始”菜单</h3><ul>
+<li>用户配置——&gt;“开始菜单”和任务栏</li>
 </ul>
-<h2 id="3、虚拟机与物理机切换"><a href="#3、虚拟机与物理机切换" class="headerlink" title="3、虚拟机与物理机切换"></a>3、虚拟机与物理机切换</h2><ul>
-<li><p>虚拟机 —&gt; 物理机</p>
-</li>
-<li><p>Ctrl+Alt</p>
-</li>
-<li><p>物理机 —&gt; 虚拟机</p>
-</li>
-<li><p>Ctrl+g</p>
-</li>
+<h3 id="3、保护个人文档隐私（历史使用文件）"><a href="#3、保护个人文档隐私（历史使用文件）" class="headerlink" title="3、保护个人文档隐私（历史使用文件）"></a>3、保护个人文档隐私（历史使用文件）</h3><ul>
+<li>用户配置——&gt;“开始菜单”和任务栏</li>
 </ul>
-<h2 id="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"><a href="#4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件" class="headerlink" title="4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件"></a>4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</h2><ul>
-<li>VMware Tools插件</li>
+<h3 id="4、禁用在浏览器上新窗口中打开"><a href="#4、禁用在浏览器上新窗口中打开" class="headerlink" title="4、禁用在浏览器上新窗口中打开"></a>4、禁用在浏览器上新窗口中打开</h3><ul>
+<li>用户配置—–&gt;Windows 组件——&gt;Internet Explorer</li>
+</ul>
+<h3 id="5、禁用控制面板"><a href="#5、禁用控制面板" class="headerlink" title="5、禁用控制面板"></a>5、禁用控制面板</h3><ul>
+<li><p>用户配置——&gt;控制面板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开控制面板命令</span><br><span class="line">control.exe</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="6、关闭自动播放功能"><a href="#6、关闭自动播放功能" class="headerlink" title="6、关闭自动播放功能"></a>6、关闭自动播放功能</h3><ul>
+<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;自动播放策略</li>
+</ul>
+<h3 id="7、配置自动更新"><a href="#7、配置自动更新" class="headerlink" title="7、配置自动更新"></a>7、配置自动更新</h3><ul>
+<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;Windows 更新</li>
 </ul>
 
     </div>
@@ -339,7 +342,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/" title="虚拟机基本指南">https://5fener.github.io/2023/02/16/虚拟机基本指南/</a>
+    <a href="https://5fener.github.io/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/" title="组策略应用">https://5fener.github.io/2023/02/16/组策略应用/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -379,8 +382,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag"># 虚拟机</a>
-              <a href="/tags/VMWare/" rel="tag"># VMWare</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"># 网络安全</a>
+              <a href="/tags/Windows%E5%AE%89%E5%85%A8/" rel="tag"># Windows安全</a>
           </div>
 
         
@@ -389,13 +392,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/15/Blog%E6%90%AD%E5%BB%BA-Hexo/" rel="prev" title="Blog快速搭建">
-      <i class="fa fa-chevron-left"></i> Blog快速搭建
+    <a href="/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/" rel="prev" title="注册表维护与优化">
+      <i class="fa fa-chevron-left"></i> 注册表维护与优化
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="next" title="Windows基础命令">
-      Windows基础命令 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -454,7 +454,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">虚拟机基本指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%99%9A%E6%8B%9F%E7%BD%91%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1、虚拟网编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%BF%AB%E7%85%A7"><span class="nav-number">1.2.</span> <span class="nav-text">2、快照</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%85%8B%E9%9A%86"><span class="nav-number">1.3.</span> <span class="nav-text">3、克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E7%89%A9%E7%90%86%E6%9C%BA%E5%88%87%E6%8D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">3、虚拟机与物理机切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%A6%82%E6%9E%9C%E6%83%B3%E8%A6%81%E5%B0%86%E7%89%A9%E7%90%86%E6%9C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E7%9B%B4%E6%8E%A5%E6%94%BE%E5%85%A5%E5%88%B0%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">4、如果想要将物理机的文件直接放入到虚拟机中需要安装插件</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">组策略应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%BB%84%E7%AD%96%E7%95%A5%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">一、组策略基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、打开方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%88%B7%E6%96%B0%E7%BB%84%E7%AD%96%E7%95%A5"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、刷新组策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%A8%A1%E5%9D%97"><span class="nav-number">1.1.4.</span> <span class="nav-text">4、模块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%A1%88%E4%BE%8B"><span class="nav-number">1.2.</span> <span class="nav-text">二、案例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E9%9A%90%E8%97%8F%E6%A1%8C%E9%9D%A2%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%9B%BE%E6%A0%87"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、隐藏桌面的系统图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E4%BF%9D%E6%8A%A4%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%92%8C%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D%E8%8F%9C%E5%8D%95"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、保护任务栏和“开始”菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E4%BF%9D%E6%8A%A4%E4%B8%AA%E4%BA%BA%E6%96%87%E6%A1%A3%E9%9A%90%E7%A7%81%EF%BC%88%E5%8E%86%E5%8F%B2%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、保护个人文档隐私（历史使用文件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E7%A6%81%E7%94%A8%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%96%B0%E7%AA%97%E5%8F%A3%E4%B8%AD%E6%89%93%E5%BC%80"><span class="nav-number">1.2.4.</span> <span class="nav-text">4、禁用在浏览器上新窗口中打开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E7%A6%81%E7%94%A8%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF"><span class="nav-number">1.2.5.</span> <span class="nav-text">5、禁用控制面板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E5%85%B3%E9%97%AD%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.6.</span> <span class="nav-text">6、关闭自动播放功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E9%85%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0"><span class="nav-number">1.2.7.</span> <span class="nav-text">7、配置自动更新</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

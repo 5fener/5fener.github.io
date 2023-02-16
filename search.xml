@@ -4,6 +4,241 @@
   
     
     <entry>
+      <title>组策略应用</title>
+      <link href="/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/"/>
+      <url>/2023/02/16/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="组策略应用"><a href="#组策略应用" class="headerlink" title="组策略应用"></a>组策略应用</h1><h2 id="一、组策略基本概念"><a href="#一、组策略基本概念" class="headerlink" title="一、组策略基本概念"></a>一、组策略基本概念</h2><h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><p>组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管理组策略设置。</p><p>组策略是一组策略的集合</p><h3 id="2、打开方式"><a href="#2、打开方式" class="headerlink" title="2、打开方式"></a>2、打开方式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpedit.msc</span><br></pre></td></tr></table></figure><h3 id="3、刷新组策略"><a href="#3、刷新组策略" class="headerlink" title="3、刷新组策略"></a>3、刷新组策略</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpupdate /force</span><br></pre></td></tr></table></figure><h3 id="4、模块"><a href="#4、模块" class="headerlink" title="4、模块"></a>4、模块</h3><ul><li>计算机配置<ul><li>针对于本地计算机生效</li></ul></li><li>用户配置<ul><li>针对于用户生效</li></ul></li></ul><h2 id="二、案例"><a href="#二、案例" class="headerlink" title="二、案例"></a>二、案例</h2><h3 id="1、隐藏桌面的系统图标"><a href="#1、隐藏桌面的系统图标" class="headerlink" title="1、隐藏桌面的系统图标"></a>1、隐藏桌面的系统图标</h3><ul><li>用户配置——&gt;管理模板</li></ul><h3 id="2、保护任务栏和“开始”菜单"><a href="#2、保护任务栏和“开始”菜单" class="headerlink" title="2、保护任务栏和“开始”菜单"></a>2、保护任务栏和“开始”菜单</h3><ul><li>用户配置——&gt;“开始菜单”和任务栏</li></ul><h3 id="3、保护个人文档隐私（历史使用文件）"><a href="#3、保护个人文档隐私（历史使用文件）" class="headerlink" title="3、保护个人文档隐私（历史使用文件）"></a>3、保护个人文档隐私（历史使用文件）</h3><ul><li>用户配置——&gt;“开始菜单”和任务栏</li></ul><h3 id="4、禁用在浏览器上新窗口中打开"><a href="#4、禁用在浏览器上新窗口中打开" class="headerlink" title="4、禁用在浏览器上新窗口中打开"></a>4、禁用在浏览器上新窗口中打开</h3><ul><li>用户配置—–&gt;Windows 组件——&gt;Internet Explorer</li></ul><h3 id="5、禁用控制面板"><a href="#5、禁用控制面板" class="headerlink" title="5、禁用控制面板"></a>5、禁用控制面板</h3><ul><li><p>用户配置——&gt;控制面板</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开控制面板命令</span><br><span class="line">control.exe</span><br></pre></td></tr></table></figure></li></ul><h3 id="6、关闭自动播放功能"><a href="#6、关闭自动播放功能" class="headerlink" title="6、关闭自动播放功能"></a>6、关闭自动播放功能</h3><ul><li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;自动播放策略</li></ul><h3 id="7、配置自动更新"><a href="#7、配置自动更新" class="headerlink" title="7、配置自动更新"></a>7、配置自动更新</h3><ul><li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;Windows 更新</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>注册表维护与优化</title>
+      <link href="/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+      <url>/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h1 id="注册表维护与优化"><a href="#注册表维护与优化" class="headerlink" title="注册表维护与优化"></a>注册表维护与优化</h1><h2 id="一、注册表维护"><a href="#一、注册表维护" class="headerlink" title="一、注册表维护"></a>一、注册表维护</h2><h3 id="1、注册表被破坏后的常见现象"><a href="#1、注册表被破坏后的常见现象" class="headerlink" title="1、注册表被破坏后的常见现象"></a>1、注册表被破坏后的常见现象</h3><ul><li>无法启动系统</li><li>无法运行或正常运行合法的应用程序</li><li>找不到启动系统或运行应用程序所需的文件</li><li>没有访问应用程序的权限</li><li>不能正确安装或装入驱动程序</li><li>不能进行网络连接</li><li>注册表条目有错误</li></ul><h3 id="2、注册表被破坏的原因"><a href="#2、注册表被破坏的原因" class="headerlink" title="2、注册表被破坏的原因"></a>2、注册表被破坏的原因</h3><ul><li>应用程序错误：在系统中安装过多的软件后，可能会出现彼此之间的冲突</li><li>驱动程序不兼容：安装系统时有很多驱动都是自动安装，容易产生不同硬件驱动程序不兼容的情况，建议到官方网站下载对应稳定版驱动进行安装</li><li>硬件问题：主要出现在硬件质量上，比如硬盘或内存质量不过关造成读写错误、超频、CMOS、病毒等</li><li>误操作：误操作是最常见的原因，可能会导致注册表出现错误，严重者造成系统崩溃或无法启动程序</li></ul><h3 id="3、备份注册表"><a href="#3、备份注册表" class="headerlink" title="3、备份注册表"></a>3、备份注册表</h3><ul><li>直接将注册表数据库文件进行备份</li><li>导出注册表<ul><li>找到对应的项直接选择导出</li></ul></li></ul><h3 id="4、恢复注册表"><a href="#4、恢复注册表" class="headerlink" title="4、恢复注册表"></a>4、恢复注册表</h3><ul><li>直接将数据库文件进行覆盖</li><li>将之前导出的项进行导入</li></ul><h3 id="5、锁定和解锁注册表"><a href="#5、锁定和解锁注册表" class="headerlink" title="5、锁定和解锁注册表"></a>5、锁定和解锁注册表</h3><ul><li>打开注册表编辑器，锁定到”HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System“项中新建DWORD值DisableRegistryTools，将值设置为1，表示锁定，设置为0表示解锁</li><li>当注册表被锁定后，Windows自带的注册表编辑器就无法打开，需要使用外部第三方注册表编辑工具来进行打开，找到对应项，修改值为1</li></ul><h2 id="二、注册表优化"><a href="#二、注册表优化" class="headerlink" title="二、注册表优化"></a>二、注册表优化</h2><h3 id="1、优化内容"><a href="#1、优化内容" class="headerlink" title="1、优化内容"></a>1、优化内容</h3><ul><li>清除多余的DLL文件<ul><li>打开注册表编辑器，锁定到”HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SharedDLLs“项，在这个项下存放的是共享的DLL信息，注意看括号里面的数据，它表示共享文件的数目，如果为0，则可将其删除</li></ul></li><li>安装卸载应用程序的垃圾信息<ul><li>打开注册表编辑器，锁定到”“HKEY_CURRENT_USER\SOFTWARE项和”HKEY_LOCAL_MACHINE\SOFTWARE“项，这两个项中包含系统中的应用程序，对于已知的程序是知道的，主要是针对一些未知的程序进行删除和一些已经卸载了的残留</li></ul></li><li>系统安装时产生的无用信息<ul><li>删除多余时区（必要情况下只保留北京时区）<ul><li>锁定到”HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones“项</li></ul></li><li>清楚多余的语言代码（英语—0409、中文—0804）<ul><li>锁定到”HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Locale“项</li></ul></li><li>删除多余的键盘布局<ul><li>锁定到”HKEY_LOCAL_MACHINE\SYSTEM\Keyboard Layout“项，下面每一个子项代表一种键盘布局</li></ul></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>注册表基础</title>
+      <link href="/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/"/>
+      <url>/2023/02/16/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="注册表基础"><a href="#注册表基础" class="headerlink" title="注册表基础"></a>注册表基础</h1><h2 id="一、注册表基础"><a href="#一、注册表基础" class="headerlink" title="一、注册表基础"></a>一、注册表基础</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><ul><li>注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统</li><li>注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬件设置、软件配置等信息，从而方便了管理，增强了系统地稳定性</li></ul><h3 id="2、早期注册表"><a href="#2、早期注册表" class="headerlink" title="2、早期注册表"></a>2、早期注册表</h3><ul><li>以ini为扩展名的文本文件的配置文件</li></ul><h3 id="3、Windows-95后的注册表"><a href="#3、Windows-95后的注册表" class="headerlink" title="3、Windows 95后的注册表"></a>3、Windows 95后的注册表</h3><ul><li><p>自Windows 95操作系统开始，注册表真正成为Windows用户经常接触的内容，并在其后的操作系统中继续沿用</p><ul><li><p>注册表数据库由多个文件组成</p></li><li><p>Windwos提供了注册表编辑器</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在运行处输入命令打开注册表编辑器</span><br><span class="line">regedit</span><br></pre></td></tr></table></figure></li></ul></li></ul><h3 id="4、注册表结构"><a href="#4、注册表结构" class="headerlink" title="4、注册表结构"></a>4、注册表结构</h3><ul><li><p>注册表以树状结构进行呈现</p><ul><li><p>子树（实际只有两颗子树，为了方便操作，分为了五颗子树）</p><ul><li><p>HKEY_LOCAL_MACHINE：记录关于本地计算机系统的信息，包括硬件和操作系统数据</p></li><li><p>HKEY_USERS：记录关于动态加载的用户配置文件和默认配置文件的信息</p></li><li><p>HKEY_CURRENT_USER：HKEY_USERS子树，它指向“HKEY_USERS\当前用户的安全ID”包含当前以交互方式登陆的用户的用户配置文件</p></li><li><p>HKEY_CURRENT_CONFIG：HEEY_LOCAL_MACHINE子树，指向</p><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current包含在启动时由本地计算机系统使用的硬件配置文件的相关信息加载的设备驱动程序、显示时要使用的分辨率</p></li><li><p>HKEY_CLASSES_ROOT：HKEY_CURRENT_USER子树包含用于各种OLE技术和文件类关联数据的信息</p></li></ul></li><li><p>项</p><ul><li>可以简单的理解为文件夹，项中可以包含项和值</li></ul></li><li><p>值</p><ul><li>每个注册表项或子项都可以包含称为值的数据</li><li>部分值应用于某个用户的信息</li><li>部分值应用于计算机所有用户的信息</li><li>值由三部分组成（值的名称、值类型、值的数据）</li></ul></li></ul></li></ul><h2 id="二、注册表基本操作"><a href="#二、注册表基本操作" class="headerlink" title="二、注册表基本操作"></a>二、注册表基本操作</h2><h3 id="1、创建项"><a href="#1、创建项" class="headerlink" title="1、创建项"></a>1、创建项</h3><h3 id="2、创建值（有六种类型的值）"><a href="#2、创建值（有六种类型的值）" class="headerlink" title="2、创建值（有六种类型的值）"></a>2、创建值（有六种类型的值）</h3><ul><li>字符串值（REG_SZ)：固定长度的文本字符串</li><li>二进制值（REG_BINARY）：原始二进制数据。多数硬件组件信息都以二进制数据存储</li><li>DWORD值（REG_DWORD）：数据由4字节长的数表示。设备驱动程序和服务的很多参数都是这种类型</li><li>QWORD值（REG_QWORD）: 数据由8字节长的数表示</li><li>多字符串值（REG_MULTI_SZ）：多重字符串。包含列表或多值的值通常为该类型</li><li>可扩充字符串值（REG_EXPAND_SZ）：长度可变的数据串。该数据类型包含在程序或服务使用该数据时解析的变量</li></ul><h3 id="3、修改、删除和重命名值"><a href="#3、修改、删除和重命名值" class="headerlink" title="3、修改、删除和重命名值"></a>3、修改、删除和重命名值</h3><h2 id="三、注册表应用"><a href="#三、注册表应用" class="headerlink" title="三、注册表应用"></a>三、注册表应用</h2><h3 id="1、案例"><a href="#1、案例" class="headerlink" title="1、案例"></a>1、案例</h3><ul><li><p>个性化时间设置</p><ul><li><p>打开注册表编辑器，锁定“HKEY_CURRENT_USER\Control Panel\International”下的值sTimeFormat进行修改</p><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173310032.png" alt="image-20211226173310032"></p></li></ul></li><li><p>在欢迎屏幕显示自定义信息</p><ul><li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”下的值legalnoticecaption（标题）legalnoticetext（文本）<img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211226173843636.png" alt="image-20211226173843636"></li></ul></li><li><p>禁用任务管理器</p><ul><li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system”下新建 DWORD 值 DisableTaskMgr，设置值为1</li></ul></li><li><p>禁用控制面板</p><ul><li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer”下新建 DOWRD 值 NoControlPanel，设置值为1</li></ul></li><li><p>去除快捷方式左下角小箭头</p><ul><li>打开注册表编辑器，锁定“HKEY_CLASSES_ROOT\lnkfile”找到项下的 IsShortcut 值，直接删除</li></ul></li></ul><h3 id="2、注册表编辑技巧"><a href="#2、注册表编辑技巧" class="headerlink" title="2、注册表编辑技巧"></a>2、注册表编辑技巧</h3><ul><li>查找字符串、值、项</li><li>将子项添加到收藏夹</li><li>打印注册表</li><li>复制项名字</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全， Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows文件共享</title>
+      <link href="/2023/02/16/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/"/>
+      <url>/2023/02/16/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows-文件共享"><a href="#Windows-文件共享" class="headerlink" title="Windows 文件共享"></a>Windows 文件共享</h1><h2 id="一、共享要求"><a href="#一、共享要求" class="headerlink" title="一、共享要求"></a>一、共享要求</h2><p>一般是局域网内使用</p><p>1、物理上处于同一局域网</p><ul><li>同一公司的网络</li><li>同一家庭的网络</li><li>在同一个手机热点下</li></ul><p>2、逻辑上处于同一局域网（使用的同一网络的IP地址）</p><ul><li>直接可以ping对方主机（可以直接访问）</li></ul><h2 id="二、共享权限"><a href="#二、共享权限" class="headerlink" title="二、共享权限"></a>二、共享权限</h2><p>1、共享权限</p><ul><li>一般设置为 everyone 完全控制</li></ul><p>2、NTFS权限</p><ul><li>前面已经设置完成</li></ul><p>3、用户从完了过访问 sever 的最终权限</p><ul><li>由共享权限和NTFS权限的交集部分<ul><li>举例：<ul><li>张三的共享权限是读取，NTFS权限是读取和写入，张三从网络访问共享最终的权限是读取</li></ul></li><li>经常设置办法<ul><li>共享权限设置最大，NTFS权限进行精细化设置</li><li>举例：张三共享权限设置完全控制，NTFS权限设置读取，张三从网络访问共享最终的权限是读取</li></ul></li></ul></li><li>共享权限默认有一个 everyone 组是读取，everyone 代表了所有人</li></ul><h2 id="三、访问共享"><a href="#三、访问共享" class="headerlink" title="三、访问共享"></a>三、访问共享</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\192.168.188.132#192.168.188.132服务器的IP地址</span><br><span class="line">\\WIN-6JFV2DR59EJ#WIN-6JFV2DR59EJ服务器的主机名</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全， Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本地安全策略</title>
+      <link href="/2023/02/16/%E6%9C%AC%E5%9C%B0%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5/"/>
+      <url>/2023/02/16/%E6%9C%AC%E5%9C%B0%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="本地安全策略"><a href="#本地安全策略" class="headerlink" title="本地安全策略"></a>本地安全策略</h1><h2 id="一、本地安全策略基本内容"><a href="#一、本地安全策略基本内容" class="headerlink" title="一、本地安全策略基本内容"></a>一、本地安全策略基本内容</h2><h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><ul><li>主要是都登录到计算机的账户进行一些安全设置</li><li>主要影响是本地计算机安全设置</li></ul><h3 id="2、打开方式"><a href="#2、打开方式" class="headerlink" title="2、打开方式"></a>2、打开方式</h3><ul><li><p>开始菜单——&gt;管理工具——&gt;本地安全策略</p></li><li><p>使用命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">secpol.msc</span><br></pre></td></tr></table></figure></li><li><p>从本地组策略进去</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#使用命令</span><br><span class="line">gpedit.msc</span><br></pre></td></tr></table></figure></li></ul><h2 id="二、账户策略"><a href="#二、账户策略" class="headerlink" title="二、账户策略"></a>二、账户策略</h2><h3 id="1、密码策略"><a href="#1、密码策略" class="headerlink" title="1、密码策略"></a>1、密码策略</h3><ul><li><p>密码必须符合复杂性要求</p><ul><li><p>默认情况下，Windows server 操作系统是开启</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">不能包含用户的帐户名，不能包含用户姓名中超过两个连续字符的部分</span><br><span class="line">至少有六个字符长</span><br><span class="line">包含以下四类字符中的三类字符:</span><br><span class="line">英文大写字母(A 到 Z)</span><br><span class="line">英文小写字母(a 到 z)</span><br><span class="line">10 个基本数字(0 到 9)</span><br><span class="line">非字母字符(例如 !、$、#、%)</span><br><span class="line">在更改或创建密码时执行复杂性要求</span><br></pre></td></tr></table></figure></li></ul></li><li></li></ul><h3 id="2、账户锁定策略"><a href="#2、账户锁定策略" class="headerlink" title="2、账户锁定策略"></a>2、账户锁定策略</h3><ul><li>账户锁定时间</li><li>账户锁定阈值</li><li>重置账户锁定计数器时间</li><li>管理员是不受限制的</li></ul><p>远程桌面命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mstsc</span><br></pre></td></tr></table></figure><h2 id="三、本地策略"><a href="#三、本地策略" class="headerlink" title="三、本地策略"></a>三、本地策略</h2><h3 id="1、审核策略"><a href="#1、审核策略" class="headerlink" title="1、审核策略"></a>1、审核策略</h3><h3 id="2、用户权限分配"><a href="#2、用户权限分配" class="headerlink" title="2、用户权限分配"></a>2、用户权限分配</h3><h3 id="3、安全选项"><a href="#3、安全选项" class="headerlink" title="3、安全选项"></a>3、安全选项</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全， Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NTFS权限规则</title>
+      <link href="/2023/02/16/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/"/>
+      <url>/2023/02/16/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="NTFS-权限规则"><a href="#NTFS-权限规则" class="headerlink" title="NTFS 权限规则"></a>NTFS 权限规则</h1><h2 id="一、权限规则"><a href="#一、权限规则" class="headerlink" title="一、权限规则"></a>一、权限规则</h2><h4 id="1、权限的累加"><a href="#1、权限的累加" class="headerlink" title="1、权限的累加"></a>1、权限的累加</h4><ul><li>用户分配的有效权限是分配给用户所有权限的累加<ul><li>假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改</li></ul></li></ul><h3 id="2、拒绝权限"><a href="#2、拒绝权限" class="headerlink" title="2、拒绝权限"></a>2、拒绝权限</h3><ul><li>拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高）</li><li>当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）</li></ul><h3 id="3、继承权限"><a href="#3、继承权限" class="headerlink" title="3、继承权限"></a>3、继承权限</h3><ul><li>文件或文件夹的访问控制列表默认情况下会继承上级文件夹的权限</li></ul><h3 id="4、特殊权限（特别的权限）"><a href="#4、特殊权限（特别的权限）" class="headerlink" title="4、特殊权限（特别的权限）"></a>4、特殊权限（特别的权限）</h3><ul><li>读取权限（和读取文件或文件夹的内容没有关系）<ul><li>读取文件或文件夹的访问控制列表</li><li>针对于用户想要访问某个文件的内容，此权限必须勾选</li></ul></li><li>更改权限（和修改文件或文件夹的内容没有关系）<ul><li>用户是否可以修改文件或文件夹的访问控制列表，由于此权限是可以为用户添加或删除权限，会造成很多不安全因素，此权限一般不会给</li><li>要想更改，前提是必须能读取</li></ul></li><li>取得所有权<ul><li>能够修改文件或文件夹的所有者</li><li>前提必须得读取和修改</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NTFS权限</title>
+      <link href="/2023/02/16/NTFS%E6%9D%83%E9%99%90/"/>
+      <url>/2023/02/16/NTFS%E6%9D%83%E9%99%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="NTFS-权限"><a href="#NTFS-权限" class="headerlink" title="NTFS 权限"></a>NTFS 权限</h1><h2 id="一、NTFS权限"><a href="#一、NTFS权限" class="headerlink" title="一、NTFS权限"></a>一、NTFS权限</h2><p>1、文件系统</p><ul><li><p>Windows</p><ul><li>早期Windows上使用 FAT16或 FAT32</li><li>目前的Windows操作系统基本使用的是 NTFS 文件系统<ul><li>ACL(访问控制列表，设置权限)</li><li>EFS（加密文件系统，使用BitLocker进行磁盘加密</li><li>压缩及磁盘配额</li></ul></li><li>ReFS文件系统</li></ul></li><li><p>Linux</p><ul><li><p>swap：交换文件系统，主要将磁盘的一部分空间划分给内存使用</p></li><li><p>ext4：</p></li><li><p>文件系统转换</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\五分儿&gt;convert g:/fs:ntfs//g 表示的是需要转换的盘符</span><br><span class="line">文件系统的类型是 FAT32。</span><br><span class="line">卷序列号为 7D8C-7EAA</span><br><span class="line">Windows 正在校验文件和文件夹...</span><br><span class="line">已完成文件和文件夹验证。</span><br><span class="line"></span><br><span class="line">Windows 已扫描文件系统并且没有发现问题。</span><br><span class="line">无需采取进一步操作。</span><br><span class="line">总共有    60,049,056 KB 磁盘空间。</span><br><span class="line">2 个隐藏文件中有            64 KB。</span><br><span class="line">6 个文件夹中有           192 KB。</span><br><span class="line">6 个文件中有         5,344 KB。</span><br><span class="line">   60,043,424 KB 可用。</span><br><span class="line"></span><br><span class="line">每个分配单元中有        32,768 字节。</span><br><span class="line">磁盘上共有     1,876,533 个分配单元。</span><br><span class="line">磁盘上有     1,876,357 个可用的分配单元。</span><br><span class="line"></span><br><span class="line">正在确定文件系统转换所需的磁盘空间...</span><br><span class="line">磁盘总空间:                 60063728 KB</span><br><span class="line">卷上的可用空间:                 60043424 KB</span><br><span class="line">转换所需的空间:                   141010 KB</span><br><span class="line">正在转换文件系统</span><br><span class="line">数据错误(循环冗余检查)。</span><br></pre></td></tr></table></figure><p>早期的FAT文件系统不支持单个大文件（超过4GB）</p></li></ul></li></ul><h2 id="二、文件权限"><a href="#二、文件权限" class="headerlink" title="二、文件权限"></a>二、文件权限</h2><p>1、设置文件权限</p><ul><li>读取数据</li><li>写入数据</li><li>附加数据</li><li>删除</li><li>执行文件</li></ul><h2 id="三、文件夹权限"><a href="#三、文件夹权限" class="headerlink" title="三、文件夹权限"></a>三、文件夹权限</h2><p>1、设置文件夹权限</p><ul><li>列出文件夹</li><li>创建文件夹</li><li>创建文件</li><li>删除</li><li>删除子文件夹和文件</li></ul><h2 id="四、权限分类"><a href="#四、权限分类" class="headerlink" title="四、权限分类"></a>四、权限分类</h2><ul><li><p>完全控制</p><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171045997.png" alt="image-20211224171045997"></p></li><li><p>修改</p><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171127818.png" alt="image-20211224171127818"></p></li><li><p>读取和执行</p><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171238051.png" alt="image-20211224171238051"></p></li><li><p>读取</p></li></ul><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171314037.png" alt="image-20211224171314037"></p><ul><li>写入</li></ul><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171512883.png" alt="image-20211224171512883"></p><ul><li>特殊权限</li></ul><p><img src="C:\Users\五分儿\AppData\Roaming\Typora\typora-user-images\image-20211224171544394.png" alt="image-20211224171544394"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全， Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows用户管理</title>
+      <link href="/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/"/>
+      <url>/2023/02/16/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows-用户管理"><a href="#Windows-用户管理" class="headerlink" title="Windows 用户管理"></a>Windows 用户管理</h1><h2 id="一、用户账户"><a href="#一、用户账户" class="headerlink" title="一、用户账户"></a>一、用户账户</h2><p>1、什么是用户账户</p><ul><li><p>不同的用户身份拥有不同的权限</p></li><li><p>每个用户包含了一个名称和一个密码</p></li><li><p>每个用户账户具有唯一的安全标识符</p></li><li><p>查看系统中的用户</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user</span><br></pre></td></tr></table></figure></li><li><p>安全标识符（SID）</p><ul><li><p>查看当前用户的SID</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami /user</span><br></pre></td></tr></table></figure><ul><li>使用注册表进行查看 打开注册表命令 regedit</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</span><br></pre></td></tr></table></figure><ul><li>在Windows系统中管理员的 SID 是500，普通用户的 SID 是从10000开始</li></ul></li></ul></li></ul><p>2、 进行用户管理</p><ul><li><p>创建用户</p><ul><li><p>用户名：系统的显示名</p></li><li><p>全名：用户登录时的显示名</p></li><li><p>密码：Windows服务器默认需要符合复杂性要求</p></li><li><p>账户已锁定：如果开启了账户锁定阈值，输错密码多次后将被锁定</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建用户不指定密码</span><br><span class="line">net user zhangsan /add</span><br><span class="line">#创建用户指定明文密码</span><br><span class="line">net user lisi p-0p-0 /add</span><br><span class="line">#创建用户手动输入密码</span><br><span class="line">net user wangwu /add *</span><br><span class="line">#删除用户</span><br><span class="line">net user zhangsan /del</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改用户的密码</span><br><span class="line">net user lisi p-0p-0p-0</span><br><span class="line">net user lisi *</span><br></pre></td></tr></table></figure></li></ul></li><li><p>管理用户</p></li><li><p>设置密码</p></li><li><p>隐藏用户</p><ul><li>在用户的后面加上了 $ 符号，隐藏用户用 net user 命令是无法看到的</li></ul></li></ul><h2 id="二、Windows的内置用户账户"><a href="#二、Windows的内置用户账户" class="headerlink" title="二、Windows的内置用户账户"></a>二、Windows的内置用户账户</h2><p>1、与使用者关联的</p><ul><li>管理员 administrator： 在使用者中具有最高的权限，如果没有其它管理员的情况下，不建议使用</li><li>普通用户：具有一般的读取权限，权限较低</li><li>来宾用户guest： 一般是提供给访客使用，在使用者中，权限最低，默认是禁用</li></ul><p>2、与Windows组件关联的</p><ul><li>system 本地系统，拥有最高权限</li><li>local service 本地服务，它的权限相对于普通用户组 users 会低一点</li><li>network service 网络服务，它的权限和普通用户组 users 一样</li></ul><h1 id="Windows-组的管理"><a href="#Windows-组的管理" class="headerlink" title="Windows 组的管理"></a>Windows 组的管理</h1><p>用户</p><p>1、与人员关联</p><ul><li>administrator</li><li>guest</li></ul><p>2、与组件关联</p><ul><li>system</li><li>local service</li><li>network service</li></ul><h2 id="一、用户组"><a href="#一、用户组" class="headerlink" title="一、用户组"></a>一、用户组</h2><p>1、概念</p><ul><li>一组用户的集合，组中所有的用户具备所组的权限</li></ul><p>2、管理组</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /add</span><br><span class="line">#删除组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /del</span><br><span class="line">#创建并将用户加入组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /add</span><br><span class="line">#将用户从组中拿掉</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /del</span><br></pre></td></tr></table></figure><h2 id="二、内置组账户"><a href="#二、内置组账户" class="headerlink" title="二、内置组账户"></a>二、内置组账户</h2><p>1、需要人为添加的</p><ul><li>administrators：管理员组</li><li>guests：来宾用户组</li><li>power users：向下兼容的组，现在一般没有使用</li><li>users：标准用户组，创建用户后默认处于此组中</li></ul><p>2、动态包含成员的组</p><ul><li>interactive：动态包含在本地登陆的用户</li><li>authenticated users：动态包含通过验证的用户</li><li>everyone：所有人，包含了来宾用户</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows基础命令</title>
+      <link href="/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/02/16/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows-基础命令"><a href="#Windows-基础命令" class="headerlink" title="Windows 基础命令"></a>Windows 基础命令</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><strong>掌握Windows系统文件及目录操作命令</strong></p><p><strong>掌握Windows网络相关命令</strong></p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="Windows输入命令-使用命令提示符对话-CMD"><a href="#Windows输入命令-使用命令提示符对话-CMD" class="headerlink" title="Windows输入命令 使用命令提示符对话 CMD"></a>Windows输入命令 使用命令提示符对话 CMD</h3><h3 id="一-目录和文件的应用操作"><a href="#一-目录和文件的应用操作" class="headerlink" title="一. 目录和文件的应用操作"></a>一. 目录和文件的应用操作</h3><ol><li><p>cd命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\    //切换到d盘目录，因为改变了驱动器，所以需要加上/d选项 </span><br><span class="line"></span><br><span class="line">c:\Users\Administrator&gt;cd c:\    //如果没有改变驱动器，就不需要加/d选项</span><br></pre></td></tr></table></figure></li></ol><ul><li>目录分为相对路径和绝对路径<ul><li>相对路径(以当前为起点)<ul><li>“.”代表的是当前路径</li><li>“..&#x2F;“代表的是当前的上一级目录</li></ul></li><li>绝对路径（以驱动器号为起点）</li></ul></li></ul><ol start="2"><li>dir命令</li></ol><ul><li><p>用于显示目录和文件列表</p></li><li><p>常用的用法直接使用dir</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- dir</span><br><span class="line">  dir /a:h c:\   #查看c盘下的隐藏目录和文件</span><br><span class="line">  dir /o:-n c:\  #使用字母逆序方式查看</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>md 或 mkdir</li></ol><ul><li><p>创建目录（文件夹），也可以创建多级子目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- md 公司文件夹</span><br><span class="line">  md 公司文件夹\技术部\技术文件夹  #当技术部文件夹不存在时会直接创建</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>rd</li></ol><ul><li><p>用于删除目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd 成都文件  #直接使用rd，只能删除空目录</span><br><span class="line">rd /s /q 公司文件夹  #如果要删除的目录中只有子目录或文件，就必须使用/s选项，可以携带/q选项不提醒</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>move</li></ol><ul><li><p>用于移动，重命名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;move woniu.bmp c:\#移动</span><br><span class="line">d:\&gt;move c:\woniu.bmp c:\woniutf.bmp#重命名</span><br></pre></td></tr></table></figure></li></ul><ol start="6"><li>copy</li></ol><ul><li><p>用于复制文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;copy c:\woniutf.bmp d:\woniuxy   #直接复制文件到指定目录</span><br><span class="line">d:\&gt;copy 1.txt+2.txt 3.txt   #将两个文件中的内容直接融合到新的文件中</span><br></pre></td></tr></table></figure></li></ul><ol start="7"><li>xcopy</li></ol><ul><li><p>用于复制目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li></ul><ol start="8"><li>del</li></ol><ul><li><p>用于删除文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;del 1.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="二-文本处理"><a href="#二-文本处理" class="headerlink" title="二. 文本处理"></a>二. 文本处理</h3><ol><li>type</li></ol><ul><li><p>用于显示文本内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;type d:\3.txt</span><br><span class="line">&lt;内容&gt;</span><br></pre></td></tr></table></figure></li><li><p>重定向 “&gt;”</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;ipconfig &gt; c:\ip.txt</span><br></pre></td></tr></table></figure></li><li><p>管道符 “|”</p><ul><li>将前面命令执行的结果做为后面命令的操作对象</li></ul></li></ul><ol start="2"><li>finder</li></ol><ul><li><p>查找文件内容（查找的某个字符串的内容）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;findstr 192 c:\ip.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="三-网络相关操作"><a href="#三-网络相关操作" class="headerlink" title="三.网络相关操作"></a>三.网络相关操作</h3><ol><li>配置TCP&#x2F;IP参数</li></ol><ul><li><p>TCP&#x2F;IP参数</p><ul><li><p>IP 地址：标识了网络中的某一台主机</p></li><li><p>子网掩码：用于标识你的 IP 所处的网络的范围，子网掩码越大，网络范围越小</p></li><li><p>默认网关：标识与主机直连的路由器的 IP 地址</p></li><li><p>DNS 服务器：用于域名解析的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#静态配置IP地址、子网掩码、默认网关</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; static 192.168.100.100 255.255.255.0 192.168.100.254</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#自动获取 TCP/IP 参数</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#静态配置 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; static 12.12.12.12</span><br><span class="line">#添加备用 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; 222.66.66.66 index=2//index=2 是索引，表示备用 DNS</span><br><span class="line">#自动获取 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="2"><li>查看TCP&#x2F;IP参数，用ipconfig</li></ol><ul><li><p>常用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关）</span><br><span class="line">ipconfig</span><br><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关、mac地址、dhcp地址、dns地址、主机名）</span><br><span class="line">ipconfig /all</span><br><span class="line">#释放TCP/IP参数</span><br><span class="line">ipconfig /release</span><br><span class="line">#重新获取TCP/IP参数</span><br><span class="line">ipconfig /renew</span><br><span class="line">#刷新dns缓存</span><br><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>ping命令</li></ol><ul><li><p>用于测试TCP&#x2F;IP配置是否正确</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping -n 10 -l 1000 -t -a 192.168.31.131</span><br><span class="line"># -n 10 发送10个报文</span><br><span class="line"># -l 1000 单个报文10000个字节</span><br><span class="line"># -t 一直不停的ping</span><br><span class="line"># -a 返回IP的主机名</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>tracert</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:&gt;tracert 39.156.66.14</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>route</li></ol><ul><li><p>用来操作网络路由表</p><ul><li><p>0.0.0.0代表的任意网路</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#打印路由表</span><br><span class="line">route -4 print</span><br><span class="line">#添加路由条目</span><br><span class="line">（112.53.42.52目标地址或网络 /32代表子网掩码或者112.53.42.0目标网络，/24代表子网掩码，192.168.33.1网关地址）</span><br><span class="line">route add 122.53.42.52/32 192.168.33.1</span><br><span class="line">#删除路由条目</span><br><span class="line">route delete 112.53.42.52 #（112.53.42.52目标）</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="6"><li>netstat</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看所有的TCP链接，包括进程，以数字形式显示</span><br><span class="line">netstat -anop tcp</span><br><span class="line">#查看路由表</span><br><span class="line">netstat -r等同于route print</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虚拟机基本指南</title>
       <link href="/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
       <url>/2023/02/16/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/</url>
