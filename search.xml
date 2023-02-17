@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>C++11标准</title>
+      <link href="/2023/02/17/C++11/"/>
+      <url>/2023/02/17/C++11/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>初始化的方式</p><p><code>int  b(2);</code></p><p><code>int n = &#123;(int)3.14&#125;</code>新的写法不允许有精度的缺失</p></li><li><p>指针置空</p><p><code>int *p = NULL;</code></p><p><code>int *p = nullptr;</code></p></li><li><p>自动类型</p><p><code>int a = 0;</code></p><p><code>auto a = 0;</code>根据值匹配类型</p></li><li><p>decltype()</p><p><code>int a = 0;</code></p><p><code>decltype(a)b;</code>根据a的类型定义一个和a类型一致的b变量</p><p><code>decltype((a))m = a; </code>给a取别名m</p></li><li><p>新的for规则</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string str = &quot;abcdef&quot;;</span><br><span class="line">for(auto i; str)</span><br><span class="line">&#123;</span><br><span class="line">std::cout &lt;&lt; i &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个方法，只能用来遍历数组等容器。i所代表的是里面存的元素</p></li><li><p>给类型取别名</p><p><code>typedef int INT;</code></p><p><code>typedef void(*pFun) ();</code></p><p><code>using Int = int;</code></p><p><code>using PFUN = void(*) ();</code></p></li><li><p>default在类中的用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">CA();</span><br><span class="line">&#125;</span><br><span class="line">CA::CA() = default;//默认调用默认构造</span><br></pre></td></tr></table></figure></li><li><p>final</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">virtual void fun()final&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> C++11 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从C过渡到C++</title>
+      <link href="/2023/02/17/C-%3EC++/"/>
+      <url>/2023/02/17/C-%3EC++/</url>
+      
+        <content type="html"><![CDATA[<p>C++新增</p><ul><li><p>语法：类</p><ul><li>封装、继承、多态</li><li>抽象、面向对象</li></ul></li><li><p>bool类型</p></li><li><p>用来描述“真”或”假“</p></li><li><p>取值范围： true， false</p></li><li><p>”非0为真“</p></li><li><p>内联函数：通过”内存膨胀“的方式，以空间换时间，提高程序运行速度</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> C-&gt;C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ERROR Deployer not found: baidu_url_submit</title>
       <link href="/2023/02/16/Hexo-d%20baitu-submit%E6%8A%A5%E9%94%99/"/>
       <url>/2023/02/16/Hexo-d%20baitu-submit%E6%8A%A5%E9%94%99/</url>
@@ -166,33 +220,6 @@
     
     
     <entry>
-      <title>NTFS权限</title>
-      <link href="/2021/12/24/NTFS%E6%9D%83%E9%99%90/"/>
-      <url>/2021/12/24/NTFS%E6%9D%83%E9%99%90/</url>
-      
-        <content type="html"><![CDATA[<h1 id="NTFS-权限"><a href="#NTFS-权限" class="headerlink" title="NTFS 权限"></a>NTFS 权限</h1><h2 id="一、NTFS权限"><a href="#一、NTFS权限" class="headerlink" title="一、NTFS权限"></a>一、NTFS权限</h2><p>1、文件系统</p><ul><li><p>Windows</p><ul><li>早期Windows上使用 FAT16或 FAT32</li><li>目前的Windows操作系统基本使用的是 NTFS 文件系统<ul><li>ACL(访问控制列表，设置权限)</li><li>EFS（加密文件系统，使用BitLocker进行磁盘加密</li><li>压缩及磁盘配额</li></ul></li><li>ReFS文件系统</li></ul></li><li><p>Linux</p><ul><li><p>swap：交换文件系统，主要将磁盘的一部分空间划分给内存使用</p></li><li><p>ext4：</p></li><li><p>文件系统转换</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\五分儿&gt;convert g:/fs:ntfs//g 表示的是需要转换的盘符</span><br><span class="line">文件系统的类型是 FAT32。</span><br><span class="line">卷序列号为 7D8C-7EAA</span><br><span class="line">Windows 正在校验文件和文件夹...</span><br><span class="line">已完成文件和文件夹验证。</span><br><span class="line"></span><br><span class="line">Windows 已扫描文件系统并且没有发现问题。</span><br><span class="line">无需采取进一步操作。</span><br><span class="line">总共有    60,049,056 KB 磁盘空间。</span><br><span class="line">2 个隐藏文件中有            64 KB。</span><br><span class="line">6 个文件夹中有           192 KB。</span><br><span class="line">6 个文件中有         5,344 KB。</span><br><span class="line">   60,043,424 KB 可用。</span><br><span class="line"></span><br><span class="line">每个分配单元中有        32,768 字节。</span><br><span class="line">磁盘上共有     1,876,533 个分配单元。</span><br><span class="line">磁盘上有     1,876,357 个可用的分配单元。</span><br><span class="line"></span><br><span class="line">正在确定文件系统转换所需的磁盘空间...</span><br><span class="line">磁盘总空间:                 60063728 KB</span><br><span class="line">卷上的可用空间:                 60043424 KB</span><br><span class="line">转换所需的空间:                   141010 KB</span><br><span class="line">正在转换文件系统</span><br><span class="line">数据错误(循环冗余检查)。</span><br></pre></td></tr></table></figure><p>早期的FAT文件系统不支持单个大文件（超过4GB）</p></li></ul></li></ul><h2 id="二、文件权限"><a href="#二、文件权限" class="headerlink" title="二、文件权限"></a>二、文件权限</h2><p>1、设置文件权限</p><ul><li>读取数据</li><li>写入数据</li><li>附加数据</li><li>删除</li><li>执行文件</li></ul><h2 id="三、文件夹权限"><a href="#三、文件夹权限" class="headerlink" title="三、文件夹权限"></a>三、文件夹权限</h2><p>1、设置文件夹权限</p><ul><li>列出文件夹</li><li>创建文件夹</li><li>创建文件</li><li>删除</li><li>删除子文件夹和文件</li></ul><h2 id="四、权限分类"><a href="#四、权限分类" class="headerlink" title="四、权限分类"></a>四、权限分类</h2><ul><li><p>完全控制</p></li><li><p>修改</p></li><li><p>读取和执行</p></li><li><p>读取</p></li><li><p>写入</p></li><li><p>特殊权限</p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络安全 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络安全 </tag>
-            
-            <tag> Windows安全 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>NTFS权限规则</title>
       <link href="/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/"/>
       <url>/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/</url>
@@ -225,6 +252,33 @@
       <url>/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
       
         <content type="html"><![CDATA[<h1 id="Windows-基础命令"><a href="#Windows-基础命令" class="headerlink" title="Windows 基础命令"></a>Windows 基础命令</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><strong>掌握Windows系统文件及目录操作命令</strong></p><p><strong>掌握Windows网络相关命令</strong></p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="Windows输入命令-使用命令提示符对话-CMD"><a href="#Windows输入命令-使用命令提示符对话-CMD" class="headerlink" title="Windows输入命令 使用命令提示符对话 CMD"></a>Windows输入命令 使用命令提示符对话 CMD</h3><h3 id="一-目录和文件的应用操作"><a href="#一-目录和文件的应用操作" class="headerlink" title="一. 目录和文件的应用操作"></a>一. 目录和文件的应用操作</h3><ol><li><p>cd命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\    //切换到d盘目录，因为改变了驱动器，所以需要加上/d选项 </span><br><span class="line"></span><br><span class="line">c:\Users\Administrator&gt;cd c:\    //如果没有改变驱动器，就不需要加/d选项</span><br></pre></td></tr></table></figure></li></ol><ul><li>目录分为相对路径和绝对路径<ul><li>相对路径(以当前为起点)<ul><li>“.”代表的是当前路径</li><li>“..&#x2F;“代表的是当前的上一级目录</li></ul></li><li>绝对路径（以驱动器号为起点）</li></ul></li></ul><ol start="2"><li>dir命令</li></ol><ul><li><p>用于显示目录和文件列表</p></li><li><p>常用的用法直接使用dir</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- dir</span><br><span class="line">  dir /a:h c:\   #查看c盘下的隐藏目录和文件</span><br><span class="line">  dir /o:-n c:\  #使用字母逆序方式查看</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>md 或 mkdir</li></ol><ul><li><p>创建目录（文件夹），也可以创建多级子目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- md 公司文件夹</span><br><span class="line">  md 公司文件夹\技术部\技术文件夹  #当技术部文件夹不存在时会直接创建</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>rd</li></ol><ul><li><p>用于删除目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd 成都文件  #直接使用rd，只能删除空目录</span><br><span class="line">rd /s /q 公司文件夹  #如果要删除的目录中只有子目录或文件，就必须使用/s选项，可以携带/q选项不提醒</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>move</li></ol><ul><li><p>用于移动，重命名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;move woniu.bmp c:\#移动</span><br><span class="line">d:\&gt;move c:\woniu.bmp c:\woniutf.bmp#重命名</span><br></pre></td></tr></table></figure></li></ul><ol start="6"><li>copy</li></ol><ul><li><p>用于复制文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;copy c:\woniutf.bmp d:\woniuxy   #直接复制文件到指定目录</span><br><span class="line">d:\&gt;copy 1.txt+2.txt 3.txt   #将两个文件中的内容直接融合到新的文件中</span><br></pre></td></tr></table></figure></li></ul><ol start="7"><li>xcopy</li></ol><ul><li><p>用于复制目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li></ul><ol start="8"><li>del</li></ol><ul><li><p>用于删除文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;del 1.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="二-文本处理"><a href="#二-文本处理" class="headerlink" title="二. 文本处理"></a>二. 文本处理</h3><ol><li>type</li></ol><ul><li><p>用于显示文本内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;type d:\3.txt</span><br><span class="line">&lt;内容&gt;</span><br></pre></td></tr></table></figure></li><li><p>重定向 “&gt;”</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;ipconfig &gt; c:\ip.txt</span><br></pre></td></tr></table></figure></li><li><p>管道符 “|”</p><ul><li>将前面命令执行的结果做为后面命令的操作对象</li></ul></li></ul><ol start="2"><li>finder</li></ol><ul><li><p>查找文件内容（查找的某个字符串的内容）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;findstr 192 c:\ip.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="三-网络相关操作"><a href="#三-网络相关操作" class="headerlink" title="三.网络相关操作"></a>三.网络相关操作</h3><ol><li>配置TCP&#x2F;IP参数</li></ol><ul><li><p>TCP&#x2F;IP参数</p><ul><li><p>IP 地址：标识了网络中的某一台主机</p></li><li><p>子网掩码：用于标识你的 IP 所处的网络的范围，子网掩码越大，网络范围越小</p></li><li><p>默认网关：标识与主机直连的路由器的 IP 地址</p></li><li><p>DNS 服务器：用于域名解析的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#静态配置IP地址、子网掩码、默认网关</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; static 192.168.100.100 255.255.255.0 192.168.100.254</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#自动获取 TCP/IP 参数</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#静态配置 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; static 12.12.12.12</span><br><span class="line">#添加备用 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; 222.66.66.66 index=2//index=2 是索引，表示备用 DNS</span><br><span class="line">#自动获取 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="2"><li>查看TCP&#x2F;IP参数，用ipconfig</li></ol><ul><li><p>常用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关）</span><br><span class="line">ipconfig</span><br><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关、mac地址、dhcp地址、dns地址、主机名）</span><br><span class="line">ipconfig /all</span><br><span class="line">#释放TCP/IP参数</span><br><span class="line">ipconfig /release</span><br><span class="line">#重新获取TCP/IP参数</span><br><span class="line">ipconfig /renew</span><br><span class="line">#刷新dns缓存</span><br><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>ping命令</li></ol><ul><li><p>用于测试TCP&#x2F;IP配置是否正确</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping -n 10 -l 1000 -t -a 192.168.31.131</span><br><span class="line"># -n 10 发送10个报文</span><br><span class="line"># -l 1000 单个报文10000个字节</span><br><span class="line"># -t 一直不停的ping</span><br><span class="line"># -a 返回IP的主机名</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>tracert</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:&gt;tracert 39.156.66.14</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>route</li></ol><ul><li><p>用来操作网络路由表</p><ul><li><p>0.0.0.0代表的任意网路</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#打印路由表</span><br><span class="line">route -4 print</span><br><span class="line">#添加路由条目</span><br><span class="line">（112.53.42.52目标地址或网络 /32代表子网掩码或者112.53.42.0目标网络，/24代表子网掩码，192.168.33.1网关地址）</span><br><span class="line">route add 122.53.42.52/32 192.168.33.1</span><br><span class="line">#删除路由条目</span><br><span class="line">route delete 112.53.42.52 #（112.53.42.52目标）</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="6"><li>netstat</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看所有的TCP链接，包括进程，以数字形式显示</span><br><span class="line">netstat -anop tcp</span><br><span class="line">#查看路由表</span><br><span class="line">netstat -r等同于route print</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> Windows安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NTFS权限</title>
+      <link href="/2021/12/24/NTFS%E6%9D%83%E9%99%90/"/>
+      <url>/2021/12/24/NTFS%E6%9D%83%E9%99%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="NTFS-权限"><a href="#NTFS-权限" class="headerlink" title="NTFS 权限"></a>NTFS 权限</h1><h2 id="一、NTFS权限"><a href="#一、NTFS权限" class="headerlink" title="一、NTFS权限"></a>一、NTFS权限</h2><p>1、文件系统</p><ul><li><p>Windows</p><ul><li>早期Windows上使用 FAT16或 FAT32</li><li>目前的Windows操作系统基本使用的是 NTFS 文件系统<ul><li>ACL(访问控制列表，设置权限)</li><li>EFS（加密文件系统，使用BitLocker进行磁盘加密</li><li>压缩及磁盘配额</li></ul></li><li>ReFS文件系统</li></ul></li><li><p>Linux</p><ul><li><p>swap：交换文件系统，主要将磁盘的一部分空间划分给内存使用</p></li><li><p>ext4：</p></li><li><p>文件系统转换</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\五分儿&gt;convert g:/fs:ntfs//g 表示的是需要转换的盘符</span><br><span class="line">文件系统的类型是 FAT32。</span><br><span class="line">卷序列号为 7D8C-7EAA</span><br><span class="line">Windows 正在校验文件和文件夹...</span><br><span class="line">已完成文件和文件夹验证。</span><br><span class="line"></span><br><span class="line">Windows 已扫描文件系统并且没有发现问题。</span><br><span class="line">无需采取进一步操作。</span><br><span class="line">总共有    60,049,056 KB 磁盘空间。</span><br><span class="line">2 个隐藏文件中有            64 KB。</span><br><span class="line">6 个文件夹中有           192 KB。</span><br><span class="line">6 个文件中有         5,344 KB。</span><br><span class="line">   60,043,424 KB 可用。</span><br><span class="line"></span><br><span class="line">每个分配单元中有        32,768 字节。</span><br><span class="line">磁盘上共有     1,876,533 个分配单元。</span><br><span class="line">磁盘上有     1,876,357 个可用的分配单元。</span><br><span class="line"></span><br><span class="line">正在确定文件系统转换所需的磁盘空间...</span><br><span class="line">磁盘总空间:                 60063728 KB</span><br><span class="line">卷上的可用空间:                 60043424 KB</span><br><span class="line">转换所需的空间:                   141010 KB</span><br><span class="line">正在转换文件系统</span><br><span class="line">数据错误(循环冗余检查)。</span><br></pre></td></tr></table></figure><p>早期的FAT文件系统不支持单个大文件（超过4GB）</p></li></ul></li></ul><h2 id="二、文件权限"><a href="#二、文件权限" class="headerlink" title="二、文件权限"></a>二、文件权限</h2><p>1、设置文件权限</p><ul><li>读取数据</li><li>写入数据</li><li>附加数据</li><li>删除</li><li>执行文件</li></ul><h2 id="三、文件夹权限"><a href="#三、文件夹权限" class="headerlink" title="三、文件夹权限"></a>三、文件夹权限</h2><p>1、设置文件夹权限</p><ul><li>列出文件夹</li><li>创建文件夹</li><li>创建文件</li><li>删除</li><li>删除子文件夹和文件</li></ul><h2 id="四、权限分类"><a href="#四、权限分类" class="headerlink" title="四、权限分类"></a>四、权限分类</h2><ul><li><p>完全控制</p></li><li><p>修改</p></li><li><p>读取和执行</p></li><li><p>读取</p></li><li><p>写入</p></li><li><p>特殊权限</p></li></ul>]]></content>
       
       
       <categories>

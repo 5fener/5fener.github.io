@@ -203,6 +203,230 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/17/C++11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/17/C++11/" class="post-title-link" itemprop="url">C++11标准</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-17 19:42:58 / 修改时间：20:10:08" itemprop="dateCreated datePublished" datetime="2023-02-17T19:42:58+08:00">2023-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>528</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><p>初始化的方式</p>
+<p><code>int  b(2);</code></p>
+<p><code>int n = &#123;(int)3.14&#125;</code>	新的写法不允许有精度的缺失</p>
+</li>
+<li><p>指针置空</p>
+<p><code>int *p = NULL;</code></p>
+<p><code>int *p = nullptr;</code></p>
+</li>
+<li><p>自动类型</p>
+<p><code>int a = 0;</code></p>
+<p><code>auto a = 0;</code>	根据值匹配类型	</p>
+</li>
+<li><p>decltype()</p>
+<p><code>int a = 0;</code></p>
+<p><code>decltype(a)b;</code>	根据a的类型定义一个和a类型一致的b变量</p>
+<p><code>decltype((a))m = a; </code>	给a取别名m</p>
+</li>
+<li><p>新的for规则</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string str = &quot;abcdef&quot;;</span><br><span class="line">for(auto i; str)</span><br><span class="line">&#123;</span><br><span class="line">	std::cout &lt;&lt; i &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个方法，只能用来遍历数组等容器。i所代表的是里面存的元素</p>
+</li>
+<li><p>给类型取别名</p>
+<p><code>typedef int INT;</code></p>
+<p><code>typedef void(*pFun) ();</code></p>
+<p><code>using Int = int;</code></p>
+<p><code>using PFUN = void(*) ();</code></p>
+</li>
+<li><p>default在类中的用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	CA();</span><br><span class="line">&#125;</span><br><span class="line">CA::CA() = default;	//默认调用默认构造</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>final</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void fun()final&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/17/C-%3EC++/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/17/C-%3EC++/" class="post-title-link" itemprop="url">从C过渡到C++</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-17 10:59:23 / 修改时间：11:44:47" itemprop="dateCreated datePublished" datetime="2023-02-17T10:59:23+08:00">2023-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>94</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>C++新增</p>
+<ul>
+<li><p>语法：类</p>
+<ul>
+<li>封装、继承、多态</li>
+<li>抽象、面向对象</li>
+</ul>
+</li>
+<li><p>bool类型</p>
+</li>
+<li><p>用来描述“真”或”假“</p>
+</li>
+<li><p>取值范围： true， false</p>
+</li>
+<li><p>”非0为真“</p>
+</li>
+<li><p>内联函数：通过”内存膨胀“的方式，以空间换时间，提高程序运行速度</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/16/Hexo-d%20baitu-submit%E6%8A%A5%E9%94%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1003,155 +1227,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/OIP.jfif">
-      <meta itemprop="name" content="5fener">
-      <meta itemprop="description" content="举目见日，不见长安">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长安街">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/24/NTFS%E6%9D%83%E9%99%90/" class="post-title-link" itemprop="url">NTFS权限</a>
-        </h2>
-
-        <div class="post-meta">
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-16 15:51:48" itemprop="dateModified" datetime="2023-02-16T15:51:48+08:00">2023-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>710</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="NTFS-权限"><a href="#NTFS-权限" class="headerlink" title="NTFS 权限"></a>NTFS 权限</h1><h2 id="一、NTFS权限"><a href="#一、NTFS权限" class="headerlink" title="一、NTFS权限"></a>一、NTFS权限</h2><p>1、文件系统</p>
-<ul>
-<li><p>Windows</p>
-<ul>
-<li>早期Windows上使用 FAT16或 FAT32</li>
-<li>目前的Windows操作系统基本使用的是 NTFS 文件系统<ul>
-<li>ACL(访问控制列表，设置权限)</li>
-<li>EFS（加密文件系统，使用BitLocker进行磁盘加密</li>
-<li>压缩及磁盘配额</li>
-</ul>
-</li>
-<li>ReFS文件系统</li>
-</ul>
-</li>
-<li><p>Linux</p>
-<ul>
-<li><p>swap：交换文件系统，主要将磁盘的一部分空间划分给内存使用</p>
-</li>
-<li><p>ext4：</p>
-</li>
-<li><p>文件系统转换</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\五分儿&gt;convert g:/fs:ntfs		//g 表示的是需要转换的盘符</span><br><span class="line">文件系统的类型是 FAT32。</span><br><span class="line">卷序列号为 7D8C-7EAA</span><br><span class="line">Windows 正在校验文件和文件夹...</span><br><span class="line">已完成文件和文件夹验证。</span><br><span class="line"></span><br><span class="line">Windows 已扫描文件系统并且没有发现问题。</span><br><span class="line">无需采取进一步操作。</span><br><span class="line">总共有    60,049,056 KB 磁盘空间。</span><br><span class="line">2 个隐藏文件中有            64 KB。</span><br><span class="line">6 个文件夹中有           192 KB。</span><br><span class="line">6 个文件中有         5,344 KB。</span><br><span class="line">   60,043,424 KB 可用。</span><br><span class="line"></span><br><span class="line">每个分配单元中有        32,768 字节。</span><br><span class="line">磁盘上共有     1,876,533 个分配单元。</span><br><span class="line">磁盘上有     1,876,357 个可用的分配单元。</span><br><span class="line"></span><br><span class="line">正在确定文件系统转换所需的磁盘空间...</span><br><span class="line">磁盘总空间:                 60063728 KB</span><br><span class="line">卷上的可用空间:                 60043424 KB</span><br><span class="line">转换所需的空间:                   141010 KB</span><br><span class="line">正在转换文件系统</span><br><span class="line">数据错误(循环冗余检查)。</span><br></pre></td></tr></table></figure>
-
-<p>早期的FAT文件系统不支持单个大文件（超过4GB）</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、文件权限"><a href="#二、文件权限" class="headerlink" title="二、文件权限"></a>二、文件权限</h2><p>1、设置文件权限</p>
-<ul>
-<li>读取数据</li>
-<li>写入数据</li>
-<li>附加数据</li>
-<li>删除</li>
-<li>执行文件</li>
-</ul>
-<h2 id="三、文件夹权限"><a href="#三、文件夹权限" class="headerlink" title="三、文件夹权限"></a>三、文件夹权限</h2><p>1、设置文件夹权限</p>
-<ul>
-<li>列出文件夹</li>
-<li>创建文件夹</li>
-<li>创建文件</li>
-<li>删除</li>
-<li>删除子文件夹和文件</li>
-</ul>
-<h2 id="四、权限分类"><a href="#四、权限分类" class="headerlink" title="四、权限分类"></a>四、权限分类</h2><ul>
-<li><p>完全控制</p>
-</li>
-<li><p>修改</p>
-</li>
-<li><p>读取和执行</p>
-</li>
-<li><p>读取</p>
-</li>
-<li><p>写入</p>
-</li>
-<li><p>特殊权限</p>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1511,195 +1586,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/OIP.jfif">
-      <meta itemprop="name" content="5fener">
-      <meta itemprop="description" content="举目见日，不见长安">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长安街">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/24/Windows%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">Windows用户管理</a>
-        </h2>
-
-        <div class="post-meta">
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-16 15:47:19" itemprop="dateModified" datetime="2023-02-16T15:47:19+08:00">2023-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Windows-用户管理"><a href="#Windows-用户管理" class="headerlink" title="Windows 用户管理"></a>Windows 用户管理</h1><h2 id="一、用户账户"><a href="#一、用户账户" class="headerlink" title="一、用户账户"></a>一、用户账户</h2><p>1、什么是用户账户</p>
-<ul>
-<li><p>不同的用户身份拥有不同的权限</p>
-</li>
-<li><p>每个用户包含了一个名称和一个密码</p>
-</li>
-<li><p>每个用户账户具有唯一的安全标识符</p>
-</li>
-<li><p>查看系统中的用户</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安全标识符（SID）</p>
-<ul>
-<li><p>查看当前用户的SID</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami /user</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>使用注册表进行查看 打开注册表命令 regedit</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>在Windows系统中管理员的 SID 是500，普通用户的 SID 是从10000开始</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>2、 进行用户管理</p>
-<ul>
-<li><p>创建用户</p>
-<ul>
-<li><p>用户名：系统的显示名</p>
-</li>
-<li><p>全名：用户登录时的显示名</p>
-</li>
-<li><p>密码：Windows服务器默认需要符合复杂性要求</p>
-</li>
-<li><p>账户已锁定：如果开启了账户锁定阈值，输错密码多次后将被锁定</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建用户不指定密码</span><br><span class="line">net user zhangsan /add</span><br><span class="line">#创建用户指定明文密码</span><br><span class="line">net user lisi p-0p-0 /add</span><br><span class="line">#创建用户手动输入密码</span><br><span class="line">net user wangwu /add *</span><br><span class="line">#删除用户</span><br><span class="line">net user zhangsan /del</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改用户的密码</span><br><span class="line">net user lisi p-0p-0p-0</span><br><span class="line">net user lisi *</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>管理用户</p>
-</li>
-<li><p>设置密码</p>
-</li>
-<li><p>隐藏用户</p>
-<ul>
-<li>在用户的后面加上了 $ 符号，隐藏用户用 net user 命令是无法看到的</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、Windows的内置用户账户"><a href="#二、Windows的内置用户账户" class="headerlink" title="二、Windows的内置用户账户"></a>二、Windows的内置用户账户</h2><p>1、与使用者关联的</p>
-<ul>
-<li>管理员 administrator： 在使用者中具有最高的权限，如果没有其它管理员的情况下，不建议使用</li>
-<li>普通用户：具有一般的读取权限，权限较低</li>
-<li>来宾用户guest： 一般是提供给访客使用，在使用者中，权限最低，默认是禁用</li>
-</ul>
-<p>2、与Windows组件关联的</p>
-<ul>
-<li>system 本地系统，拥有最高权限</li>
-<li>local service 本地服务，它的权限相对于普通用户组 users 会低一点</li>
-<li>network service 网络服务，它的权限和普通用户组 users 一样</li>
-</ul>
-<h1 id="Windows-组的管理"><a href="#Windows-组的管理" class="headerlink" title="Windows 组的管理"></a>Windows 组的管理</h1><p>用户</p>
-<p>1、与人员关联</p>
-<ul>
-<li>administrator</li>
-<li>guest</li>
-</ul>
-<p>2、与组件关联</p>
-<ul>
-<li>system</li>
-<li>local service</li>
-<li>network service</li>
-</ul>
-<h2 id="一、用户组"><a href="#一、用户组" class="headerlink" title="一、用户组"></a>一、用户组</h2><p>1、概念</p>
-<ul>
-<li>一组用户的集合，组中所有的用户具备所组的权限</li>
-</ul>
-<p>2、管理组</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#创建组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /add</span><br><span class="line">#删除组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 /del</span><br><span class="line">#创建并将用户加入组</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /add</span><br><span class="line">#将用户从组中拿掉</span><br><span class="line">C:\Users\Administrator\net localgroup 技术部 zhangsan /del</span><br></pre></td></tr></table></figure>
-
-<h2 id="二、内置组账户"><a href="#二、内置组账户" class="headerlink" title="二、内置组账户"></a>二、内置组账户</h2><p>1、需要人为添加的</p>
-<ul>
-<li>administrators：管理员组</li>
-<li>guests：来宾用户组</li>
-<li>power users：向下兼容的组，现在一般没有使用</li>
-<li>users：标准用户组，创建用户后默认处于此组中</li>
-</ul>
-<p>2、动态包含成员的组</p>
-<ul>
-<li>interactive：动态包含在本地登陆的用户</li>
-<li>authenticated users：动态包含通过验证的用户</li>
-<li>everyone：所有人，包含了来宾用户</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1771,20 +1657,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1825,12 +1711,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
