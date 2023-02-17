@@ -22,21 +22,22 @@
     var CONFIG = {"hostname":"5fener.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
+  <meta name="description" content="早期的计算机只用于处理纯数值问题；现代计算机经常处理非数值型问题  数据：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料。  数据元素描述的是一个个体  数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。 一个数据元素可由多个数据项来组成，数据项是构成 数据元素的不可分割的最小单位   数据对象是具有相">
 <meta property="og:type" content="article">
-<meta property="og:title" content="注册表基础">
-<meta property="og:url" content="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="基本概念和术语">
+<meta property="og:url" content="https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/index.html">
 <meta property="og:site_name" content="长安街">
-<meta property="og:description" content="注册表基础一、注册表基础1、概述 注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统 注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬">
+<meta property="og:description" content="早期的计算机只用于处理纯数值问题；现代计算机经常处理非数值型问题  数据：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料。  数据元素描述的是一个个体  数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。 一个数据元素可由多个数据项来组成，数据项是构成 数据元素的不可分割的最小单位   数据对象是具有相">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-16T07:55:51.379Z">
+<meta property="article:published_time" content="2023-02-17T12:37:45.790Z">
+<meta property="article:modified_time" content="2023-02-17T13:47:27.289Z">
 <meta property="article:author" content="5fener">
-<meta property="article:tag" content="网络安全">
-<meta property="article:tag" content="Windows安全">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="王道">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
+<link rel="canonical" href="https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/">
 
 
 <script id="page-configurations">
@@ -49,7 +50,7 @@
   };
 </script>
 
-  <title>注册表基础 | 长安街</title>
+  <title>基本概念和术语 | 长安街</title>
   
 
 
@@ -208,7 +209,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/OIP.jfif">
@@ -221,7 +222,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          注册表基础
+          基本概念和术语
         </h1>
 
         <div class="post-meta">
@@ -232,23 +233,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
+              <time title="创建时间：2023-02-17 20:37:45 / 修改时间：21:47:27" itemprop="dateCreated datePublished" datetime="2023-02-17T20:37:45+08:00">2023-02-17</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-16 15:55:51" itemprop="dateModified" datetime="2023-02-16T15:55:51+08:00">2023-02-16</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
                 </span>
             </span>
 
@@ -265,14 +260,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>534</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -284,97 +279,54 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="注册表基础"><a href="#注册表基础" class="headerlink" title="注册表基础"></a>注册表基础</h1><h2 id="一、注册表基础"><a href="#一、注册表基础" class="headerlink" title="一、注册表基础"></a>一、注册表基础</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><ul>
-<li>注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统</li>
-<li>注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬件设置、软件配置等信息，从而方便了管理，增强了系统地稳定性</li>
-</ul>
-<h3 id="2、早期注册表"><a href="#2、早期注册表" class="headerlink" title="2、早期注册表"></a>2、早期注册表</h3><ul>
-<li>以ini为扩展名的文本文件的配置文件</li>
-</ul>
-<h3 id="3、Windows-95后的注册表"><a href="#3、Windows-95后的注册表" class="headerlink" title="3、Windows 95后的注册表"></a>3、Windows 95后的注册表</h3><ul>
-<li><p>自Windows 95操作系统开始，注册表真正成为Windows用户经常接触的内容，并在其后的操作系统中继续沿用</p>
+        <ul>
+<li><p>早期的计算机只用于处理纯数值问题；现代计算机经常处理<strong>非数值型</strong>问题</p>
+</li>
+<li><p><strong>数据</strong>：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料。</p>
+</li>
+<li><p><strong>数据元素</strong>描述的是一个个体</p>
 <ul>
-<li><p>注册表数据库由多个文件组成</p>
-</li>
-<li><p>Windwos提供了注册表编辑器</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在运行处输入命令打开注册表编辑器</span><br><span class="line">regedit</span><br></pre></td></tr></table></figure></li>
+<li>数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。</li>
+<li>一个数据元素可由多个数据项来组成，数据项是构成 数据元素的不可分割的最小单位</li>
 </ul>
 </li>
-</ul>
-<h3 id="4、注册表结构"><a href="#4、注册表结构" class="headerlink" title="4、注册表结构"></a>4、注册表结构</h3><ul>
-<li><p>注册表以树状结构进行呈现</p>
+<li><p><strong>数据对象</strong>是具有相同性质的数据元素的集合，是数据的一个子集</p>
+</li>
+<li><p><strong>数据结构</strong>指相互之间存在一定关系的数据元素的集合</p>
 <ul>
-<li><p>子树（实际只有两颗子树，为了方便操作，分为了五颗子树）</p>
+<li><p>线性数据结构、网状数据结构（同一个数据对象里的数据元素，可以组成不同的数据结构）</p>
+</li>
+<li><p>同样的数据元素，可组成不同的数据结构；不同的数据结构，可组成相同的数据结构</p>
+</li>
+</ul>
+</li>
+<li><p><strong>数据类型</strong>是一个值的集合和定义在此集合上的一组操作的总称</p>
 <ul>
-<li><p>HKEY_LOCAL_MACHINE：记录关于本地计算机系统的信息，包括硬件和操作系统数据</p>
+<li>原子类型，其值不可再分的数据类型<ul>
+<li>bool类型：<ul>
+<li>值范围：true、false</li>
+<li>可进行操作：与、或、非…</li>
+</ul>
 </li>
-<li><p>HKEY_USERS：记录关于动态加载的用户配置文件和默认配置文件的信息</p>
-</li>
-<li><p>HKEY_CURRENT_USER：HKEY_USERS子树，它指向“HKEY_USERS\当前用户的安全ID”包含当前以交互方式登陆的用户的用户配置文件</p>
-</li>
-<li><p>HKEY_CURRENT_CONFIG：HEEY_LOCAL_MACHINE子树，指向</p>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current包含在启动时由本地计算机系统使用的硬件配置文件的相关信息加载的设备驱动程序、显示时要使用的分辨率</p>
-</li>
-<li><p>HKEY_CLASSES_ROOT：HKEY_CURRENT_USER子树包含用于各种OLE技术和文件类关联数据的信息</p>
+<li>int类型：<ul>
+<li>值范围:-2147483648~2147483647</li>
+<li>可进行操作：加、减、乘、除、模运算…</li>
+</ul>
 </li>
 </ul>
 </li>
-<li><p>项</p>
+<li>结构类型，其值可以再分解为若干成分（分量）的数据类型<ul>
+<li>结构体</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>抽象数据类型（ADT）</strong>是抽象数据组织及与之相关的操作</p>
 <ul>
-<li>可以简单的理解为文件夹，项中可以包含项和值</li>
+<li>定义一个ADT，就是在“定义”一种数据结构</li>
+<li>确定了ADT的存储结构，才能”实现“这种数据结构</li>
 </ul>
 </li>
-<li><p>值</p>
-<ul>
-<li>每个注册表项或子项都可以包含称为值的数据</li>
-<li>部分值应用于某个用户的信息</li>
-<li>部分值应用于计算机所有用户的信息</li>
-<li>值由三部分组成（值的名称、值类型、值的数据）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、注册表基本操作"><a href="#二、注册表基本操作" class="headerlink" title="二、注册表基本操作"></a>二、注册表基本操作</h2><h3 id="1、创建项"><a href="#1、创建项" class="headerlink" title="1、创建项"></a>1、创建项</h3><h3 id="2、创建值（有六种类型的值）"><a href="#2、创建值（有六种类型的值）" class="headerlink" title="2、创建值（有六种类型的值）"></a>2、创建值（有六种类型的值）</h3><ul>
-<li>字符串值（REG_SZ)：固定长度的文本字符串</li>
-<li>二进制值（REG_BINARY）：原始二进制数据。多数硬件组件信息都以二进制数据存储</li>
-<li>DWORD值（REG_DWORD）：数据由4字节长的数表示。设备驱动程序和服务的很多参数都是这种类型</li>
-<li>QWORD值（REG_QWORD）: 数据由8字节长的数表示</li>
-<li>多字符串值（REG_MULTI_SZ）：多重字符串。包含列表或多值的值通常为该类型</li>
-<li>可扩充字符串值（REG_EXPAND_SZ）：长度可变的数据串。该数据类型包含在程序或服务使用该数据时解析的变量</li>
-</ul>
-<h3 id="3、修改、删除和重命名值"><a href="#3、修改、删除和重命名值" class="headerlink" title="3、修改、删除和重命名值"></a>3、修改、删除和重命名值</h3><h2 id="三、注册表应用"><a href="#三、注册表应用" class="headerlink" title="三、注册表应用"></a>三、注册表应用</h2><h3 id="1、案例"><a href="#1、案例" class="headerlink" title="1、案例"></a>1、案例</h3><ul>
-<li><p>个性化时间设置</p>
-<ul>
-<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\Control Panel\International”下的值sTimeFormat进行修改</li>
-</ul>
-</li>
-<li><p>在欢迎屏幕显示自定义信息</p>
-<ul>
-<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”下的值legalnoticecaption（标题）legalnoticetext（文本）</li>
-</ul>
-</li>
-<li><p>禁用任务管理器</p>
-<ul>
-<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system”下新建 DWORD 值 DisableTaskMgr，设置值为1</li>
-</ul>
-</li>
-<li><p>禁用控制面板</p>
-<ul>
-<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer”下新建 DOWRD 值 NoControlPanel，设置值为1</li>
-</ul>
-</li>
-<li><p>去除快捷方式左下角小箭头</p>
-<ul>
-<li>打开注册表编辑器，锁定“HKEY_CLASSES_ROOT\lnkfile”找到项下的 IsShortcut 值，直接删除</li>
-</ul>
-</li>
-</ul>
-<h3 id="2、注册表编辑技巧"><a href="#2、注册表编辑技巧" class="headerlink" title="2、注册表编辑技巧"></a>2、注册表编辑技巧</h3><ul>
-<li>查找字符串、值、项</li>
-<li>将子项添加到收藏夹</li>
-<li>打印注册表</li>
-<li>复制项名字</li>
 </ul>
 
     </div>
@@ -402,7 +354,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/" title="注册表基础">https://5fener.github.io/2021/12/26/注册表基础/</a>
+    <a href="https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/" title="基本概念和术语">https://5fener.github.io/2023/02/17/ds基本概念和术语/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -442,8 +394,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"># 网络安全</a>
-              <a href="/tags/Windows%E5%AE%89%E5%85%A8/" rel="tag"># Windows安全</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E7%8E%8B%E9%81%93/" rel="tag"># 王道</a>
           </div>
 
         
@@ -452,12 +405,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/" rel="prev" title="注册表维护与优化">
-      <i class="fa fa-chevron-left"></i> 注册表维护与优化
+    <a href="/2023/02/17/C++11/" rel="prev" title="C++11标准">
+      <i class="fa fa-chevron-left"></i> C++11标准
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/12/26/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" rel="next" title="Windows文件共享">
-      Windows文件共享 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/" rel="next" title="数据结构的三要素">
+      数据结构的三要素 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -517,7 +470,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">一、注册表基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%97%A9%E6%9C%9F%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、早期注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81Windows-95%E5%90%8E%E7%9A%84%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、Windows 95后的注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.4.</span> <span class="nav-text">4、注册表结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">二、注册表基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%88%9B%E5%BB%BA%E9%A1%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、创建项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%88%9B%E5%BB%BA%E5%80%BC%EF%BC%88%E6%9C%89%E5%85%AD%E7%A7%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC%EF%BC%89"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、创建值（有六种类型的值）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E9%87%8D%E5%91%BD%E5%90%8D%E5%80%BC"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、修改、删除和重命名值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BA%94%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">三、注册表应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A1%88%E4%BE%8B"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BC%96%E8%BE%91%E6%8A%80%E5%B7%A7"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、注册表编辑技巧</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

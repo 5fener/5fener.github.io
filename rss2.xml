@@ -9,8 +9,75 @@
     <atom:link href="https://5fener.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>举目见日，不见长安</description>
-    <pubDate>Fri, 17 Feb 2023 12:10:08 GMT</pubDate>
+    <pubDate>Fri, 17 Feb 2023 13:48:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>数据结构的三要素</title>
+      <link>https://5fener.github.io/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/</link>
+      <guid>https://5fener.github.io/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/</guid>
+      <pubDate>Fri, 17 Feb 2023 13:12:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;数据结构三要素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;逻辑结构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;集合结构&lt;/li&gt;
+&lt;li&gt;线性结构——一对一&lt;ul&gt;
+&lt;li&gt;数据元素之间是一对一的关系&lt;/li&gt;
+&lt;li&gt;除了第一个元素，所有元素都有唯一前驱&lt;/li&gt;
+&lt;li&gt;除了最后一个元素，所有元</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>数据结构三要素</p><ul><li><p>逻辑结构</p><ul><li>集合结构</li><li>线性结构——一对一<ul><li>数据元素之间是一对一的关系</li><li>除了第一个元素，所有元素都有唯一前驱</li><li>除了最后一个元素，所有元素都有唯一后继</li></ul></li><li>树形结构——一对多</li><li>图状结构——多对多</li></ul></li><li><p>数据的运算</p><p>针对于某种逻辑结构，结合实际需求，定义基本运算</p><ul><li>基本运算<ul><li>查找第i个数据元素</li><li>在第i个位置插入新的数据元素</li><li>删除第i个位置的数据元素</li><li>……</li></ul></li></ul></li><li><p>物理结构（存储结构）</p><ul><li><p>顺序存储</p><ul><li>把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现</li></ul></li><li><p>非顺序存储（离散存储）</p><ul><li><p>链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素之间的逻辑关系</p></li><li><p>索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）</p></li><li><p>散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希（Hash）存储</p></li></ul></li><li><p>若采用顺序存储，则各个数据元素在物理上必须是连续的；若采用非顺序存储，则各个数据元素在物理上是离散的</p></li><li><p>数据的存储结构会影响存储空间分配的方便程度</p></li><li><p>数据的存储结构会影响对数据运算的速度</p></li></ul></li><li><p>运算的定义是针对逻辑结构的，指出运算的功能</p></li><li><p>运算的实现是针对存储结构的，指出运算的具体操作步骤</p></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://5fener.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      
+      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C-%E8%80%83%E7%A0%94%EF%BC%8C-%E7%8E%8B%E9%81%93/">数据结构， 考研， 王道</category>
+      
+      
+      <comments>https://5fener.github.io/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>基本概念和术语</title>
+      <link>https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/</link>
+      <guid>https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/</guid>
+      <pubDate>Fri, 17 Feb 2023 12:37:45 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;早期的计算机只用于处理纯数值问题；现代计算机经常处理&lt;strong&gt;非数值型&lt;/strong&gt;问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;数据&lt;/strong&gt;：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><p>早期的计算机只用于处理纯数值问题；现代计算机经常处理<strong>非数值型</strong>问题</p></li><li><p><strong>数据</strong>：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料。</p></li><li><p><strong>数据元素</strong>描述的是一个个体</p><ul><li>数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。</li><li>一个数据元素可由多个数据项来组成，数据项是构成 数据元素的不可分割的最小单位</li></ul></li><li><p><strong>数据对象</strong>是具有相同性质的数据元素的集合，是数据的一个子集</p></li><li><p><strong>数据结构</strong>指相互之间存在一定关系的数据元素的集合</p><ul><li><p>线性数据结构、网状数据结构（同一个数据对象里的数据元素，可以组成不同的数据结构）</p></li><li><p>同样的数据元素，可组成不同的数据结构；不同的数据结构，可组成相同的数据结构</p></li></ul></li><li><p><strong>数据类型</strong>是一个值的集合和定义在此集合上的一组操作的总称</p><ul><li>原子类型，其值不可再分的数据类型<ul><li>bool类型：<ul><li>值范围：true、false</li><li>可进行操作：与、或、非…</li></ul></li><li>int类型：<ul><li>值范围:-2147483648~2147483647</li><li>可进行操作：加、减、乘、除、模运算…</li></ul></li></ul></li><li>结构类型，其值可以再分解为若干成分（分量）的数据类型<ul><li>结构体</li></ul></li></ul></li><li><p><strong>抽象数据类型（ADT）</strong>是抽象数据组织及与之相关的操作</p><ul><li>定义一个ADT，就是在“定义”一种数据结构</li><li>确定了ADT的存储结构，才能”实现“这种数据结构</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://5fener.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      
+      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      <category domain="https://5fener.github.io/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://5fener.github.io/tags/%E7%8E%8B%E9%81%93/">王道</category>
+      
+      
+      <comments>https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>C++11标准</title>
@@ -254,62 +321,6 @@
       
       
       <comments>https://5fener.github.io/2021/12/26/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>NTFS权限规则</title>
-      <link>https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/</link>
-      <guid>https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/</guid>
-      <pubDate>Thu, 23 Dec 2021 16:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;NTFS-权限规则&quot;&gt;&lt;a href=&quot;#NTFS-权限规则&quot; class=&quot;headerlink&quot; title=&quot;NTFS 权限规则&quot;&gt;&lt;/a&gt;NTFS 权限规则&lt;/h1&gt;&lt;h2 id=&quot;一、权限规则&quot;&gt;&lt;a href=&quot;#一、权限规则&quot; class=&quot;head</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="NTFS-权限规则"><a href="#NTFS-权限规则" class="headerlink" title="NTFS 权限规则"></a>NTFS 权限规则</h1><h2 id="一、权限规则"><a href="#一、权限规则" class="headerlink" title="一、权限规则"></a>一、权限规则</h2><h4 id="1、权限的累加"><a href="#1、权限的累加" class="headerlink" title="1、权限的累加"></a>1、权限的累加</h4><ul><li>用户分配的有效权限是分配给用户所有权限的累加<ul><li>假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改</li></ul></li></ul><h3 id="2、拒绝权限"><a href="#2、拒绝权限" class="headerlink" title="2、拒绝权限"></a>2、拒绝权限</h3><ul><li>拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高）</li><li>当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）</li></ul><h3 id="3、继承权限"><a href="#3、继承权限" class="headerlink" title="3、继承权限"></a>3、继承权限</h3><ul><li>文件或文件夹的访问控制列表默认情况下会继承上级文件夹的权限</li></ul><h3 id="4、特殊权限（特别的权限）"><a href="#4、特殊权限（特别的权限）" class="headerlink" title="4、特殊权限（特别的权限）"></a>4、特殊权限（特别的权限）</h3><ul><li>读取权限（和读取文件或文件夹的内容没有关系）<ul><li>读取文件或文件夹的访问控制列表</li><li>针对于用户想要访问某个文件的内容，此权限必须勾选</li></ul></li><li>更改权限（和修改文件或文件夹的内容没有关系）<ul><li>用户是否可以修改文件或文件夹的访问控制列表，由于此权限是可以为用户添加或删除权限，会造成很多不安全因素，此权限一般不会给</li><li>要想更改，前提是必须能读取</li></ul></li><li>取得所有权<ul><li>能够修改文件或文件夹的所有者</li><li>前提必须得读取和修改</li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://5fener.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</category>
-      
-      
-      <category domain="https://5fener.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</category>
-      
-      <category domain="https://5fener.github.io/tags/Windows%E5%AE%89%E5%85%A8/">Windows安全</category>
-      
-      
-      <comments>https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Windows基础命令</title>
-      <link>https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
-      <guid>https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
-      <pubDate>Thu, 23 Dec 2021 16:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;Windows-基础命令&quot;&gt;&lt;a href=&quot;#Windows-基础命令&quot; class=&quot;headerlink&quot; title=&quot;Windows 基础命令&quot;&gt;&lt;/a&gt;Windows 基础命令&lt;/h1&gt;&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="Windows-基础命令"><a href="#Windows-基础命令" class="headerlink" title="Windows 基础命令"></a>Windows 基础命令</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><strong>掌握Windows系统文件及目录操作命令</strong></p><p><strong>掌握Windows网络相关命令</strong></p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="Windows输入命令-使用命令提示符对话-CMD"><a href="#Windows输入命令-使用命令提示符对话-CMD" class="headerlink" title="Windows输入命令 使用命令提示符对话 CMD"></a>Windows输入命令 使用命令提示符对话 CMD</h3><h3 id="一-目录和文件的应用操作"><a href="#一-目录和文件的应用操作" class="headerlink" title="一. 目录和文件的应用操作"></a>一. 目录和文件的应用操作</h3><ol><li><p>cd命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\    //切换到d盘目录，因为改变了驱动器，所以需要加上/d选项 </span><br><span class="line"></span><br><span class="line">c:\Users\Administrator&gt;cd c:\    //如果没有改变驱动器，就不需要加/d选项</span><br></pre></td></tr></table></figure></li></ol><ul><li>目录分为相对路径和绝对路径<ul><li>相对路径(以当前为起点)<ul><li>“.”代表的是当前路径</li><li>“..&#x2F;“代表的是当前的上一级目录</li></ul></li><li>绝对路径（以驱动器号为起点）</li></ul></li></ul><ol start="2"><li>dir命令</li></ol><ul><li><p>用于显示目录和文件列表</p></li><li><p>常用的用法直接使用dir</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- dir</span><br><span class="line">  dir /a:h c:\   #查看c盘下的隐藏目录和文件</span><br><span class="line">  dir /o:-n c:\  #使用字母逆序方式查看</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>md 或 mkdir</li></ol><ul><li><p>创建目录（文件夹），也可以创建多级子目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- md 公司文件夹</span><br><span class="line">  md 公司文件夹\技术部\技术文件夹  #当技术部文件夹不存在时会直接创建</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>rd</li></ol><ul><li><p>用于删除目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd 成都文件  #直接使用rd，只能删除空目录</span><br><span class="line">rd /s /q 公司文件夹  #如果要删除的目录中只有子目录或文件，就必须使用/s选项，可以携带/q选项不提醒</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>move</li></ol><ul><li><p>用于移动，重命名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;move woniu.bmp c:\#移动</span><br><span class="line">d:\&gt;move c:\woniu.bmp c:\woniutf.bmp#重命名</span><br></pre></td></tr></table></figure></li></ul><ol start="6"><li>copy</li></ol><ul><li><p>用于复制文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;copy c:\woniutf.bmp d:\woniuxy   #直接复制文件到指定目录</span><br><span class="line">d:\&gt;copy 1.txt+2.txt 3.txt   #将两个文件中的内容直接融合到新的文件中</span><br></pre></td></tr></table></figure></li></ul><ol start="7"><li>xcopy</li></ol><ul><li><p>用于复制目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li></ul><ol start="8"><li>del</li></ol><ul><li><p>用于删除文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:\&gt;del 1.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="二-文本处理"><a href="#二-文本处理" class="headerlink" title="二. 文本处理"></a>二. 文本处理</h3><ol><li>type</li></ol><ul><li><p>用于显示文本内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;type d:\3.txt</span><br><span class="line">&lt;内容&gt;</span><br></pre></td></tr></table></figure></li><li><p>重定向 “&gt;”</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;ipconfig &gt; c:\ip.txt</span><br></pre></td></tr></table></figure></li><li><p>管道符 “|”</p><ul><li>将前面命令执行的结果做为后面命令的操作对象</li></ul></li></ul><ol start="2"><li>finder</li></ol><ul><li><p>查找文件内容（查找的某个字符串的内容）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\Windows\System32&gt;findstr 192 c:\ip.txt</span><br></pre></td></tr></table></figure></li></ul><h3 id="三-网络相关操作"><a href="#三-网络相关操作" class="headerlink" title="三.网络相关操作"></a>三.网络相关操作</h3><ol><li>配置TCP&#x2F;IP参数</li></ol><ul><li><p>TCP&#x2F;IP参数</p><ul><li><p>IP 地址：标识了网络中的某一台主机</p></li><li><p>子网掩码：用于标识你的 IP 所处的网络的范围，子网掩码越大，网络范围越小</p></li><li><p>默认网关：标识与主机直连的路由器的 IP 地址</p></li><li><p>DNS 服务器：用于域名解析的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#静态配置IP地址、子网掩码、默认网关</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; static 192.168.100.100 255.255.255.0 192.168.100.254</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#自动获取 TCP/IP 参数</span><br><span class="line">c:&gt;netsh interface ip set address &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#静态配置 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; static 12.12.12.12</span><br><span class="line">#添加备用 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; 222.66.66.66 index=2//index=2 是索引，表示备用 DNS</span><br><span class="line">#自动获取 DNS 服务器</span><br><span class="line">c:&gt;netsh interface ip set dnssever &quot;Ethernet0&quot; dhcp</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="2"><li>查看TCP&#x2F;IP参数，用ipconfig</li></ol><ul><li><p>常用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关）</span><br><span class="line">ipconfig</span><br><span class="line">#查看所有网卡的TCP/IP参数（IP地址、子网掩码、默认网关、mac地址、dhcp地址、dns地址、主机名）</span><br><span class="line">ipconfig /all</span><br><span class="line">#释放TCP/IP参数</span><br><span class="line">ipconfig /release</span><br><span class="line">#重新获取TCP/IP参数</span><br><span class="line">ipconfig /renew</span><br><span class="line">#刷新dns缓存</span><br><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure></li></ul><ol start="3"><li>ping命令</li></ol><ul><li><p>用于测试TCP&#x2F;IP配置是否正确</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping -n 10 -l 1000 -t -a 192.168.31.131</span><br><span class="line"># -n 10 发送10个报文</span><br><span class="line"># -l 1000 单个报文10000个字节</span><br><span class="line"># -t 一直不停的ping</span><br><span class="line"># -a 返回IP的主机名</span><br></pre></td></tr></table></figure></li></ul><ol start="4"><li>tracert</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:&gt;tracert 39.156.66.14</span><br></pre></td></tr></table></figure></li></ul><ol start="5"><li>route</li></ol><ul><li><p>用来操作网络路由表</p><ul><li><p>0.0.0.0代表的任意网路</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#打印路由表</span><br><span class="line">route -4 print</span><br><span class="line">#添加路由条目</span><br><span class="line">（112.53.42.52目标地址或网络 /32代表子网掩码或者112.53.42.0目标网络，/24代表子网掩码，192.168.33.1网关地址）</span><br><span class="line">route add 122.53.42.52/32 192.168.33.1</span><br><span class="line">#删除路由条目</span><br><span class="line">route delete 112.53.42.52 #（112.53.42.52目标）</span><br></pre></td></tr></table></figure></li></ul></li></ul><ol start="6"><li>netstat</li></ol><ul><li><p>用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看所有的TCP链接，包括进程，以数字形式显示</span><br><span class="line">netstat -anop tcp</span><br><span class="line">#查看路由表</span><br><span class="line">netstat -r等同于route print</span><br></pre></td></tr></table></figure></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://5fener.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</category>
-      
-      
-      <category domain="https://5fener.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</category>
-      
-      <category domain="https://5fener.github.io/tags/Windows%E5%AE%89%E5%85%A8/">Windows安全</category>
-      
-      
-      <comments>https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/#disqus_thread</comments>
       
     </item>
     
