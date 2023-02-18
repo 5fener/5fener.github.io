@@ -203,6 +203,142 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/18/%E7%AE%97%E6%B3%95%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/18/%E7%AE%97%E6%B3%95%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="post-title-link" itemprop="url">算法的复杂度</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-18 20:06:55 / 修改时间：21:29:43" itemprop="dateCreated datePublished" datetime="2023-02-18T20:06:55+08:00">2023-02-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>747</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="算法效率的度量"><a href="#算法效率的度量" class="headerlink" title="算法效率的度量"></a>算法效率的度量</h2><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><ul>
+<li><h4 id="问题计算"><a href="#问题计算" class="headerlink" title="问题计算"></a>问题计算</h4><ul>
+<li>普通程序<ul>
+<li>找到所占空间大小与问题规模相关的变量</li>
+<li>分析所占空间 x 与问题规模 n 的关系 x &#x3D; f(n)</li>
+<li>x 的数量级 O(x) 就是算法空间复杂度 S(n)</li>
+</ul>
+</li>
+<li>递归程序<ul>
+<li>找到递归调用的深度 x 与问题规模 n 的关系 x &#x3D; f(n)</li>
+<li>x 的数量级 O(x) 就是算法空间复杂度 S(n)</li>
+<li>有的算法各层函数所需存储空间不同，分析方法略有区别</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="常用技巧"><a href="#常用技巧" class="headerlink" title="常用技巧"></a>常用技巧</h4><ul>
+<li>加法规则： O(f(n)) + O(g(n)) &#x3D; O(max(f(n), g(n)))</li>
+<li>乘法规则：O(f(n)) * O(g(n)) &#x3D; O(f(n) * g(n))</li>
+<li>O(1) &lt; O(log<sub>2</sub>n) &lt; O(n) &lt; O(nlog<sub>2</sub>n) &lt; O(n<sup>2</sup>) &lt; O(n<sup>3</sup>) &lt; O(2<sup>n</sup>) &lt; O(n!) &lt; O(n<sup>n</sup>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul>
+<li><p>事前预估算法时间开销 T(n) 与问题规模 n 的关系</p>
+</li>
+<li><p>顺序执行的代码只会影响常数项，可以忽略</p>
+</li>
+<li><p>只需挑循环中的一个基本操作分析它的执行次数与 n 的关系即可</p>
+</li>
+<li><p>如果有多层嵌套循环，只需关注最深层循环循环了几次</p>
+</li>
+<li><h4 id="如何计算"><a href="#如何计算" class="headerlink" title="如何计算"></a>如何计算</h4><ul>
+<li>找到一个基本操作（最深层循环）</li>
+<li>分析该基本操作的执行次数 x 与问题规模 n 的关系 x &#x3D; f(n)</li>
+<li>x 的数量级 O(x) 就是算法时间复杂度 T(n)</li>
+</ul>
+</li>
+<li><h4 id="常用技巧-1"><a href="#常用技巧-1" class="headerlink" title="常用技巧"></a>常用技巧</h4><ul>
+<li>加法规则：O(f(n)) + O(g(n)) &#x3D; O(max(f(n), g(n)))</li>
+<li>乘法规则：O(f(n)) * O(g(n)) &#x3D; O(f(n) * g(n))</li>
+<li>O(1) &lt; O(log<sub>2</sub>n) &lt; O(n) &lt; O(nlog<sub>2</sub>n) &lt; O(n<sup>2</sup>) &lt; O(n<sup>3</sup>) &lt; O(2<sup>n</sup>) &lt; O(n!) &lt; O(n<sup>n</sup>)</li>
+</ul>
+</li>
+<li><h4 id="三种复杂度"><a href="#三种复杂度" class="headerlink" title="三种复杂度"></a>三种复杂度</h4><ul>
+<li>最坏时间复杂度：考虑输入数据“最坏”的情况</li>
+<li>平均时间复杂度：考虑所有输入数据都等概率出现的情况</li>
+<li>最好时间复杂度：考虑输入数据“最好”的情况</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1375,135 +1511,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/OIP.jfif">
-      <meta itemprop="name" content="5fener">
-      <meta itemprop="description" content="举目见日，不见长安">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长安街">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/26/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">组策略应用</a>
-        </h2>
-
-        <div class="post-meta">
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-16 15:49:21" itemprop="dateModified" datetime="2023-02-16T15:49:21+08:00">2023-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>582</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="组策略应用"><a href="#组策略应用" class="headerlink" title="组策略应用"></a>组策略应用</h1><h2 id="一、组策略基本概念"><a href="#一、组策略基本概念" class="headerlink" title="一、组策略基本概念"></a>一、组策略基本概念</h2><h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><p>组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管理组策略设置。</p>
-<p>组策略是一组策略的集合</p>
-<h3 id="2、打开方式"><a href="#2、打开方式" class="headerlink" title="2、打开方式"></a>2、打开方式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpedit.msc</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、刷新组策略"><a href="#3、刷新组策略" class="headerlink" title="3、刷新组策略"></a>3、刷新组策略</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpupdate /force</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、模块"><a href="#4、模块" class="headerlink" title="4、模块"></a>4、模块</h3><ul>
-<li>计算机配置<ul>
-<li>针对于本地计算机生效</li>
-</ul>
-</li>
-<li>用户配置<ul>
-<li>针对于用户生效</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、案例"><a href="#二、案例" class="headerlink" title="二、案例"></a>二、案例</h2><h3 id="1、隐藏桌面的系统图标"><a href="#1、隐藏桌面的系统图标" class="headerlink" title="1、隐藏桌面的系统图标"></a>1、隐藏桌面的系统图标</h3><ul>
-<li>用户配置——&gt;管理模板</li>
-</ul>
-<h3 id="2、保护任务栏和“开始”菜单"><a href="#2、保护任务栏和“开始”菜单" class="headerlink" title="2、保护任务栏和“开始”菜单"></a>2、保护任务栏和“开始”菜单</h3><ul>
-<li>用户配置——&gt;“开始菜单”和任务栏</li>
-</ul>
-<h3 id="3、保护个人文档隐私（历史使用文件）"><a href="#3、保护个人文档隐私（历史使用文件）" class="headerlink" title="3、保护个人文档隐私（历史使用文件）"></a>3、保护个人文档隐私（历史使用文件）</h3><ul>
-<li>用户配置——&gt;“开始菜单”和任务栏</li>
-</ul>
-<h3 id="4、禁用在浏览器上新窗口中打开"><a href="#4、禁用在浏览器上新窗口中打开" class="headerlink" title="4、禁用在浏览器上新窗口中打开"></a>4、禁用在浏览器上新窗口中打开</h3><ul>
-<li>用户配置—–&gt;Windows 组件——&gt;Internet Explorer</li>
-</ul>
-<h3 id="5、禁用控制面板"><a href="#5、禁用控制面板" class="headerlink" title="5、禁用控制面板"></a>5、禁用控制面板</h3><ul>
-<li><p>用户配置——&gt;控制面板</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开控制面板命令</span><br><span class="line">control.exe</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="6、关闭自动播放功能"><a href="#6、关闭自动播放功能" class="headerlink" title="6、关闭自动播放功能"></a>6、关闭自动播放功能</h3><ul>
-<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;自动播放策略</li>
-</ul>
-<h3 id="7、配置自动更新"><a href="#7、配置自动更新" class="headerlink" title="7、配置自动更新"></a>7、配置自动更新</h3><ul>
-<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;Windows 更新</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1575,7 +1582,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1588,7 +1595,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

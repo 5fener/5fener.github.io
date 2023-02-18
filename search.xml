@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>算法的复杂度</title>
+      <link href="/2023/02/18/%E7%AE%97%E6%B3%95%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+      <url>/2023/02/18/%E7%AE%97%E6%B3%95%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="算法效率的度量"><a href="#算法效率的度量" class="headerlink" title="算法效率的度量"></a>算法效率的度量</h2><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><ul><li><h4 id="问题计算"><a href="#问题计算" class="headerlink" title="问题计算"></a>问题计算</h4><ul><li>普通程序<ul><li>找到所占空间大小与问题规模相关的变量</li><li>分析所占空间 x 与问题规模 n 的关系 x &#x3D; f(n)</li><li>x 的数量级 O(x) 就是算法空间复杂度 S(n)</li></ul></li><li>递归程序<ul><li>找到递归调用的深度 x 与问题规模 n 的关系 x &#x3D; f(n)</li><li>x 的数量级 O(x) 就是算法空间复杂度 S(n)</li><li>有的算法各层函数所需存储空间不同，分析方法略有区别</li></ul></li></ul></li><li><h4 id="常用技巧"><a href="#常用技巧" class="headerlink" title="常用技巧"></a>常用技巧</h4><ul><li>加法规则： O(f(n)) + O(g(n)) &#x3D; O(max(f(n), g(n)))</li><li>乘法规则：O(f(n)) * O(g(n)) &#x3D; O(f(n) * g(n))</li><li>O(1) &lt; O(log<sub>2</sub>n) &lt; O(n) &lt; O(nlog<sub>2</sub>n) &lt; O(n<sup>2</sup>) &lt; O(n<sup>3</sup>) &lt; O(2<sup>n</sup>) &lt; O(n!) &lt; O(n<sup>n</sup>)</li></ul></li></ul><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li><p>事前预估算法时间开销 T(n) 与问题规模 n 的关系</p></li><li><p>顺序执行的代码只会影响常数项，可以忽略</p></li><li><p>只需挑循环中的一个基本操作分析它的执行次数与 n 的关系即可</p></li><li><p>如果有多层嵌套循环，只需关注最深层循环循环了几次</p></li><li><h4 id="如何计算"><a href="#如何计算" class="headerlink" title="如何计算"></a>如何计算</h4><ul><li>找到一个基本操作（最深层循环）</li><li>分析该基本操作的执行次数 x 与问题规模 n 的关系 x &#x3D; f(n)</li><li>x 的数量级 O(x) 就是算法时间复杂度 T(n)</li></ul></li><li><h4 id="常用技巧-1"><a href="#常用技巧-1" class="headerlink" title="常用技巧"></a>常用技巧</h4><ul><li>加法规则：O(f(n)) + O(g(n)) &#x3D; O(max(f(n), g(n)))</li><li>乘法规则：O(f(n)) * O(g(n)) &#x3D; O(f(n) * g(n))</li><li>O(1) &lt; O(log<sub>2</sub>n) &lt; O(n) &lt; O(nlog<sub>2</sub>n) &lt; O(n<sup>2</sup>) &lt; O(n<sup>3</sup>) &lt; O(2<sup>n</sup>) &lt; O(n!) &lt; O(n<sup>n</sup>)</li></ul></li><li><h4 id="三种复杂度"><a href="#三种复杂度" class="headerlink" title="三种复杂度"></a>三种复杂度</h4><ul><li>最坏时间复杂度：考虑输入数据“最坏”的情况</li><li>平均时间复杂度：考虑所有输入数据都等概率出现的情况</li><li>最好时间复杂度：考虑输入数据“最好”的情况</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构， 王道， 考研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数据结构的三要素</title>
       <link href="/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/"/>
       <url>/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/</url>
