@@ -9,7 +9,7 @@
     <atom:link href="https://5fener.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>举目见日，不见长安</description>
-    <pubDate>Fri, 17 Feb 2023 13:48:52 GMT</pubDate>
+    <pubDate>Sat, 18 Feb 2023 06:34:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,26 +20,26 @@
       
         
         
-      <description>&lt;p&gt;数据结构三要素&lt;/p&gt;
-&lt;ul&gt;
+      <description>&lt;h3 id=&quot;数据结构三要素&quot;&gt;&lt;a href=&quot;#数据结构三要素&quot; class=&quot;headerlink&quot; title=&quot;数据结构三要素&quot;&gt;&lt;/a&gt;数据结构三要素&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;逻辑结构&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;集合结构&lt;/li&gt;
-&lt;li&gt;线性结构——一对一&lt;ul&gt;
-&lt;li&gt;数据元素之间是一对一的关系&lt;/li&gt;
-&lt;li&gt;除了第一个元素，所有元素都有唯一前驱&lt;/li&gt;
-&lt;li&gt;除了最后一个元素，所有元</description>
+&lt;li&gt;线性结构——一对一</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>数据结构三要素</p><ul><li><p>逻辑结构</p><ul><li>集合结构</li><li>线性结构——一对一<ul><li>数据元素之间是一对一的关系</li><li>除了第一个元素，所有元素都有唯一前驱</li><li>除了最后一个元素，所有元素都有唯一后继</li></ul></li><li>树形结构——一对多</li><li>图状结构——多对多</li></ul></li><li><p>数据的运算</p><p>针对于某种逻辑结构，结合实际需求，定义基本运算</p><ul><li>基本运算<ul><li>查找第i个数据元素</li><li>在第i个位置插入新的数据元素</li><li>删除第i个位置的数据元素</li><li>……</li></ul></li></ul></li><li><p>物理结构（存储结构）</p><ul><li><p>顺序存储</p><ul><li>把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现</li></ul></li><li><p>非顺序存储（离散存储）</p><ul><li><p>链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素之间的逻辑关系</p></li><li><p>索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）</p></li><li><p>散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希（Hash）存储</p></li></ul></li><li><p>若采用顺序存储，则各个数据元素在物理上必须是连续的；若采用非顺序存储，则各个数据元素在物理上是离散的</p></li><li><p>数据的存储结构会影响存储空间分配的方便程度</p></li><li><p>数据的存储结构会影响对数据运算的速度</p></li></ul></li><li><p>运算的定义是针对逻辑结构的，指出运算的功能</p></li><li><p>运算的实现是针对存储结构的，指出运算的具体操作步骤</p></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="数据结构三要素"><a href="#数据结构三要素" class="headerlink" title="数据结构三要素"></a>数据结构三要素</h3><ul><li><p>逻辑结构</p><ul><li>集合结构</li><li>线性结构——一对一<ul><li>数据元素之间是一对一的关系</li><li>除了第一个元素，所有元素都有唯一前驱</li><li>除了最后一个元素，所有元素都有唯一后继</li></ul></li><li>树形结构——一对多</li><li>图状结构——多对多</li></ul></li><li><p>数据的运算</p><p>针对于某种逻辑结构，结合实际需求，定义基本运算</p><ul><li>基本运算<ul><li>查找第i个数据元素</li><li>在第i个位置插入新的数据元素</li><li>删除第i个位置的数据元素</li><li>……</li></ul></li></ul></li><li><p>物理结构（存储结构）</p><ul><li><p>顺序存储</p><ul><li>把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现</li></ul></li><li><p>非顺序存储（离散存储）</p><ul><li><p>链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素之间的逻辑关系</p></li><li><p>索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）</p></li><li><p>散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希（Hash）存储</p></li></ul></li><li><p>若采用顺序存储，则各个数据元素在物理上必须是连续的；若采用非顺序存储，则各个数据元素在物理上是离散的</p></li><li><p>数据的存储结构会影响存储空间分配的方便程度</p></li><li><p>数据的存储结构会影响对数据运算的速度</p></li></ul></li><li><p>运算的定义是针对逻辑结构的，指出运算的功能</p></li><li><p>运算的实现是针对存储结构的，指出运算的具体操作步骤</p></li></ul>]]></content:encoded>
       
       
       <category domain="https://5fener.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
       
       
-      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C-%E8%80%83%E7%A0%94%EF%BC%8C-%E7%8E%8B%E9%81%93/">数据结构， 考研， 王道</category>
+      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      <category domain="https://5fener.github.io/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://5fener.github.io/tags/%E7%8E%8B%E9%81%93/">王道</category>
       
       
       <comments>https://5fener.github.io/2023/02/17/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0/#disqus_thread</comments>
