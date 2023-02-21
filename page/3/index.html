@@ -203,6 +203,860 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/26/Windows%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" class="post-title-link" itemprop="url">Windows文件共享</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:48:16" itemprop="dateModified" datetime="2023-02-16T15:48:16+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>430</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Windows-文件共享"><a href="#Windows-文件共享" class="headerlink" title="Windows 文件共享"></a>Windows 文件共享</h1><h2 id="一、共享要求"><a href="#一、共享要求" class="headerlink" title="一、共享要求"></a>一、共享要求</h2><p>一般是局域网内使用</p>
+<p>1、物理上处于同一局域网</p>
+<ul>
+<li>同一公司的网络</li>
+<li>同一家庭的网络</li>
+<li>在同一个手机热点下</li>
+</ul>
+<p>2、逻辑上处于同一局域网（使用的同一网络的IP地址）</p>
+<ul>
+<li>直接可以ping对方主机（可以直接访问）</li>
+</ul>
+<h2 id="二、共享权限"><a href="#二、共享权限" class="headerlink" title="二、共享权限"></a>二、共享权限</h2><p>1、共享权限</p>
+<ul>
+<li>一般设置为 everyone 完全控制</li>
+</ul>
+<p>2、NTFS权限</p>
+<ul>
+<li>前面已经设置完成</li>
+</ul>
+<p>3、用户从完了过访问 sever 的最终权限</p>
+<ul>
+<li>由共享权限和NTFS权限的交集部分<ul>
+<li>举例：<ul>
+<li>张三的共享权限是读取，NTFS权限是读取和写入，张三从网络访问共享最终的权限是读取</li>
+</ul>
+</li>
+<li>经常设置办法<ul>
+<li>共享权限设置最大，NTFS权限进行精细化设置</li>
+<li>举例：张三共享权限设置完全控制，NTFS权限设置读取，张三从网络访问共享最终的权限是读取</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>共享权限默认有一个 everyone 组是读取，everyone 代表了所有人</li>
+</ul>
+<h2 id="三、访问共享"><a href="#三、访问共享" class="headerlink" title="三、访问共享"></a>三、访问共享</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\192.168.188.132			#192.168.188.132服务器的IP地址</span><br><span class="line">\\WIN-6JFV2DR59EJ			#WIN-6JFV2DR59EJ服务器的主机名</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">注册表基础</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:55:51" itemprop="dateModified" datetime="2023-02-16T15:55:51+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="注册表基础"><a href="#注册表基础" class="headerlink" title="注册表基础"></a>注册表基础</h1><h2 id="一、注册表基础"><a href="#一、注册表基础" class="headerlink" title="一、注册表基础"></a>一、注册表基础</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><ul>
+<li>注册表是Windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统</li>
+<li>注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的 硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个强大的注册表数据库来统一集中地管理系统硬件设置、软件配置等信息，从而方便了管理，增强了系统地稳定性</li>
+</ul>
+<h3 id="2、早期注册表"><a href="#2、早期注册表" class="headerlink" title="2、早期注册表"></a>2、早期注册表</h3><ul>
+<li>以ini为扩展名的文本文件的配置文件</li>
+</ul>
+<h3 id="3、Windows-95后的注册表"><a href="#3、Windows-95后的注册表" class="headerlink" title="3、Windows 95后的注册表"></a>3、Windows 95后的注册表</h3><ul>
+<li><p>自Windows 95操作系统开始，注册表真正成为Windows用户经常接触的内容，并在其后的操作系统中继续沿用</p>
+<ul>
+<li><p>注册表数据库由多个文件组成</p>
+</li>
+<li><p>Windwos提供了注册表编辑器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在运行处输入命令打开注册表编辑器</span><br><span class="line">regedit</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="4、注册表结构"><a href="#4、注册表结构" class="headerlink" title="4、注册表结构"></a>4、注册表结构</h3><ul>
+<li><p>注册表以树状结构进行呈现</p>
+<ul>
+<li><p>子树（实际只有两颗子树，为了方便操作，分为了五颗子树）</p>
+<ul>
+<li><p>HKEY_LOCAL_MACHINE：记录关于本地计算机系统的信息，包括硬件和操作系统数据</p>
+</li>
+<li><p>HKEY_USERS：记录关于动态加载的用户配置文件和默认配置文件的信息</p>
+</li>
+<li><p>HKEY_CURRENT_USER：HKEY_USERS子树，它指向“HKEY_USERS\当前用户的安全ID”包含当前以交互方式登陆的用户的用户配置文件</p>
+</li>
+<li><p>HKEY_CURRENT_CONFIG：HEEY_LOCAL_MACHINE子树，指向</p>
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current包含在启动时由本地计算机系统使用的硬件配置文件的相关信息加载的设备驱动程序、显示时要使用的分辨率</p>
+</li>
+<li><p>HKEY_CLASSES_ROOT：HKEY_CURRENT_USER子树包含用于各种OLE技术和文件类关联数据的信息</p>
+</li>
+</ul>
+</li>
+<li><p>项</p>
+<ul>
+<li>可以简单的理解为文件夹，项中可以包含项和值</li>
+</ul>
+</li>
+<li><p>值</p>
+<ul>
+<li>每个注册表项或子项都可以包含称为值的数据</li>
+<li>部分值应用于某个用户的信息</li>
+<li>部分值应用于计算机所有用户的信息</li>
+<li>值由三部分组成（值的名称、值类型、值的数据）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、注册表基本操作"><a href="#二、注册表基本操作" class="headerlink" title="二、注册表基本操作"></a>二、注册表基本操作</h2><h3 id="1、创建项"><a href="#1、创建项" class="headerlink" title="1、创建项"></a>1、创建项</h3><h3 id="2、创建值（有六种类型的值）"><a href="#2、创建值（有六种类型的值）" class="headerlink" title="2、创建值（有六种类型的值）"></a>2、创建值（有六种类型的值）</h3><ul>
+<li>字符串值（REG_SZ)：固定长度的文本字符串</li>
+<li>二进制值（REG_BINARY）：原始二进制数据。多数硬件组件信息都以二进制数据存储</li>
+<li>DWORD值（REG_DWORD）：数据由4字节长的数表示。设备驱动程序和服务的很多参数都是这种类型</li>
+<li>QWORD值（REG_QWORD）: 数据由8字节长的数表示</li>
+<li>多字符串值（REG_MULTI_SZ）：多重字符串。包含列表或多值的值通常为该类型</li>
+<li>可扩充字符串值（REG_EXPAND_SZ）：长度可变的数据串。该数据类型包含在程序或服务使用该数据时解析的变量</li>
+</ul>
+<h3 id="3、修改、删除和重命名值"><a href="#3、修改、删除和重命名值" class="headerlink" title="3、修改、删除和重命名值"></a>3、修改、删除和重命名值</h3><h2 id="三、注册表应用"><a href="#三、注册表应用" class="headerlink" title="三、注册表应用"></a>三、注册表应用</h2><h3 id="1、案例"><a href="#1、案例" class="headerlink" title="1、案例"></a>1、案例</h3><ul>
+<li><p>个性化时间设置</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\Control Panel\International”下的值sTimeFormat进行修改</li>
+</ul>
+</li>
+<li><p>在欢迎屏幕显示自定义信息</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”下的值legalnoticecaption（标题）legalnoticetext（文本）</li>
+</ul>
+</li>
+<li><p>禁用任务管理器</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system”下新建 DWORD 值 DisableTaskMgr，设置值为1</li>
+</ul>
+</li>
+<li><p>禁用控制面板</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer”下新建 DOWRD 值 NoControlPanel，设置值为1</li>
+</ul>
+</li>
+<li><p>去除快捷方式左下角小箭头</p>
+<ul>
+<li>打开注册表编辑器，锁定“HKEY_CLASSES_ROOT\lnkfile”找到项下的 IsShortcut 值，直接删除</li>
+</ul>
+</li>
+</ul>
+<h3 id="2、注册表编辑技巧"><a href="#2、注册表编辑技巧" class="headerlink" title="2、注册表编辑技巧"></a>2、注册表编辑技巧</h3><ul>
+<li>查找字符串、值、项</li>
+<li>将子项添加到收藏夹</li>
+<li>打印注册表</li>
+<li>复制项名字</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/26/%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%BB%B4%E6%8A%A4%E4%B8%8E%E4%BC%98%E5%8C%96/" class="post-title-link" itemprop="url">注册表维护与优化</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:56:38" itemprop="dateModified" datetime="2023-02-16T15:56:38+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="注册表维护与优化"><a href="#注册表维护与优化" class="headerlink" title="注册表维护与优化"></a>注册表维护与优化</h1><h2 id="一、注册表维护"><a href="#一、注册表维护" class="headerlink" title="一、注册表维护"></a>一、注册表维护</h2><h3 id="1、注册表被破坏后的常见现象"><a href="#1、注册表被破坏后的常见现象" class="headerlink" title="1、注册表被破坏后的常见现象"></a>1、注册表被破坏后的常见现象</h3><ul>
+<li>无法启动系统</li>
+<li>无法运行或正常运行合法的应用程序</li>
+<li>找不到启动系统或运行应用程序所需的文件</li>
+<li>没有访问应用程序的权限</li>
+<li>不能正确安装或装入驱动程序</li>
+<li>不能进行网络连接</li>
+<li>注册表条目有错误</li>
+</ul>
+<h3 id="2、注册表被破坏的原因"><a href="#2、注册表被破坏的原因" class="headerlink" title="2、注册表被破坏的原因"></a>2、注册表被破坏的原因</h3><ul>
+<li>应用程序错误：在系统中安装过多的软件后，可能会出现彼此之间的冲突</li>
+<li>驱动程序不兼容：安装系统时有很多驱动都是自动安装，容易产生不同硬件驱动程序不兼容的情况，建议到官方网站下载对应稳定版驱动进行安装</li>
+<li>硬件问题：主要出现在硬件质量上，比如硬盘或内存质量不过关造成读写错误、超频、CMOS、病毒等</li>
+<li>误操作：误操作是最常见的原因，可能会导致注册表出现错误，严重者造成系统崩溃或无法启动程序</li>
+</ul>
+<h3 id="3、备份注册表"><a href="#3、备份注册表" class="headerlink" title="3、备份注册表"></a>3、备份注册表</h3><ul>
+<li>直接将注册表数据库文件进行备份</li>
+<li>导出注册表<ul>
+<li>找到对应的项直接选择导出</li>
+</ul>
+</li>
+</ul>
+<h3 id="4、恢复注册表"><a href="#4、恢复注册表" class="headerlink" title="4、恢复注册表"></a>4、恢复注册表</h3><ul>
+<li>直接将数据库文件进行覆盖</li>
+<li>将之前导出的项进行导入</li>
+</ul>
+<h3 id="5、锁定和解锁注册表"><a href="#5、锁定和解锁注册表" class="headerlink" title="5、锁定和解锁注册表"></a>5、锁定和解锁注册表</h3><ul>
+<li>打开注册表编辑器，锁定到”HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System“项中新建DWORD值DisableRegistryTools，将值设置为1，表示锁定，设置为0表示解锁</li>
+<li>当注册表被锁定后，Windows自带的注册表编辑器就无法打开，需要使用外部第三方注册表编辑工具来进行打开，找到对应项，修改值为1</li>
+</ul>
+<h2 id="二、注册表优化"><a href="#二、注册表优化" class="headerlink" title="二、注册表优化"></a>二、注册表优化</h2><h3 id="1、优化内容"><a href="#1、优化内容" class="headerlink" title="1、优化内容"></a>1、优化内容</h3><ul>
+<li>清除多余的DLL文件<ul>
+<li>打开注册表编辑器，锁定到”HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SharedDLLs“项，在这个项下存放的是共享的DLL信息，注意看括号里面的数据，它表示共享文件的数目，如果为0，则可将其删除</li>
+</ul>
+</li>
+<li>安装卸载应用程序的垃圾信息<ul>
+<li>打开注册表编辑器，锁定到”HKEY_CURRENT_USER\SOFTWARE”项和”HKEY_LOCAL_MACHINE\SOFTWARE“项，这两个项中包含系统中的应用程序，对于已知的程序是知道的，主要是针对一些未知的程序进行删除和一些已经卸载了的残留</li>
+</ul>
+</li>
+<li>系统安装时产生的无用信息<ul>
+<li>删除多余时区（必要情况下只保留北京时区）<ul>
+<li>锁定到”HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones“项</li>
+</ul>
+</li>
+<li>清楚多余的语言代码（英语—0409、中文—0804）<ul>
+<li>锁定到”HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Locale“项</li>
+</ul>
+</li>
+<li>删除多余的键盘布局<ul>
+<li>锁定到”HKEY_LOCAL_MACHINE\SYSTEM\Keyboard Layout“项，下面每一个子项代表一种键盘布局</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/26/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/26/%E7%BB%84%E7%AD%96%E7%95%A5%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">组策略应用</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-26T00:00:00+08:00">2021-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:49:21" itemprop="dateModified" datetime="2023-02-16T15:49:21+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>582</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="组策略应用"><a href="#组策略应用" class="headerlink" title="组策略应用"></a>组策略应用</h1><h2 id="一、组策略基本概念"><a href="#一、组策略基本概念" class="headerlink" title="一、组策略基本概念"></a>一、组策略基本概念</h2><h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><p>组策略是一种允许你通过组策略设置和组策略首选项为用户和计算机指定受管理配置的基础结构。 要配置仅影响本地计算机或用户的组策略设置，你可以使用本地组策略编辑器。 你可以在 Active Directory 域服务 (AD DS) 环境中通过组策略管理控制台 (GPMC) 管理组策略设置和组策略首选项。 组策略管理工具还包含在远程服务器管理工具包中，以帮助你从桌面管理组策略设置。</p>
+<p>组策略是一组策略的集合</p>
+<h3 id="2、打开方式"><a href="#2、打开方式" class="headerlink" title="2、打开方式"></a>2、打开方式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpedit.msc</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、刷新组策略"><a href="#3、刷新组策略" class="headerlink" title="3、刷新组策略"></a>3、刷新组策略</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpupdate /force</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、模块"><a href="#4、模块" class="headerlink" title="4、模块"></a>4、模块</h3><ul>
+<li>计算机配置<ul>
+<li>针对于本地计算机生效</li>
+</ul>
+</li>
+<li>用户配置<ul>
+<li>针对于用户生效</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、案例"><a href="#二、案例" class="headerlink" title="二、案例"></a>二、案例</h2><h3 id="1、隐藏桌面的系统图标"><a href="#1、隐藏桌面的系统图标" class="headerlink" title="1、隐藏桌面的系统图标"></a>1、隐藏桌面的系统图标</h3><ul>
+<li>用户配置——&gt;管理模板</li>
+</ul>
+<h3 id="2、保护任务栏和“开始”菜单"><a href="#2、保护任务栏和“开始”菜单" class="headerlink" title="2、保护任务栏和“开始”菜单"></a>2、保护任务栏和“开始”菜单</h3><ul>
+<li>用户配置——&gt;“开始菜单”和任务栏</li>
+</ul>
+<h3 id="3、保护个人文档隐私（历史使用文件）"><a href="#3、保护个人文档隐私（历史使用文件）" class="headerlink" title="3、保护个人文档隐私（历史使用文件）"></a>3、保护个人文档隐私（历史使用文件）</h3><ul>
+<li>用户配置——&gt;“开始菜单”和任务栏</li>
+</ul>
+<h3 id="4、禁用在浏览器上新窗口中打开"><a href="#4、禁用在浏览器上新窗口中打开" class="headerlink" title="4、禁用在浏览器上新窗口中打开"></a>4、禁用在浏览器上新窗口中打开</h3><ul>
+<li>用户配置—–&gt;Windows 组件——&gt;Internet Explorer</li>
+</ul>
+<h3 id="5、禁用控制面板"><a href="#5、禁用控制面板" class="headerlink" title="5、禁用控制面板"></a>5、禁用控制面板</h3><ul>
+<li><p>用户配置——&gt;控制面板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开控制面板命令</span><br><span class="line">control.exe</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="6、关闭自动播放功能"><a href="#6、关闭自动播放功能" class="headerlink" title="6、关闭自动播放功能"></a>6、关闭自动播放功能</h3><ul>
+<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;自动播放策略</li>
+</ul>
+<h3 id="7、配置自动更新"><a href="#7、配置自动更新" class="headerlink" title="7、配置自动更新"></a>7、配置自动更新</h3><ul>
+<li>计算机配置——&gt;管理模板——&gt;Windows 组件——&gt;Windows 更新</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/24/NTFS%E6%9D%83%E9%99%90/" class="post-title-link" itemprop="url">NTFS权限</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:51:48" itemprop="dateModified" datetime="2023-02-16T15:51:48+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>710</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="NTFS-权限"><a href="#NTFS-权限" class="headerlink" title="NTFS 权限"></a>NTFS 权限</h1><h2 id="一、NTFS权限"><a href="#一、NTFS权限" class="headerlink" title="一、NTFS权限"></a>一、NTFS权限</h2><p>1、文件系统</p>
+<ul>
+<li><p>Windows</p>
+<ul>
+<li>早期Windows上使用 FAT16或 FAT32</li>
+<li>目前的Windows操作系统基本使用的是 NTFS 文件系统<ul>
+<li>ACL(访问控制列表，设置权限)</li>
+<li>EFS（加密文件系统，使用BitLocker进行磁盘加密</li>
+<li>压缩及磁盘配额</li>
+</ul>
+</li>
+<li>ReFS文件系统</li>
+</ul>
+</li>
+<li><p>Linux</p>
+<ul>
+<li><p>swap：交换文件系统，主要将磁盘的一部分空间划分给内存使用</p>
+</li>
+<li><p>ext4：</p>
+</li>
+<li><p>文件系统转换</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\五分儿&gt;convert g:/fs:ntfs		//g 表示的是需要转换的盘符</span><br><span class="line">文件系统的类型是 FAT32。</span><br><span class="line">卷序列号为 7D8C-7EAA</span><br><span class="line">Windows 正在校验文件和文件夹...</span><br><span class="line">已完成文件和文件夹验证。</span><br><span class="line"></span><br><span class="line">Windows 已扫描文件系统并且没有发现问题。</span><br><span class="line">无需采取进一步操作。</span><br><span class="line">总共有    60,049,056 KB 磁盘空间。</span><br><span class="line">2 个隐藏文件中有            64 KB。</span><br><span class="line">6 个文件夹中有           192 KB。</span><br><span class="line">6 个文件中有         5,344 KB。</span><br><span class="line">   60,043,424 KB 可用。</span><br><span class="line"></span><br><span class="line">每个分配单元中有        32,768 字节。</span><br><span class="line">磁盘上共有     1,876,533 个分配单元。</span><br><span class="line">磁盘上有     1,876,357 个可用的分配单元。</span><br><span class="line"></span><br><span class="line">正在确定文件系统转换所需的磁盘空间...</span><br><span class="line">磁盘总空间:                 60063728 KB</span><br><span class="line">卷上的可用空间:                 60043424 KB</span><br><span class="line">转换所需的空间:                   141010 KB</span><br><span class="line">正在转换文件系统</span><br><span class="line">数据错误(循环冗余检查)。</span><br></pre></td></tr></table></figure>
+
+<p>早期的FAT文件系统不支持单个大文件（超过4GB）</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、文件权限"><a href="#二、文件权限" class="headerlink" title="二、文件权限"></a>二、文件权限</h2><p>1、设置文件权限</p>
+<ul>
+<li>读取数据</li>
+<li>写入数据</li>
+<li>附加数据</li>
+<li>删除</li>
+<li>执行文件</li>
+</ul>
+<h2 id="三、文件夹权限"><a href="#三、文件夹权限" class="headerlink" title="三、文件夹权限"></a>三、文件夹权限</h2><p>1、设置文件夹权限</p>
+<ul>
+<li>列出文件夹</li>
+<li>创建文件夹</li>
+<li>创建文件</li>
+<li>删除</li>
+<li>删除子文件夹和文件</li>
+</ul>
+<h2 id="四、权限分类"><a href="#四、权限分类" class="headerlink" title="四、权限分类"></a>四、权限分类</h2><ul>
+<li><p>完全控制</p>
+</li>
+<li><p>修改</p>
+</li>
+<li><p>读取和执行</p>
+</li>
+<li><p>读取</p>
+</li>
+<li><p>写入</p>
+</li>
+<li><p>特殊权限</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jfif">
+      <meta itemprop="name" content="5fener">
+      <meta itemprop="description" content="举目见日，不见长安">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="长安街">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/24/NTFS%E6%9D%83%E9%99%90%E8%A7%84%E5%88%99/" class="post-title-link" itemprop="url">NTFS权限规则</a>
+        </h2>
+
+        <div class="post-meta">
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-24T00:00:00+08:00">2021-12-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-16 15:46:05" itemprop="dateModified" datetime="2023-02-16T15:46:05+08:00">2023-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">网络安全</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>408</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="NTFS-权限规则"><a href="#NTFS-权限规则" class="headerlink" title="NTFS 权限规则"></a>NTFS 权限规则</h1><h2 id="一、权限规则"><a href="#一、权限规则" class="headerlink" title="一、权限规则"></a>一、权限规则</h2><h4 id="1、权限的累加"><a href="#1、权限的累加" class="headerlink" title="1、权限的累加"></a>1、权限的累加</h4><ul>
+<li>用户分配的有效权限是分配给用户所有权限的累加<ul>
+<li>假设一个用户配置了读取权限，给用户所属组分配了修改权限，用户最终的权限就等于读取和修改</li>
+</ul>
+</li>
+</ul>
+<h3 id="2、拒绝权限"><a href="#2、拒绝权限" class="headerlink" title="2、拒绝权限"></a>2、拒绝权限</h3><ul>
+<li>拒绝的权限大于一切（在访问控制列表中，拒绝的权限优先级最高）</li>
+<li>当出现权限冲突的时候，拒绝的权限优先级最高（举例：用户所属组读取权限，用户拒绝读取，最终用户没有读取权限）</li>
+</ul>
+<h3 id="3、继承权限"><a href="#3、继承权限" class="headerlink" title="3、继承权限"></a>3、继承权限</h3><ul>
+<li>文件或文件夹的访问控制列表默认情况下会继承上级文件夹的权限</li>
+</ul>
+<h3 id="4、特殊权限（特别的权限）"><a href="#4、特殊权限（特别的权限）" class="headerlink" title="4、特殊权限（特别的权限）"></a>4、特殊权限（特别的权限）</h3><ul>
+<li>读取权限（和读取文件或文件夹的内容没有关系）<ul>
+<li>读取文件或文件夹的访问控制列表</li>
+<li>针对于用户想要访问某个文件的内容，此权限必须勾选</li>
+</ul>
+</li>
+<li>更改权限（和修改文件或文件夹的内容没有关系）<ul>
+<li>用户是否可以修改文件或文件夹的访问控制列表，由于此权限是可以为用户添加或删除权限，会造成很多不安全因素，此权限一般不会给</li>
+<li>要想更改，前提是必须能读取</li>
+</ul>
+</li>
+<li>取得所有权<ul>
+<li>能够修改文件或文件夹的所有者</li>
+<li>前提必须得读取和修改</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://5fener.github.io/2021/12/24/Windows%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -949,7 +1803,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -962,7 +1816,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1003,12 +1857,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">20k</span>
+    <span title="站点总字数">26k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">19 分钟</span>
+    <span title="站点阅读时长">24 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
