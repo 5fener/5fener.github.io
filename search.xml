@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux云服务器远程登录失败</title>
+      <link href="/2023/02/21/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E8%83%BD%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/"/>
+      <url>/2023/02/21/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E8%83%BD%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>在通过 Linux ssh 远程登录华为云服务器时，出现报错<strong>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</strong></p><h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><ul><li><p>这是SSH 使用过程中最常见的错误“警告：远程主机标识已更改”</p></li><li><h4 id="可能原因"><a href="#可能原因" class="headerlink" title="可能原因"></a>可能原因</h4><ul><li>服务器误报：<code>known_hosts</code>当服务器的唯一指纹与首次连接时存储在文件中的指纹不匹配时，通常会出现警告：远程主机识别错误。此密钥更改的一个常见原因是因为更改了 root 密码或重建了 VPS 服务器</li><li>更可怕的猜测是中间人攻击，攻击者将使用持有相同 IP 的虚假 SSH 服务器设置在你的连接和服务器之间。然后他们会将你的流量转发到真正的 SSH 服务器，让你不知道他们正在监视和收集您所做的一切</li></ul></li></ul><h3 id="谨慎排除"><a href="#谨慎排除" class="headerlink" title="谨慎排除"></a>谨慎排除</h3><p>如果你近期做出了如下改变，那么就是服务器误报而非中间人攻击引起的警告</p><ul><li><p>更改了你的 VPS 密码或 SSH 密钥</p></li><li><p>重建你的服务器</p></li><li><p>为多个远程系统分配相同的 IP 地址</p></li><li><p>销毁了你的服务器，然后启动了一台恰好具有相同 IP 地址的新服务器</p></li><li><p>切换操作系统或重新安装</p></li></ul><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>在排除自己是中间人攻击的受害者后，只需删除文件中的现有条目即可再次连接到你的服务器<code>known_hosts</code>，有几种方法可以做到</p><ul><li><h4 id="使用文本编辑器"><a href="#使用文本编辑器" class="headerlink" title="使用文本编辑器"></a>使用文本编辑器</h4></li><li><p>你可以使用任何文本编辑器浏览到您的<code>known_hosts</code>位置并删除与你的服务器 IP 对应的行。该<code>known_hosts</code>文件可能存储在以下位置：</p><ul><li><strong>Windows：</strong> <code>%USERPROFILE%\\.ssh or %USERPROFILE%\\ssh</code></li><li><strong>Linux 和 macOS：</strong> <code>.ssh/known_hosts</code></li></ul></li><li><h4 id="在命令行中使用-ssh-keygen"><a href="#在命令行中使用-ssh-keygen" class="headerlink" title="在命令行中使用 ssh-keygen"></a>在命令行中使用 ssh-keygen</h4><p>修改<code>known_hosts</code>一种可能更快、更通用的方法是通过 ssh-keygen删除您的行。您可以使用以下命令快速删除无效密钥：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -R &quot;your.server.ip&quot;</span><br></pre></td></tr></table></figure><p>当您通过此方法删除指纹时，您的旧信息将存储在<code>known_hosts.old</code></p></li></ul><p>PS：使用任一方法后再次连接到你的服务器会将你服务器的新指纹存储在你已知的主机文件中（<code>known_hosts</code>)，就像您第一次连接时一样</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux，云服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux， 云服务器， 杂症 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>单链表的插入删除</title>
       <link href="/2023/02/20/%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5%E5%88%A0%E9%99%A4/"/>
       <url>/2023/02/20/%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5%E5%88%A0%E9%99%A4/</url>

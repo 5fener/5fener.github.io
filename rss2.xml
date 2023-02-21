@@ -9,8 +9,35 @@
     <atom:link href="https://5fener.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>举目见日，不见长安</description>
-    <pubDate>Mon, 20 Feb 2023 15:32:43 GMT</pubDate>
+    <pubDate>Tue, 21 Feb 2023 01:40:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Linux云服务器远程登录失败</title>
+      <link>https://5fener.github.io/2023/02/21/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E8%83%BD%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</link>
+      <guid>https://5fener.github.io/2023/02/21/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E8%83%BD%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</guid>
+      <pubDate>Tue, 21 Feb 2023 01:19:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;在通过 Linux ssh 远程登录华为云服务器时，出现报错&lt;strong&gt;WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;问题分析&quot;&gt;&lt;a href=&quot;#问题分析&quot; class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>在通过 Linux ssh 远程登录华为云服务器时，出现报错<strong>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</strong></p><h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><ul><li><p>这是SSH 使用过程中最常见的错误“警告：远程主机标识已更改”</p></li><li><h4 id="可能原因"><a href="#可能原因" class="headerlink" title="可能原因"></a>可能原因</h4><ul><li>服务器误报：<code>known_hosts</code>当服务器的唯一指纹与首次连接时存储在文件中的指纹不匹配时，通常会出现警告：远程主机识别错误。此密钥更改的一个常见原因是因为更改了 root 密码或重建了 VPS 服务器</li><li>更可怕的猜测是中间人攻击，攻击者将使用持有相同 IP 的虚假 SSH 服务器设置在你的连接和服务器之间。然后他们会将你的流量转发到真正的 SSH 服务器，让你不知道他们正在监视和收集您所做的一切</li></ul></li></ul><h3 id="谨慎排除"><a href="#谨慎排除" class="headerlink" title="谨慎排除"></a>谨慎排除</h3><p>如果你近期做出了如下改变，那么就是服务器误报而非中间人攻击引起的警告</p><ul><li><p>更改了你的 VPS 密码或 SSH 密钥</p></li><li><p>重建你的服务器</p></li><li><p>为多个远程系统分配相同的 IP 地址</p></li><li><p>销毁了你的服务器，然后启动了一台恰好具有相同 IP 地址的新服务器</p></li><li><p>切换操作系统或重新安装</p></li></ul><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>在排除自己是中间人攻击的受害者后，只需删除文件中的现有条目即可再次连接到你的服务器<code>known_hosts</code>，有几种方法可以做到</p><ul><li><h4 id="使用文本编辑器"><a href="#使用文本编辑器" class="headerlink" title="使用文本编辑器"></a>使用文本编辑器</h4></li><li><p>你可以使用任何文本编辑器浏览到您的<code>known_hosts</code>位置并删除与你的服务器 IP 对应的行。该<code>known_hosts</code>文件可能存储在以下位置：</p><ul><li><strong>Windows：</strong> <code>%USERPROFILE%\\.ssh or %USERPROFILE%\\ssh</code></li><li><strong>Linux 和 macOS：</strong> <code>.ssh/known_hosts</code></li></ul></li><li><h4 id="在命令行中使用-ssh-keygen"><a href="#在命令行中使用-ssh-keygen" class="headerlink" title="在命令行中使用 ssh-keygen"></a>在命令行中使用 ssh-keygen</h4><p>修改<code>known_hosts</code>一种可能更快、更通用的方法是通过 ssh-keygen删除您的行。您可以使用以下命令快速删除无效密钥：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -R &quot;your.server.ip&quot;</span><br></pre></td></tr></table></figure><p>当您通过此方法删除指纹时，您的旧信息将存储在<code>known_hosts.old</code></p></li></ul><p>PS：使用任一方法后再次连接到你的服务器会将你服务器的新指纹存储在你已知的主机文件中（<code>known_hosts</code>)，就像您第一次连接时一样</p>]]></content:encoded>
+      
+      
+      <category domain="https://5fener.github.io/categories/Linux%EF%BC%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">Linux，云服务器</category>
+      
+      
+      <category domain="https://5fener.github.io/tags/Linux%EF%BC%8C-%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%8C-%E6%9D%82%E7%97%87/">Linux， 云服务器， 杂症</category>
+      
+      
+      <comments>https://5fener.github.io/2023/02/21/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8D%E8%83%BD%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>单链表的插入删除</title>
@@ -293,40 +320,6 @@
       
       
       <comments>https://5fener.github.io/2023/02/17/ds%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>C++11标准</title>
-      <link>https://5fener.github.io/2023/02/17/C++11/</link>
-      <guid>https://5fener.github.io/2023/02/17/C++11/</guid>
-      <pubDate>Fri, 17 Feb 2023 11:42:58 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;初始化的方式&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;int  b(2);&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;int n = &amp;#123;(int)3.14&amp;#125;&lt;/code&gt;	新的写法不允许有精度的缺失&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;指针置空&lt;/p&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ol><li><p>初始化的方式</p><p><code>int  b(2);</code></p><p><code>int n = &#123;(int)3.14&#125;</code>新的写法不允许有精度的缺失</p></li><li><p>指针置空</p><p><code>int *p = NULL;</code></p><p><code>int *p = nullptr;</code></p></li><li><p>自动类型</p><p><code>int a = 0;</code></p><p><code>auto a = 0;</code>根据值匹配类型</p></li><li><p>decltype()</p><p><code>int a = 0;</code></p><p><code>decltype(a)b;</code>根据a的类型定义一个和a类型一致的b变量</p><p><code>decltype((a))m = a; </code>给a取别名m</p></li><li><p>新的for规则</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string str = &quot;abcdef&quot;;</span><br><span class="line">for(auto i; str)</span><br><span class="line">&#123;</span><br><span class="line">std::cout &lt;&lt; i &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个方法，只能用来遍历数组等容器。i所代表的是里面存的元素</p></li><li><p>给类型取别名</p><p><code>typedef int INT;</code></p><p><code>typedef void(*pFun) ();</code></p><p><code>using Int = int;</code></p><p><code>using PFUN = void(*) ();</code></p></li><li><p>default在类中的用法</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">CA();</span><br><span class="line">&#125;</span><br><span class="line">CA::CA() = default;//默认调用默认构造</span><br></pre></td></tr></table></figure></li><li><p>final</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class CA</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">virtual void fun()final&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content:encoded>
-      
-      
-      <category domain="https://5fener.github.io/categories/C/">C++</category>
-      
-      
-      <category domain="https://5fener.github.io/tags/C/">C++</category>
-      
-      <category domain="https://5fener.github.io/tags/C-11/">C++11</category>
-      
-      
-      <comments>https://5fener.github.io/2023/02/17/C++11/#disqus_thread</comments>
       
     </item>
     
