@@ -9,18 +9,42 @@
     <atom:link href="https://5fener.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>举目见日，不见长安</description>
-    <pubDate>Tue, 21 Feb 2023 08:38:11 GMT</pubDate>
+    <pubDate>Tue, 21 Feb 2023 12:36:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title></title>
+      <title>顺序表和链表的比较</title>
       <link>https://5fener.github.io/2023/02/21/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83/</link>
       <guid>https://5fener.github.io/2023/02/21/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83/</guid>
       <pubDate>Tue, 21 Feb 2023 08:38:11 GMT</pubDate>
       
+        
+        
+      <description>&lt;p&gt;顺序表（顺序存储)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;优点：支持随机存取、存储密度高&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;缺点：大片连续空间分配不方便，改变容量不方便&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;链表（链式存储）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点：离散的小空间分配方便，</description>
+        
       
       
       
+      <content:encoded><![CDATA[<p>顺序表（顺序存储)</p><ul><li><p>优点：支持随机存取、存储密度高</p></li><li><p>缺点：大片连续空间分配不方便，改变容量不方便</p></li></ul><p>链表（链式存储）</p><ul><li>优点：离散的小空间分配方便，改变容量方便</li><li>缺点：不可随机存取，存储密度低</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://5fener.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      
+      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      <category domain="https://5fener.github.io/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://5fener.github.io/tags/%E7%8E%8B%E9%81%93/">王道</category>
       
       
       <comments>https://5fener.github.io/2023/02/21/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83/#disqus_thread</comments>
@@ -28,14 +52,32 @@
     </item>
     
     <item>
-      <title></title>
+      <title>静态链表</title>
       <link>https://5fener.github.io/2023/02/21/%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/</link>
       <guid>https://5fener.github.io/2023/02/21/%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/</guid>
       <pubDate>Tue, 21 Feb 2023 08:37:42 GMT</pubDate>
       
+        
+        
+      <description>&lt;p&gt;静态链表：分配一整片连续的内存空间，各个结点集中安置&lt;/p&gt;
+&lt;p&gt;优点：增删操作不需要大量移动元素&lt;/p&gt;
+&lt;p&gt;缺点：不能随机存取，只能从头结点开始依次往后查找；&lt;strong&gt;容量固定不可变&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight </description>
+        
       
       
       
+      <content:encoded><![CDATA[<p>静态链表：分配一整片连续的内存空间，各个结点集中安置</p><p>优点：增删操作不需要大量移动元素</p><p>缺点：不能随机存取，只能从头结点开始依次往后查找；<strong>容量固定不可变</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MaxSize 10<span class="comment">//静态链表的最大长度</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Node</span>&#123;<span class="comment">//静态链表结构类型的定义</span></span><br><span class="line">    ElemType data;<span class="comment">//存储数据元素</span></span><br><span class="line">    <span class="type">int</span> next;<span class="comment">//下一个元素的数组下标</span></span><br><span class="line">&#125;SLinkList[MaxSize];</span><br><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment">typedef struct Node SLinkList[MaxSize];</span></span><br><span class="line"><span class="comment">***/</span></span><br></pre></td></tr></table></figure><ul><li><p>查找：从头结点出发挨个往后遍历结点</p></li><li><p>插入位序为 i 的结点：</p><ul><li>找到一个空的结点，存入数据元素</li><li>从头结点出发找到位序为 i-1 的结点</li><li>修改新结点的 next</li><li>修改 i-1 号结点的 next</li></ul></li><li><p>删除某个结点</p><ul><li>从头结点出发找到前驱结点</li><li>修改前驱结点的游标</li><li>被删除结点next设为-2（用一个特殊的数值标记空闲结点）</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://5fener.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      
+      <category domain="https://5fener.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      
+      <category domain="https://5fener.github.io/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://5fener.github.io/tags/%E7%8E%8B%E9%81%93/">王道</category>
       
       
       <comments>https://5fener.github.io/2023/02/21/%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/#disqus_thread</comments>
