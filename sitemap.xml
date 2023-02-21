@@ -358,20 +358,6 @@
   </url>
   
   <url>
-    <loc>https://5fener.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
-    <lastmod>2023-02-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://5fener.github.io/tags/VMWare/</loc>
-    <lastmod>2023-02-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://5fener.github.io/tags/Linux/</loc>
     <lastmod>2023-02-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -380,6 +366,20 @@
   
   <url>
     <loc>https://5fener.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2023-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://5fener.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <lastmod>2023-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://5fener.github.io/tags/VMWare/</loc>
     <lastmod>2023-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -416,13 +416,6 @@
   </url>
   
   <url>
-    <loc>https://5fener.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
-    <lastmod>2023-02-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://5fener.github.io/categories/Linux/</loc>
     <lastmod>2023-02-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -430,7 +423,7 @@
   </url>
   
   <url>
-    <loc>https://5fener.github.io/categories/Linux/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://5fener.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     <lastmod>2023-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
